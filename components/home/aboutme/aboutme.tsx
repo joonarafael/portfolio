@@ -1,10 +1,13 @@
 "use client";
 
-import Subtitle from "../subtitle";
+import Subtitle from "../../subtitle";
 
 const AboutMe = () => {
 	return (
-		<div className="items-center justify-center w-full flex flex-col gap-4">
+		<div
+			id="aboutMe"
+			className="items-center justify-center w-full flex flex-col gap-4"
+		>
 			<Subtitle text="ABOUT ME" />
 			<div className="flex flex-row gap-2 justify-between w-full items-center">
 				<div className="border-rose-500 text-rose-500 border hidden lg:flex min-w-[256px] min-h-[256px] text-center items-center justify-center rounded-xl">

@@ -1,10 +1,13 @@
 "use client";
 
-import Subtitle from "../subtitle";
+import Subtitle from "../../subtitle";
 
 const Skills = () => {
 	return (
-		<div className="items-center justify-center w-full flex flex-col gap-4">
+		<div
+			id="skills"
+			className="items-center justify-center w-full flex flex-col gap-4"
+		>
 			<Subtitle text="SKILLS" />
 			<div>
 				<h2 className="font-bold text-3xl border border-rose-500">
