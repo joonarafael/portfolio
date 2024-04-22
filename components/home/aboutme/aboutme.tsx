@@ -1,6 +1,7 @@
 "use client";
 
 import Subtitle from "../../subtitle";
+import ProfPic from "./profpic";
 
 const AboutMe = () => {
 	return (
@@ -10,10 +11,10 @@ const AboutMe = () => {
 		>
 			<Subtitle text="ABOUT ME" />
 			<div className="flex flex-row gap-2 justify-between w-full items-center">
-				<div className="border-rose-500 text-rose-500 border hidden lg:flex min-w-[256px] min-h-[256px] text-center items-center justify-center rounded-xl">
-					IMAGE
+				<div className="hidden lg:flex min-w-[256px] min-h-[256px]">
+					<ProfPic />
 				</div>
-				<div className="border-rose-500 border text-left">
+				<div className="text-left">
 					<h2 className="font-bold text-3xl">
 						Nam ante sem, tristique eleifend pellentesque eu, placerat
 						sollicitudin lorem.
