@@ -1,13 +1,13 @@
 "use client";
 
-import { CircleMinus, CirclePlus } from "lucide-react";
-import { useState } from "react";
+import { CircleMinus, CirclePlus } from 'lucide-react';
+import { useState } from 'react';
 
-import { Button } from "@/components/ui/button";
-import useScreenSize from "@/hooks/useScreenSize";
-import SKILLS from "@/lib/skills";
+import { Button } from '@/components/ui/button';
+import useScreenSize from '@/hooks/useScreenSize';
+import SKILLS from '@/lib/skills';
 
-import SkillElement from "./skillelement";
+import SkillElement from './skillelement';
 
 const SkillList = () => {
 	const [expand, setExpand] = useState(false);
@@ -51,7 +51,7 @@ const SkillList = () => {
 									setExpand(false);
 								}}
 								size="xl"
-								className="bg-black font-bold items-center gap-2"
+								className="bg-black font-bold items-center gap-2 text-white"
 							>
 								<CircleMinus className="h-4 w-4" />
 								<p>SHOW LESS</p>
@@ -72,7 +72,7 @@ const SkillList = () => {
 									setExpand(true);
 								}}
 								size="xl"
-								className="bg-black font-bold items-center gap-2"
+								className="bg-black font-bold items-center gap-2 text-white"
 							>
 								<CirclePlus className="h-4 w-4" />
 								<p>SHOW MORE</p>

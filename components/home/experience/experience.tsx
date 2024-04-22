@@ -11,6 +11,7 @@ const Experience = () => {
 			<Subtitle text="EXPERIENCE" />
 			<div className="flex flex-col gap-8">
 				<h2 className="font-bold text-3xl">{`Quick summary of my most recent experiences`}</h2>
+				<p>[add experience here]</p>
 			</div>
 		</div>
 	);

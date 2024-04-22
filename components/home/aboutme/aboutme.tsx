@@ -21,12 +21,13 @@ const AboutMe = () => {
 					</h2>
 					<p>
 						I am a second-year Computer Science student at the University of
-						Helsinki, eager to take the next step in my career. I learn quickly
-						and have completed numerous programming projects as hobbies during
-						my free time. Over the past six months, I have immersed myself in
-						web development, building full-stack applications with React in
-						TypeScript for Next.js servers. Additionally, I have proactively
-						acquainted myself with Jest and GitLab Actions for CI/CD.
+						Helsinki, eager to take the next step in my career. Over the past
+						twelve months, I have immersed myself in web development, building
+						full-stack applications with React in TypeScript for Next.js
+						servers. Additionally, I have proactively acquainted myself with
+						Jest and GitLab Actions for CI/CD. As my next step, I am looking
+						into caching & rate limiting, Docker containers and other cloud
+						services and advanced deployment strategies.
 					</p>
 				</div>
 			</div>
