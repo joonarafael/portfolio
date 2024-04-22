@@ -86,6 +86,19 @@
 		#7469b6,
 		#ffe6e6
 	);
-	background-size: 300% 300%;
+	background-size: 400%;
 	background-clip: text;
+}
+
+.gradient-background {
+	background-image: linear-gradient(
+		to left,
+		#7338a0,
+		#4a2574,
+		#0f0529,
+		#7338a0,
+		#4a2574,
+		#0f0529
+	);
+	background-size: 400%;
 }

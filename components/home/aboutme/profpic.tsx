@@ -5,7 +5,7 @@ const ProfPic = () => {
 		<div className="relative">
 			<div className="p-4">
 				<img
-					className="rounded-full object-contain border-b-8 border-x-2 border-black dark:border-purple-500 shadow-lg dark:shadow-purple-800 shadow-black"
+					className="rounded-full object-contain border-b-8 border-x-2 border-black dark:border-purple-500 shadow-lg dark:shadow-purple-800 shadow-black pointer-events-none"
 					src={
 						"https://dl.dropboxusercontent.com/scl/fi/bwipx7607ro1gb5akaarz/profpic.jpeg?rlkey=ec61wmz84rno3339ssxcngvky"
 					}

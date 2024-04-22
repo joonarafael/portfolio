@@ -6,7 +6,8 @@ const Logo = () => {
 	return (
 		<Button
 			onClick={() => {
-				window.open("/", "_self");
+				const element = document.getElementById("title");
+				element?.scrollIntoView({ behavior: "smooth", block: "center" });
 			}}
 			variant="link"
 		>

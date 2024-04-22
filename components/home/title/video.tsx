@@ -10,7 +10,7 @@ const TitleVideo = () => {
 				autoPlay
 				loop
 				muted
-				className="w-full h-full object-cover rounded-xl z-30"
+				className="w-full h-full object-cover rounded-xl z-30 pointer-events-none"
 				src={
 					"https://dl.dropboxusercontent.com/scl/fi/kfvrri1r7qdr3vn2z61bk/titlevideo.mp4?rlkey=t3xscp7prok74snt51dyj5qr0&st"
 				}

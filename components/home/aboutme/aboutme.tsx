@@ -20,14 +20,13 @@ const AboutMe = () => {
 						sollicitudin lorem.
 					</h2>
 					<p>
-						In consequat tincidunt eros sollicitudin hendrerit. Fusce molestie
-						dapibus orci tristique vestibulum. Nullam efficitur, magna eget
-						semper mattis, turpis ipsum vulputate velit, eget imperdiet leo sem
-						ut tellus. Phasellus vestibulum, ex eget posuere volutpat, leo arcu
-						pretium eros, et sollicitudin mauris purus eget mauris. Fusce dictum
-						leo ut turpis laoreet mollis. Suspendisse venenatis mi at suscipit
-						porta. Morbi sagittis lacus quis mi dignissim, eu maximus lectus
-						lobortis. Mauris et egestas mauris, sagittis egestas urna.{" "}
+						I am a second-year Computer Science student at the University of
+						Helsinki, eager to take the next step in my career. I learn quickly
+						and have completed numerous programming projects as hobbies during
+						my free time. Over the past six months, I have immersed myself in
+						web development, building full-stack applications with React in
+						TypeScript for Next.js servers. Additionally, I have proactively
+						acquainted myself with Jest and GitLab Actions for CI/CD.
 					</p>
 				</div>
 			</div>

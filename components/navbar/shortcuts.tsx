@@ -8,7 +8,7 @@ const Shortcuts = () => {
 			<Button
 				onClick={() => {
 					const element = document.getElementById("title");
-					element?.scrollIntoView({ behavior: "smooth" });
+					element?.scrollIntoView({ behavior: "smooth", block: "center" });
 				}}
 				variant="link"
 			>
@@ -17,7 +17,7 @@ const Shortcuts = () => {
 			<Button
 				onClick={() => {
 					const element = document.getElementById("aboutMe");
-					element?.scrollIntoView({ behavior: "smooth" });
+					element?.scrollIntoView({ behavior: "smooth", block: "center" });
 				}}
 				variant="link"
 			>
@@ -26,7 +26,7 @@ const Shortcuts = () => {
 			<Button
 				onClick={() => {
 					const element = document.getElementById("skills");
-					element?.scrollIntoView({ behavior: "smooth" });
+					element?.scrollIntoView({ behavior: "smooth", block: "center" });
 				}}
 				variant="link"
 			>
@@ -35,7 +35,7 @@ const Shortcuts = () => {
 			<Button
 				onClick={() => {
 					const element = document.getElementById("work");
-					element?.scrollIntoView({ behavior: "smooth" });
+					element?.scrollIntoView({ behavior: "smooth", block: "center" });
 				}}
 				variant="link"
 			>
@@ -44,7 +44,7 @@ const Shortcuts = () => {
 			<Button
 				onClick={() => {
 					const element = document.getElementById("experience");
-					element?.scrollIntoView({ behavior: "smooth" });
+					element?.scrollIntoView({ behavior: "smooth", block: "center" });
 				}}
 				variant="link"
 			>
