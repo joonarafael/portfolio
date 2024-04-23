@@ -9,6 +9,7 @@ const ProfPic = () => {
 					src={
 						"https://dl.dropboxusercontent.com/scl/fi/bwipx7607ro1gb5akaarz/profpic.jpeg?rlkey=ec61wmz84rno3339ssxcngvky"
 					}
+					alt="Profile Picture"
 				/>
 			</div>
 			<div className="absolute rounded-xl p-2 left-0 right-0 bottom-0 text-primary bg-secondary/50 backdrop-blur-lg font-bold text-lg shadow-lg">

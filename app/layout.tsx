@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import './globals.css';
+import "./globals.css";
 
-import { Inter } from 'next/font/google';
+import dynamic from "next/dynamic";
+import { Inter } from "next/font/google";
 
-import Footer from '@/components/footer';
-import Navbar from '@/components/navbar/navbar';
-import { ThemeProvider } from '@/components/themeprovider';
+import Footer from "@/components/footer";
+import { ThemeProvider } from "@/components/themeprovider";
+
+const Navbar = dynamic(() => import("../components/navbar/navbar"), {
+	ssr: false,
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
