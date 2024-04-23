@@ -65,7 +65,7 @@ const config = {
 				},
 			},
 			animation: {
-				gradient: "gradient 6s linear infinite",
+				gradient: "gradient 12s linear infinite",
 				gradientBackground: "gradient 18s linear infinite",
 			},
 		},
