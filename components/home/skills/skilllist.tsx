@@ -51,7 +51,7 @@ const SkillList = () => {
 									setExpand(false);
 								}}
 								size="xl"
-								className="bg-black font-bold items-center gap-2 text-white"
+								className="bg-black font-bold items-center gap-2 text-white dark:hover:text-black"
 							>
 								<CircleMinus className="h-4 w-4" />
 								<p>SHOW LESS</p>
@@ -72,7 +72,7 @@ const SkillList = () => {
 									setExpand(true);
 								}}
 								size="xl"
-								className="bg-black font-bold items-center gap-2 text-white"
+								className="bg-black font-bold items-center gap-2 text-white dark:hover:text-black"
 							>
 								<CirclePlus className="h-4 w-4" />
 								<p>SHOW MORE</p>

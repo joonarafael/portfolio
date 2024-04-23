@@ -1,11 +1,11 @@
 "use client";
 
-import dynamic from "next/dynamic";
+import dynamic from 'next/dynamic';
 
-import SKILLS_LEARNING from "@/lib/learning";
+import SKILLS_LEARNING from '@/lib/learning';
 
-import Subtitle from "../../subtitle";
-import SkillElement from "./skillelement";
+import Subtitle from '../../subtitle';
+import SkillElement from './skillelement';
 
 const SkillList = dynamic(() => import("./skilllist"), { ssr: false });
 
@@ -22,7 +22,7 @@ const Skills = () => {
 			className="items-center justify-center w-full flex flex-col gap-12"
 		>
 			<Subtitle text="SKILLS" />
-			<div className="flex flex-col gap-8">
+			<div className="flex flex-col gap-12">
 				<h2 className="font-bold text-3xl">
 					Technologies and tools I am good with
 				</h2>

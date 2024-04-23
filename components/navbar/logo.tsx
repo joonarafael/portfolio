@@ -1,13 +1,17 @@
 "use client";
 
-import { Button } from "../ui/button";
+import { Button } from '../ui/button';
 
 const Logo = () => {
 	return (
 		<Button
 			onClick={() => {
-				const element = document.getElementById("title");
-				element?.scrollIntoView({ behavior: "smooth", block: "center" });
+				if (window.location.href.includes("projects")) {
+					window.open("/", "_self");
+				} else {
+					const element = document.getElementById("title");
+					element?.scrollIntoView({ behavior: "smooth", block: "center" });
+				}
 			}}
 			variant="link"
 		>

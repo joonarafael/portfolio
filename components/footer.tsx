@@ -1,9 +1,9 @@
 "use client";
 
-import { Github } from "lucide-react";
+import { Github } from 'lucide-react';
 
-import Logo from "./navbar/logo";
-import { Button } from "./ui/button";
+import Logo from './navbar/logo';
+import { Button } from './ui/button';
 
 const Footer = () => {
 	return (
@@ -11,26 +11,28 @@ const Footer = () => {
 			<div className="flex flex-col lg:flex-row items-center justify-center gap-2">
 				<Logo />
 				<p className="text-sm text-neutral-500 font-light text-center">
-					updated lastly April 21st 2024
+					updated lastly April 23rd 2024
 				</p>
 			</div>
 			<div className="flex flex-col md:flex-row gap-2 items-center">
-				<Button
-					onClick={() => {
-						window.open("mailto:joonarafael@gmail.com", "_blank");
-					}}
-					variant="link"
-				>
-					<p>joonarafael@gmail.com</p>
-				</Button>
-				<Button
-					onClick={() => {
-						window.open("https://github.com/joonarafael", "_blank");
-					}}
-					variant="ghost"
-				>
-					<Github className="w-4 h-4" />
-				</Button>
+				<div className="flex flex-row items-center gap-0">
+					<Button
+						onClick={() => {
+							window.open("mailto:joonarafael@gmail.com", "_blank");
+						}}
+						variant="link"
+					>
+						<p>joonarafael@gmail.com</p>
+					</Button>
+					<Button
+						onClick={() => {
+							window.open("https://github.com/joonarafael", "_blank");
+						}}
+						variant="ghost"
+					>
+						<Github className="w-4 h-4" />
+					</Button>
+				</div>
 				<div className="flex flex-col text-center md:text-right items-center md:items-end">
 					<Button
 						onClick={() => {
@@ -44,14 +46,14 @@ const Footer = () => {
 					<Button
 						onClick={() => {
 							window.open(
-								"https://pixabay.com/users/u_gm5v89x1on-33680440/",
+								"https://pixabay.com/users/u_vt453kmgmm-28659814/",
 								"_blank"
 							);
 						}}
 						variant="link"
 						className="font-light"
 					>
-						title video by u_gm5v89x1on from Pixabay
+						title video by u_vt453kmgmm from Pixabay
 					</Button>
 				</div>
 			</div>

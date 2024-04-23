@@ -1,7 +1,7 @@
 "use client";
 
-import Subtitle from "../../subtitle";
-import ProfPic from "./profpic";
+import Subtitle from '../../subtitle';
+import ProfPic from './profpic';
 
 const AboutMe = () => {
 	return (
@@ -10,7 +10,7 @@ const AboutMe = () => {
 			className="items-center justify-center w-full flex flex-col gap-12"
 		>
 			<Subtitle text="ABOUT ME" />
-			<div className="flex flex-row gap-2 justify-between w-full items-center">
+			<div className="flex flex-row gap-12 justify-between w-full items-center">
 				<div className="hidden lg:flex min-w-[256px] min-h-[256px]">
 					<ProfPic />
 				</div>

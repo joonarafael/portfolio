@@ -1,9 +1,9 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
-import Subtitle from "../../subtitle";
-import WorkPanel from "./workpanel";
+import Subtitle from '../../subtitle';
+import WorkPanel from './workpanel';
 
 const Work = () => {
 	return (
@@ -12,7 +12,7 @@ const Work = () => {
 			className="items-center justify-center w-full flex flex-col gap-12"
 		>
 			<Subtitle text="WORK" />
-			<div className="flex flex-col gap-8 w-full items-center justify-center">
+			<div className="flex flex-col gap-12 w-full items-center justify-center">
 				<h2 className="font-bold text-3xl">{`Things I've built so far`}</h2>
 				<div className="gap-8 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 					<WorkPanel
@@ -37,14 +37,11 @@ const Work = () => {
 					/>
 				</div>
 				<Button
-					variant="link"
+					variant="ghost"
 					onClick={() => {
-						window.open(
-							"https://github.com/joonarafael?tab=repositories",
-							"_blank"
-						);
+						window.open("/projects", "_self");
 					}}
-					className="text-xl w-min"
+					className="gradient-text w-fit text-transparent animate-gradient text-2xl"
 				>
 					and more...
 				</Button>

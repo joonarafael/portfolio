@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "../../ui/button";
-import TitleVideo from "./video";
+import { Button } from '../../ui/button';
+import TitleVideo from './video';
 
 const Title = () => {
 	return (
@@ -9,7 +9,7 @@ const Title = () => {
 			id="title"
 			className="flex flex-row h-full lg:h-[720px] justify-center items-center gap-2"
 		>
-			<div className="flex flex-col gap-8 lg:w-3/5 pr-10">
+			<div className="flex flex-col gap-12 lg:w-3/5 pr-10">
 				<div className="w-full text-left flex flex-col gap-2">
 					<h2 className="text-2xl">{`Hello, I'm`}</h2>
 					<h1 className="gradient-text w-fit text-transparent text-6xl font-extrabold animate-gradient">
