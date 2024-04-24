@@ -1,10 +1,10 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import WORK from "@/lib/work";
+import { Button } from '@/components/ui/button';
+import WORK from '@/lib/work';
 
-import Subtitle from "../../subtitle";
-import WorkPanel from "../../workpanel";
+import Subtitle from '../../subtitle';
+import WorkPanel from '../../workpanel';
 
 const Work = () => {
 	const firstFour = WORK.slice(0, 4);
@@ -17,7 +17,7 @@ const Work = () => {
 			<Subtitle text="WORK" />
 			<div className="flex flex-col gap-12 w-full items-center justify-center">
 				<h2 className="font-bold text-3xl">{`Things I've built so far`}</h2>
-				<div className="gap-8 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+				<div className="gap-8 grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 					{firstFour.map((work, i) => (
 						<WorkPanel key={i} work={work} />
 					))}

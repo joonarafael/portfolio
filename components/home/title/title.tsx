@@ -20,7 +20,7 @@ const Title = () => {
 			<div className="flex flex-col gap-12 lg:w-3/5 pr-10">
 				<div className="w-full text-left flex flex-col gap-2">
 					<h2 className="text-2xl">{`Hello, I'm`}</h2>
-					<h1 className="gradient-text w-fit text-transparent text-6xl font-extrabold animate-gradient">
+					<h1 className="gradient-text w-fit text-transparent text-4xl sm:text-6xl font-extrabold animate-gradient">
 						Joona Kettunen,
 					</h1>
 					<p className="text-xl">

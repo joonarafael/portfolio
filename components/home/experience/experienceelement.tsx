@@ -35,7 +35,7 @@ const ExperienceElement = ({
 				}}
 				className="flex flex-row w-full justify-between items-center"
 			>
-				<div className="flex flex-row gap-2 items-center">
+				<div className="flex flex-wrap gap-2 text-left items-center">
 					<h1 className="text-lg font-bold">{title}</h1>
 					<h2 className="text-lg font-light">@ {company}</h2>
 				</div>
@@ -71,13 +71,13 @@ const ExperienceElement = ({
 							{from} - {to ?? "Present"}
 						</p>
 					</div>
-					<div className="flex flex-row gap-4">
+					<div className="flex items-start justify-start flex-col sm:flex-row gap-2 sm:gap-4">
 						<Button
 							onClick={() => {
 								window.open(`http://maps.google.com/?q=${location}`, "_blank");
 							}}
 							variant="link"
-							className="gap-2 items-center p-0"
+							className="gap-2 items-center px-0"
 						>
 							<SiGooglemaps className="w-5 h-5" />
 							<p className="font-light text-neutral">{location}</p>
@@ -88,16 +88,16 @@ const ExperienceElement = ({
 									window.open(href ?? "", "_blank");
 								}}
 								variant="link"
-								className="gap-2 items-center"
+								className="gap-2 items-center px-0"
 							>
-								<FiLink className="w-4 h-4" />
+								<FiLink className="w-4 h-4 " />
 								<p className="font-light text-neutral">
 									{href.replace("https://", "").replace("www.", "")}
 								</p>
 							</Button>
 						)}
 					</div>
-					<div className="flex flex-col">
+					<div>
 						<p>{description}</p>
 					</div>
 					<div className="flex flex-wrap gap-3 text-neutral-500 text-xs font-light">
