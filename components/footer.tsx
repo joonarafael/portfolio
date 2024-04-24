@@ -33,29 +33,15 @@ const Footer = () => {
 						<Github className="w-4 h-4" />
 					</Button>
 				</div>
-				<div className="flex flex-col text-center md:text-right items-center md:items-end">
-					<Button
-						onClick={() => {
-							window.open("https://www.freepik.com", "_blank");
-						}}
-						variant="link"
-						className="font-light"
-					>
-						favicon by Freepik
-					</Button>
-					<Button
-						onClick={() => {
-							window.open(
-								"https://pixabay.com/users/u_vt453kmgmm-28659814/",
-								"_blank"
-							);
-						}}
-						variant="link"
-						className="font-light"
-					>
-						title video by u_vt453kmgmm from Pixabay
-					</Button>
-				</div>
+				<Button
+					onClick={() => {
+						window.open("https://www.freepik.com", "_blank");
+					}}
+					variant="link"
+					className="font-light"
+				>
+					favicon by Freepik
+				</Button>
 			</div>
 		</div>
 	);

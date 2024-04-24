@@ -1,5 +1,12 @@
 "use client";
 
+import { Linkedin, Mail } from 'lucide-react';
+
+import {
+    Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle,
+    DialogTrigger
+} from '@/components/ui/dialog';
+
 import { Button } from '../../ui/button';
 import TitleVideo from './video';
 
@@ -21,9 +28,37 @@ const Title = () => {
 						problem-solver and worker of the digital age.
 					</p>
 				</div>
-				<Button disabled variant="outline" className="w-min drop-shadow-sm">
-					Send me a message
-				</Button>
+				<Dialog>
+					<DialogTrigger asChild>
+						<Button variant="secondary" className="w-fit">
+							<p>Send me a message</p>
+						</Button>
+					</DialogTrigger>
+					<DialogContent className="sm:max-w-md">
+						<DialogHeader>
+							<DialogTitle>Send me a message</DialogTitle>
+							<DialogDescription>Shoot me an email!</DialogDescription>
+						</DialogHeader>
+						<div className="flex items-center space-x-2 w-full">
+							<Button
+								onClick={() => {
+									window.open("mailto:joonarafael@gmail.com", "_blank");
+								}}
+								className="w-full items-center gap-2"
+							>
+								<Mail className="w-4 h-4" />
+								<p>joonarafael@gmail.com</p>
+							</Button>
+						</div>
+						<DialogFooter className="sm:justify-start">
+							<DialogClose asChild>
+								<Button type="button" variant="outline">
+									Close
+								</Button>
+							</DialogClose>
+						</DialogFooter>
+					</DialogContent>
+				</Dialog>
 			</div>
 			<TitleVideo />
 		</div>

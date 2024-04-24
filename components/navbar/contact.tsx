@@ -1,13 +1,19 @@
 "use client";
 
-import { Linkedin, Mail } from 'lucide-react';
+import { Linkedin, Mail } from "lucide-react";
 
 import {
-    Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle,
-    DialogTrigger
-} from '@/components/ui/dialog';
+	Dialog,
+	DialogClose,
+	DialogContent,
+	DialogDescription,
+	DialogFooter,
+	DialogHeader,
+	DialogTitle,
+	DialogTrigger,
+} from "@/components/ui/dialog";
 
-import { Button } from '../ui/button';
+import { Button } from "../ui/button";
 
 const ContactButton = () => {
 	return (
@@ -15,7 +21,7 @@ const ContactButton = () => {
 			<DialogTrigger asChild>
 				<Button
 					variant="ghost"
-					className="bg-purple-500 text-white hover:bg-purple-500/50 hover:text-white/50"
+					className="bg-purple-500 text-white hover:bg-purple-500/75 hover:text-white/75"
 				>
 					<p>Contact me</p>
 				</Button>

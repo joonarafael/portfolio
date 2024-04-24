@@ -1,10 +1,10 @@
 "use client";
 
-import { Link, MapPin, MinusCircle, PlusCircle } from 'lucide-react';
-import { useState } from 'react';
+import { Link, MapPin, MinusCircle, PlusCircle } from "lucide-react";
+import { useState } from "react";
 
-import { Button } from '@/components/ui/button';
-import { Experience } from '@/types';
+import { Button } from "@/components/ui/button";
+import { Experience } from "@/types";
 
 interface ExperienceElementProps {
 	experience: Experience;
@@ -20,13 +20,19 @@ const ExperienceElement = ({
 	const { title, company, from, to, location, href, description, skills } =
 		experience;
 
+	skills.sort((a, b) => {
+		if (a.name < b.name) return -1;
+		if (a.name > b.name) return 1;
+		return 0;
+	});
+
 	return (
 		<div className="flex w-full flex-col shadow-black/50 dark:shadow-purple-800 shadow-md p-4 gap-4 rounded-xl bg-background">
 			<div
 				onClick={() => {
 					setExpand(!expand);
 				}}
-				className="flex flex-row w-full justify-between items-center hover:cursor-pointer"
+				className="flex flex-row w-full justify-between items-center"
 			>
 				<div className="flex flex-row gap-2 items-center">
 					<h1 className="text-lg font-bold">{title}</h1>
@@ -75,18 +81,20 @@ const ExperienceElement = ({
 							<MapPin className="w-5 h-5" />
 							<p className="font-light text-neutral">{location}</p>
 						</Button>
-						<Button
-							onClick={() => {
-								window.open(href, "_blank");
-							}}
-							variant="link"
-							className="gap-2 items-center"
-						>
-							<Link className="w-4 h-4" />
-							<p className="font-light text-neutral">
-								{href?.replaceAll("https://www.", "")}
-							</p>
-						</Button>
+						{href && (
+							<Button
+								onClick={() => {
+									window.open(href ?? "", "_blank");
+								}}
+								variant="link"
+								className="gap-2 items-center"
+							>
+								<Link className="w-4 h-4" />
+								<p className="font-light text-neutral">
+									{href.replace("https://", "").replace("www.", "")}
+								</p>
+							</Button>
+						)}
 					</div>
 					<div className="flex flex-col">
 						<p>{description}</p>
