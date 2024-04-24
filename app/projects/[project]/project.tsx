@@ -1,10 +1,11 @@
 "use client";
 
-import { CircleChevronLeft, Globe } from "lucide-react";
+import { IoIosArrowDropleft } from 'react-icons/io';
+import { VscGlobe } from 'react-icons/vsc';
 
-import Container from "@/components/container";
-import { Button } from "@/components/ui/button";
-import WORK from "@/lib/work";
+import Container from '@/components/container';
+import { Button } from '@/components/ui/button';
+import WORK from '@/lib/work';
 
 interface ProjectProps {
 	id: string;
@@ -28,7 +29,7 @@ const ProjectClient = ({ id }: ProjectProps) => {
 					<div className="flex flex-col gap-8 text-left w-full">
 						<a href="/projects">
 							<Button variant="outline" className="w-fit items-center gap-2">
-								<CircleChevronLeft className="w-4 h-4" />
+								<IoIosArrowDropleft className="w-4 h-4" />
 								<p>Back to projects</p>
 							</Button>
 						</a>
@@ -48,7 +49,7 @@ const ProjectClient = ({ id }: ProjectProps) => {
 								}}
 								className="items-center gap-2 text-md w-full lg:w-fit"
 							>
-								<Globe className="w-5 h-5" />
+								<VscGlobe className="w-5 h-5" />
 								<p>Check the live project on web</p>
 							</Button>
 						)}

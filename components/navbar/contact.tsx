@@ -1,19 +1,15 @@
 "use client";
 
-import { Linkedin, Mail } from "lucide-react";
+import { FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
+import { IoMail } from 'react-icons/io5';
+import { RxGithubLogo } from 'react-icons/rx';
 
 import {
-	Dialog,
-	DialogClose,
-	DialogContent,
-	DialogDescription,
-	DialogFooter,
-	DialogHeader,
-	DialogTitle,
-	DialogTrigger,
-} from "@/components/ui/dialog";
+    Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle,
+    DialogTrigger
+} from '@/components/ui/dialog';
 
-import { Button } from "../ui/button";
+import { Button } from '../ui/button';
 
 const ContactButton = () => {
 	return (
@@ -30,20 +26,18 @@ const ContactButton = () => {
 				<DialogHeader>
 					<DialogTitle>Contact me</DialogTitle>
 					<DialogDescription>
-						Shoot me an email or get in contact through LinkedIn!
+						Get in contact through your preferred social channel!
 					</DialogDescription>
 				</DialogHeader>
-				<div className="flex items-center space-x-2 w-full">
-					<div className="flex w-full flex-row gap-2">
+				<div className="flex flex-col items-center gap-2 w-full">
+					<div className="flex flex-row gap-2 w-full">
 						<Button
 							onClick={() => {
-								window.open("mailto:joonarafael@gmail.com", "_blank");
+								window.open("https://github.com/joonarafael", "_blank");
 							}}
-							variant="secondary"
-							className="w-full items-center gap-2"
+							className="px-3 py-0 w-full"
 						>
-							<Mail className="w-4 h-4" />
-							<p>joonarafael@gmail.com</p>
+							<RxGithubLogo className="w-5 h-5" />
 						</Button>
 						<Button
 							onClick={() => {
@@ -52,12 +46,29 @@ const ContactButton = () => {
 									"_blank"
 								);
 							}}
-							className="w-full items-center gap-2"
+							className="px-3 py-0 w-full"
 						>
-							<Linkedin className="w-4 h-4" />
-							<p>LinkedIn</p>
+							<FaLinkedin className="w-5 h-5" />
+						</Button>
+						<Button
+							onClick={() => {
+								window.open("https://t.me/joonarafael", "_blank");
+							}}
+							className="px-3 py-0 w-full"
+						>
+							<FaTelegramPlane className="w-5 h-5" />
 						</Button>
 					</div>
+					<Button
+						onClick={() => {
+							window.open("mailto:joonarafael@gmail.com", "_blank");
+						}}
+						variant="secondary"
+						className="px-3 py-0 w-full items-center gap-2"
+					>
+						<IoMail className="w-5 h-5" />
+						<p>joonarafael@gmail.com</p>
+					</Button>
 				</div>
 				<DialogFooter className="sm:justify-start">
 					<DialogClose asChild>

@@ -1,9 +1,9 @@
 "use client";
 
-import { Github } from "lucide-react";
+import { RxGithubLogo } from 'react-icons/rx';
 
-import Logo from "./navbar/logo";
-import { Button } from "./ui/button";
+import Logo from './navbar/logo';
+import { Button } from './ui/button';
 
 const Footer = () => {
 	return (
@@ -30,7 +30,7 @@ const Footer = () => {
 						}}
 						variant="ghost"
 					>
-						<Github className="w-4 h-4" />
+						<RxGithubLogo className="w-4 h-4" />
 					</Button>
 				</div>
 				<Button

@@ -1,10 +1,11 @@
 "use client";
 
-import { Link, MapPin, MinusCircle, PlusCircle } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
+import { FiLink, FiMinusCircle, FiPlusCircle } from 'react-icons/fi';
+import { SiGooglemaps } from 'react-icons/si';
 
-import { Button } from "@/components/ui/button";
-import { Experience } from "@/types";
+import { Button } from '@/components/ui/button';
+import { Experience } from '@/types';
 
 interface ExperienceElementProps {
 	experience: Experience;
@@ -49,7 +50,7 @@ const ExperienceElement = ({
 							}}
 							variant="outline"
 						>
-							<MinusCircle />
+							<FiMinusCircle />
 						</Button>
 					) : (
 						<Button
@@ -58,7 +59,7 @@ const ExperienceElement = ({
 							}}
 							variant="outline"
 						>
-							<PlusCircle />
+							<FiPlusCircle />
 						</Button>
 					)}
 				</div>
@@ -78,7 +79,7 @@ const ExperienceElement = ({
 							variant="link"
 							className="gap-2 items-center p-0"
 						>
-							<MapPin className="w-5 h-5" />
+							<SiGooglemaps className="w-5 h-5" />
 							<p className="font-light text-neutral">{location}</p>
 						</Button>
 						{href && (
@@ -89,7 +90,7 @@ const ExperienceElement = ({
 								variant="link"
 								className="gap-2 items-center"
 							>
-								<Link className="w-4 h-4" />
+								<FiLink className="w-4 h-4" />
 								<p className="font-light text-neutral">
 									{href.replace("https://", "").replace("www.", "")}
 								</p>

@@ -1,11 +1,11 @@
 "use client";
 
-import { SquareArrowOutUpRight } from "lucide-react";
+import { RxExternalLink } from 'react-icons/rx';
 
-import Container from "@/components/container";
-import { Button } from "@/components/ui/button";
-import WorkPanel from "@/components/workpanel";
-import WORK from "@/lib/work";
+import Container from '@/components/container';
+import { Button } from '@/components/ui/button';
+import WorkPanel from '@/components/workpanel';
+import WORK from '@/lib/work';
 
 const ProjectsPage = () => {
 	return (
@@ -27,7 +27,7 @@ const ProjectsPage = () => {
 						className="items-center gap-2 gradient-text w-fit text-transparent animate-gradient text-2xl"
 					>
 						<p>Check my GitHub</p>
-						<SquareArrowOutUpRight className="w-5 h-5" />
+						<RxExternalLink className="w-5 h-5" />
 					</Button>
 				</div>
 			</div>

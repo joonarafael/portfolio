@@ -1,6 +1,7 @@
 "use client";
 
-import { Linkedin, Mail } from 'lucide-react';
+import { FaTelegramPlane } from 'react-icons/fa';
+import { IoMail } from 'react-icons/io5';
 
 import {
     Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle,
@@ -30,23 +31,36 @@ const Title = () => {
 				</div>
 				<Dialog>
 					<DialogTrigger asChild>
-						<Button variant="secondary" className="w-fit">
+						<Button className="w-fit gap-2 items-center">
+							<IoMail className="w-4 h-4" />
 							<p>Send me a message</p>
 						</Button>
 					</DialogTrigger>
 					<DialogContent className="sm:max-w-md">
 						<DialogHeader>
 							<DialogTitle>Send me a message</DialogTitle>
-							<DialogDescription>Shoot me an email!</DialogDescription>
+							<DialogDescription>
+								You reach me best via Telegram.
+							</DialogDescription>
 						</DialogHeader>
-						<div className="flex items-center space-x-2 w-full">
+						<div className="flex flex-col items-center gap-2 w-full">
+							<Button
+								onClick={() => {
+									window.open("https://t.me/joonarafael", "_blank");
+								}}
+								className="w-full gap-2 items-center"
+							>
+								<FaTelegramPlane className="w-5 h-5" />
+								<p>Telegram @joonarafael</p>
+							</Button>
 							<Button
 								onClick={() => {
 									window.open("mailto:joonarafael@gmail.com", "_blank");
 								}}
+								variant="secondary"
 								className="w-full items-center gap-2"
 							>
-								<Mail className="w-4 h-4" />
+								<IoMail className="w-5 h-5" />
 								<p>joonarafael@gmail.com</p>
 							</Button>
 						</div>

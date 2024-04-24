@@ -1,9 +1,9 @@
-import { CircleChevronLeft } from "lucide-react";
+import { IoIosArrowDropleft } from 'react-icons/io';
 
-import EmptyState from "@/components/emptystate";
-import { Button } from "@/components/ui/button";
+import EmptyState from '@/components/emptystate';
+import { Button } from '@/components/ui/button';
 
-import ProjectClient from "./project";
+import ProjectClient from './project';
 
 interface IParams {
 	project?: string;
@@ -28,7 +28,7 @@ const ProjectPage = async ({ params }: { params: IParams }) => {
 					<p>{`No project was specified in the URL.`}</p>
 					<a href="/projects">
 						<Button className="w-min items-center gap-2">
-							<CircleChevronLeft className="w-4 h-4" />
+							<IoIosArrowDropleft className="w-4 h-4" />
 							<p>Back to projects</p>
 						</Button>
 					</a>
@@ -51,7 +51,7 @@ const ProjectPage = async ({ params }: { params: IParams }) => {
 					</span>
 					<a href="/projects">
 						<Button className="w-min items-center gap-2">
-							<CircleChevronLeft className="w-4 h-4" />
+							<IoIosArrowDropleft className="w-4 h-4" />
 							<p>Back to projects</p>
 						</Button>
 					</a>

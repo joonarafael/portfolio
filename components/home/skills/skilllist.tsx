@@ -1,7 +1,7 @@
 "use client";
 
-import { CircleMinus, CirclePlus } from 'lucide-react';
 import { useState } from 'react';
+import { FiMinusCircle, FiPlusCircle } from 'react-icons/fi';
 
 import { Button } from '@/components/ui/button';
 import useScreenSize from '@/hooks/useScreenSize';
@@ -53,7 +53,7 @@ const SkillList = () => {
 								size="xl"
 								className="bg-black font-bold items-center gap-2 text-white dark:hover:text-black"
 							>
-								<CircleMinus className="h-4 w-4" />
+								<FiMinusCircle className="h-4 w-4" />
 								<p>SHOW LESS</p>
 							</Button>
 						</>
@@ -74,7 +74,7 @@ const SkillList = () => {
 								size="xl"
 								className="bg-black font-bold items-center gap-2 text-white dark:hover:text-black"
 							>
-								<CirclePlus className="h-4 w-4" />
+								<FiPlusCircle className="h-4 w-4" />
 								<p>SHOW MORE</p>
 							</Button>
 						</>
