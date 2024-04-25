@@ -1,9 +1,9 @@
-import { IoIosArrowDropleft } from 'react-icons/io';
+import { IoIosArrowDropleft } from "react-icons/io";
 
-import EmptyState from '@/components/emptystate';
-import { Button } from '@/components/ui/button';
+import EmptyState from "@/components/emptystate";
+import { Button } from "@/components/ui/button";
 
-import ProjectClient from './project';
+import ProjectClient from "./project";
 
 interface IParams {
 	project?: string;
@@ -12,7 +12,7 @@ interface IParams {
 const ProjectPage = async ({ params }: { params: IParams }) => {
 	const { project } = params;
 	const acceptable = [
-		"blastcalc",
+		"blast-calc",
 		"explotrack",
 		"spotisaver",
 		"tiirascraper",

@@ -1,15 +1,21 @@
 "use client";
 
-import { FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
-import { IoMail } from 'react-icons/io5';
-import { RxGithubLogo } from 'react-icons/rx';
+import { FaLinkedin, FaTelegramPlane } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
+import { RxGithubLogo } from "react-icons/rx";
 
 import {
-    Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle,
-    DialogTrigger
-} from '@/components/ui/dialog';
+	Dialog,
+	DialogClose,
+	DialogContent,
+	DialogDescription,
+	DialogFooter,
+	DialogHeader,
+	DialogTitle,
+	DialogTrigger,
+} from "@/components/ui/dialog";
 
-import { Button } from '../ui/button';
+import { Button } from "../ui/button";
 
 const ContactButton = () => {
 	return (
@@ -70,9 +76,9 @@ const ContactButton = () => {
 						<p>joonarafael@gmail.com</p>
 					</Button>
 				</div>
-				<DialogFooter className="sm:justify-start">
+				<DialogFooter className="w-full">
 					<DialogClose asChild>
-						<Button type="button" variant="outline">
+						<Button className="w-full" type="button" variant="outline">
 							Close
 						</Button>
 					</DialogClose>

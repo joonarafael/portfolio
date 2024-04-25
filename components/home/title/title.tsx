@@ -1,15 +1,21 @@
 "use client";
 
-import { FaTelegramPlane } from 'react-icons/fa';
-import { IoMail } from 'react-icons/io5';
+import { FaTelegramPlane } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
 
 import {
-    Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle,
-    DialogTrigger
-} from '@/components/ui/dialog';
+	Dialog,
+	DialogClose,
+	DialogContent,
+	DialogDescription,
+	DialogFooter,
+	DialogHeader,
+	DialogTitle,
+	DialogTrigger,
+} from "@/components/ui/dialog";
 
-import { Button } from '../../ui/button';
-import TitleVideo from './video';
+import { Button } from "../../ui/button";
+import TitleVideo from "./video";
 
 const Title = () => {
 	return (
@@ -64,9 +70,9 @@ const Title = () => {
 								<p>joonarafael@gmail.com</p>
 							</Button>
 						</div>
-						<DialogFooter className="sm:justify-start">
+						<DialogFooter className="w-full">
 							<DialogClose asChild>
-								<Button type="button" variant="outline">
+								<Button type="button" className="w-full" variant="outline">
 									Close
 								</Button>
 							</DialogClose>

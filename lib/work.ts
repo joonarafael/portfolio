@@ -104,7 +104,7 @@ const WORK: Work[] = [
 		image: "",
 		href: "https://blastcalc.pages.dev/",
 		date: "Under development",
-		id: "blastcalc",
+		id: "blast-calc",
 		title: "Blast Calc",
 		about:
 			"Application to create blasting circuit diagrams and calculate detonation delays.",
