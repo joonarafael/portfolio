@@ -1,12 +1,13 @@
 "use client";
 
-import { IoIosArrowDropleft } from 'react-icons/io';
-import { RxGithubLogo } from 'react-icons/rx';
-import { VscGlobe } from 'react-icons/vsc';
+import { IoIosArrowDropleft } from "react-icons/io";
+import { RxGithubLogo } from "react-icons/rx";
+import { TbForbid2 } from "react-icons/tb";
+import { VscGlobe } from "react-icons/vsc";
 
-import Container from '@/components/container';
-import { Button } from '@/components/ui/button';
-import WORK from '@/lib/work';
+import Container from "@/components/container";
+import { Button } from "@/components/ui/button";
+import WORK from "@/lib/work";
 
 interface ProjectProps {
 	id: string;
@@ -56,19 +57,30 @@ const ProjectClient = ({ id }: ProjectProps) => {
 								<p>Check the live project on web</p>
 							</Button>
 						)}
-						<Button
-							onClick={() => {
-								window.open(
-									`https://github.com/joonarafael/${project.id}`,
-									"_blank"
-								);
-							}}
-							variant="outline"
-							className="items-center gap-2 text-md w-full"
-						>
-							<RxGithubLogo className="w-5 h-5" />
-							<p>View source code on GitHub</p>
-						</Button>
+						{project.id === "explotrack" ? (
+							<Button
+								disabled
+								variant="outline"
+								className="items-center gap-2 text-md w-full"
+							>
+								<TbForbid2 className="w-5 h-5" />
+								<p>Source code is private</p>
+							</Button>
+						) : (
+							<Button
+								onClick={() => {
+									window.open(
+										`https://github.com/joonarafael/${project.id}`,
+										"_blank"
+									);
+								}}
+								variant="outline"
+								className="items-center gap-2 text-md w-full"
+							>
+								<RxGithubLogo className="w-5 h-5" />
+								<p>View source code on GitHub</p>
+							</Button>
+						)}
 						<pre className="text-neutral-500 w-fit">{project.date}</pre>
 					</div>
 				</div>
