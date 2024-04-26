@@ -4,6 +4,7 @@ const WORK: Work[] = [
 	{
 		image: "",
 		title: "Explotrack",
+		deployedOn: "Vercel",
 		date: "Under development",
 		id: "explotrack",
 		about: "Completed fullstack project built with a real customer.",
@@ -55,6 +56,7 @@ const WORK: Work[] = [
 	{
 		image: "",
 		href: "https://spotisaver.vercel.app",
+		deployedOn: "Vercel",
 		date: "Apr 2024",
 		title: "Spotisaver",
 		id: "spotisaver",
@@ -103,6 +105,7 @@ const WORK: Work[] = [
 	{
 		image: "",
 		href: "https://blastcalc.pages.dev/",
+		deployedOn: "Cloudflare Pages",
 		date: "Under development",
 		id: "blast-calc",
 		title: "Blast Calc",
@@ -184,6 +187,7 @@ const WORK: Work[] = [
 		image: "",
 		href: "https://visualpathfinder-production.up.railway.app/",
 		date: "Mar 2024",
+		deployedOn: "Railway App",
 		title: "Visual Pathfinder",
 		id: "visualpathfinder",
 		about:

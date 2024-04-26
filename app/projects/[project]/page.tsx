@@ -1,9 +1,10 @@
-import { IoIosArrowDropleft } from "react-icons/io";
+import { IoIosArrowDropleft } from 'react-icons/io';
 
-import EmptyState from "@/components/emptystate";
-import { Button } from "@/components/ui/button";
+import EmptyState from '@/components/emptystate';
+import ProjectNavbar from '@/components/project/projectnavbar';
+import { Button } from '@/components/ui/button';
 
-import ProjectClient from "./project";
+import ProjectClient from './project';
 
 interface IParams {
 	project?: string;
@@ -60,7 +61,12 @@ const ProjectPage = async ({ params }: { params: IParams }) => {
 		);
 	}
 
-	return <ProjectClient id={project} />;
+	return (
+		<div>
+			<ProjectClient id={project} />
+			<ProjectNavbar currentProject={project} />
+		</div>
+	);
 };
 
 export default ProjectPage;
