@@ -9,7 +9,7 @@ const WORK: Work[] = [
 		id: "explotrack",
 		about: "Completed fullstack project built with a real customer.",
 		description:
-			"Fullstack application built with the Next.js framework and utilizing the React library. The application is hosted on Vercel and uses a Postgres database. The application is a tracking tool for a company that keeps track company orders and the flow of explosive products. The application includes user authentication, user roles, logging and advanced middleware.",
+			"Fullstack application built with the Next.js framework and utilizing the React library. The application is hosted on Vercel and uses a Postgres database. The application is a tracking tool for a company that keeps track company orders and the flow of explosive products. The application includes user authentication, extensive logging, and advanced middleware. With this project, I've really tried to understand various security aspects of web development, and I've learned a lot about the importance of user roles and permissions. How are sessions managed, how to validate data again on server-side, email verifications, etc. How to handle a production database?",
 		skills: [
 			{
 				name: "TypeScript",
@@ -62,7 +62,7 @@ const WORK: Work[] = [
 		id: "spotisaver",
 		about: "Service to analyze and export Spotify playlists.",
 		description:
-			"A useful and simple service that allows users to analyze and export their Spotify playlists. The service is built with Next.js and React, and is hosted on Vercel. The service is built with a focus on user experience and simplicity. The data is fetched and parsed from JSON responses provided by the official Spotify API, and finally analyzed through my custom analyzing logic.",
+			"A useful and simple service that allows users to analyze and export their Spotify playlists. The service is built with Next.js and React, and is hosted on Vercel. The service is built with a focus on user experience and simplicity. The data is fetched and parsed from JSON responses provided by the official Spotify API, and finally analyzed through my custom analyzing logic. This project was also the first time I implemented a rate limiter and understood the importance of securing your API routes.",
 		skills: [
 			{
 				name: "TypeScript",
@@ -99,6 +99,76 @@ const WORK: Work[] = [
 			{
 				name: "Redis",
 				icon: "https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&color=black&logo=redis",
+			},
+		],
+	},
+	{
+		image: "",
+		href: "https://visualpathfinder-production.up.railway.app/",
+		date: "Mar 2024",
+		deployedOn: "Railway App",
+		title: "Visual Pathfinder",
+		id: "visualpathfinder",
+		about:
+			"A visual pathfinding tool to compare three different pathfinding algorithms.",
+		description:
+			"Fun pathfinder application built as an university assignment. The application is built with React and Next.js, and is hosted on Railway. The application allows users to compare three different pathfinding algorithms: Dijkstra's, A* and Jump Point Search. Building the algorithms with TypeScript was maybe not the most optimal choice, but I wanted to make a really great UI for the application, and involving multiple languages would have made the project unnecessary complex as a university assignment. I learned a ton of the Jest library during the development of this project.",
+		skills: [
+			{
+				name: "TypeScript",
+				icon: "https://img.shields.io/badge/-TypeScript-informational?style=for-the-badge&color=black&logo=typescript",
+			},
+			{
+				name: "Radix UI",
+				icon: "https://img.shields.io/badge/Radix%20UI-informational?style=for-the-badge&color=black&logo=radix-ui&logoColor=red",
+			},
+			{
+				name: "Tailwind CSS",
+				icon: "https://img.shields.io/badge/-TailwindCSS-informational?style=for-the-badge&color=black&logo=tailwindcss",
+			},
+			{
+				name: "React",
+				icon: "https://img.shields.io/badge/-React-informational?style=for-the-badge&color=black&logo=react",
+			},
+			{
+				name: "Next.js",
+				icon: "https://img.shields.io/badge/Next-informational?style=for-the-badge&color=black&logo=next.js&logoColor=white",
+			},
+			{
+				name: "Jest",
+				icon: "https://img.shields.io/badge/-Jest-informational?style=for-the-badge&color=black&logo=jest&logoColor=red",
+			},
+			{
+				name: "ChatGPT",
+				icon: "https://img.shields.io/badge/ChatGPT-informational?style=for-the-badge&color=black&logo=openai&logoColor=green",
+			},
+			{
+				name: "Dependabot",
+				icon: "https://img.shields.io/badge/Dependabot-informational?style=for-the-badge&color=black&logo=dependabot&logoColor=blue",
+			},
+		],
+	},
+	{
+		image: "",
+		id: "tiirascraper",
+		date: "Apr 2024",
+		title: "Tiirascraper",
+		about:
+			"Python web scraper to scrape, filter and process bird observations from Tiira.fi.",
+		description:
+			"Simple web scraper built with Python to scrape bird observations from the Finnish bird observation service Tiira.fi. The scraper is built with the BeautifulSoup library and the requests library. The scraper has built-in filtering functionality, which enables the user to create their own configuration files to allow/block certain species and/or cities. On top of all of that, the scraper has a built-in Telegram messaging system, which can be configured to send user updates when new observations matching the predetermined criteria are found.",
+		skills: [
+			{
+				name: "GitHub Actions",
+				icon: "https://img.shields.io/badge/GitHub%20Actions-%232671E5.svg?style=for-the-badge&color=black&logo=githubactions",
+			},
+			{
+				name: "Python",
+				icon: "https://img.shields.io/badge/-Python-informational?style=for-the-badge&color=black&logo=python",
+			},
+			{
+				name: "ChatGPT",
+				icon: "https://img.shields.io/badge/ChatGPT-informational?style=for-the-badge&color=black&logo=openai&logoColor=green",
 			},
 		],
 	},
@@ -157,75 +227,6 @@ const WORK: Work[] = [
 			{
 				name: "Cloudflare",
 				icon: "https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&color=black&logo=Cloudflare",
-			},
-		],
-	},
-	{
-		image: "",
-		id: "tiirascraper",
-		date: "Apr 2024",
-		title: "Tiirascraper",
-		about: "Python web scraper to scrape bird observations from Tiira.fi.",
-		description:
-			"Simple web scraper built with Python to scrape bird observations from the Finnish bird observation service Tiira.fi. The scraper is built with the BeautifulSoup library and the requests library. The scraper has built-in filtering functionality, which enables the user to create their own configuration files to allow/block certain species and/or cities. On top of all of that, the scraper has a built-in Telegram messaging system, which can be configured to send user updates when new observations matching the predetermined criteria are found.",
-		skills: [
-			{
-				name: "GitHub Actions",
-				icon: "https://img.shields.io/badge/GitHub%20Actions-%232671E5.svg?style=for-the-badge&color=black&logo=githubactions",
-			},
-			{
-				name: "Python",
-				icon: "https://img.shields.io/badge/-Python-informational?style=for-the-badge&color=black&logo=python",
-			},
-			{
-				name: "ChatGPT",
-				icon: "https://img.shields.io/badge/ChatGPT-informational?style=for-the-badge&color=black&logo=openai&logoColor=green",
-			},
-		],
-	},
-	{
-		image: "",
-		href: "https://visualpathfinder-production.up.railway.app/",
-		date: "Mar 2024",
-		deployedOn: "Railway App",
-		title: "Visual Pathfinder",
-		id: "visualpathfinder",
-		about:
-			"A visual pathfinding tool to compare three different pathfinding algorithms.",
-		description:
-			"Fun pathfinder application built as an university assignment. The application is built with React and Next.js, and is hosted on Railway. The application allows users to compare three different pathfinding algorithms: Dijkstra's, A* and Jump Point Search. Building the algorithms with TypeScript was maybe not the most optimal choice, but I wanted to make a really great UI for the application, and involving multiple languages would have made the project unnecessary complex as a university assignment. I learned a ton of the Jest library during the development of this project.",
-		skills: [
-			{
-				name: "TypeScript",
-				icon: "https://img.shields.io/badge/-TypeScript-informational?style=for-the-badge&color=black&logo=typescript",
-			},
-			{
-				name: "Radix UI",
-				icon: "https://img.shields.io/badge/Radix%20UI-informational?style=for-the-badge&color=black&logo=radix-ui&logoColor=red",
-			},
-			{
-				name: "Tailwind CSS",
-				icon: "https://img.shields.io/badge/-TailwindCSS-informational?style=for-the-badge&color=black&logo=tailwindcss",
-			},
-			{
-				name: "React",
-				icon: "https://img.shields.io/badge/-React-informational?style=for-the-badge&color=black&logo=react",
-			},
-			{
-				name: "Next.js",
-				icon: "https://img.shields.io/badge/Next-informational?style=for-the-badge&color=black&logo=next.js&logoColor=white",
-			},
-			{
-				name: "Jest",
-				icon: "https://img.shields.io/badge/-Jest-informational?style=for-the-badge&color=black&logo=jest&logoColor=red",
-			},
-			{
-				name: "ChatGPT",
-				icon: "https://img.shields.io/badge/ChatGPT-informational?style=for-the-badge&color=black&logo=openai&logoColor=green",
-			},
-			{
-				name: "Dependabot",
-				icon: "https://img.shields.io/badge/Dependabot-informational?style=for-the-badge&color=black&logo=dependabot&logoColor=blue",
 			},
 		],
 	},

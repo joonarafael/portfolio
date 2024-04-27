@@ -1,8 +1,8 @@
 "use client";
 
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6';
 
-import { Button } from "../ui/button";
+import { Button } from '../ui/button';
 
 interface ProjectNavbarProps {
 	currentProject: string;
@@ -44,7 +44,7 @@ const ProjectNavbar = ({ currentProject }: ProjectNavbarProps) => {
 	const nextProject = PROJECTS[(currentIndex + 1) % PROJECTS.length];
 
 	return (
-		<div className="z-50 pb-36 px-12 md:px-48 lg:px-96 group fixed bottom-0 left-0 flex w-full justify-center items-center">
+		<div className="pb-36 group fixed bottom-0 left-0 w-full justify-center items-center hidden lg:flex">
 			<div className="group-hover:shadow-lg group-hover:shadow-black/50 dark:group-hover:shadow-purple-500 dark:shadow-purple-800 shadow-black/25 bg-background border shadow-md min-w-[180px] w-full max-w-[720px] flex justify-between items-center rounded-xl p-2 transition group-hover:duration-200 duration-1000 flex-col sm:flex-row gap-2">
 				<a className="w-full sm:w-fit" href={`/projects/${previousProject.id}`}>
 					<Button
@@ -55,7 +55,7 @@ const ProjectNavbar = ({ currentProject }: ProjectNavbarProps) => {
 						<p>{previousProject.title}</p>
 					</Button>
 				</a>
-				<div className="hidden lg:flex font-light text-neutral-500">
+				<div className="hidden md:flex font-light text-neutral-500 text-sm">
 					<em>Check the next project as well!</em>
 				</div>
 				<a className="w-full sm:w-fit" href={`/projects/${nextProject.id}`}>

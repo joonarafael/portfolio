@@ -26,7 +26,7 @@ const ProjectsPage = () => {
 						onClick={() => {
 							window.open("https://github.com/joonarafael", "_blank");
 						}}
-						className="items-center gap-2 w-fit text-2xl p-6"
+						className="items-center gap-2 w-fit text-2xl p-6 font-bold"
 					>
 						<p>Check my GitHub</p>
 						<RxExternalLink className="w-5 h-5" />

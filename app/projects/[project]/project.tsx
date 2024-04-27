@@ -6,6 +6,7 @@ import { TbForbid2 } from "react-icons/tb";
 import { VscGlobe } from "react-icons/vsc";
 
 import Container from "@/components/container";
+import ProjectNavbarStatic from "@/components/project/projectnavbarstatic";
 import { Button } from "@/components/ui/button";
 import WORK from "@/lib/work";
 
@@ -39,7 +40,7 @@ const ProjectClient = ({ id }: ProjectProps) => {
 							{project.title}
 						</h1>
 						<p className="text-lg">{project.about}</p>
-						<div className="flex flex-wrap gap-4 text-sm font-light">
+						<div className="flex flex-wrap gap-4 text-sm font-light text-primary/50">
 							{sortedSkills.map((skill, i) => (
 								<p key={i}>{skill.name}</p>
 							))}
@@ -100,6 +101,7 @@ const ProjectClient = ({ id }: ProjectProps) => {
 						<p>{project.description}</p>
 					</div>
 				</div>
+				<ProjectNavbarStatic currentProject={project.id} />
 			</div>
 		</Container>
 	);
