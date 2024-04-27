@@ -15,7 +15,8 @@ export type Experience = {
 };
 
 export type Work = {
-	image: string;
+	thumbnail?: string | null;
+	media: string;
 	href?: string | null;
 	deployedOn?: string | null;
 	id: string;

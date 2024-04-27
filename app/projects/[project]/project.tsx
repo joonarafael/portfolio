@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { IoIosArrowDropleft } from "react-icons/io";
@@ -8,6 +9,7 @@ import { VscGlobe } from "react-icons/vsc";
 import Container from "@/components/container";
 import ProjectNavbarStatic from "@/components/project/projectnavbarstatic";
 import { Button } from "@/components/ui/button";
+import DROPBOX_CONTENT from "@/constants/dropboxcontent";
 import WORK from "@/lib/work";
 
 interface ProjectProps {
@@ -27,7 +29,7 @@ const ProjectClient = ({ id }: ProjectProps) => {
 
 	return (
 		<Container>
-			<div className="flex flex-col gap-12 items-center w-full min-h-screen">
+			<div className="flex flex-col gap-12 items-center w-full min-h-[100vh]">
 				<div className="flex gap-6 flex-col lg:flex-row w-full">
 					<div className="flex flex-col gap-8 text-left w-full">
 						<a href="/projects">
@@ -46,24 +48,7 @@ const ProjectClient = ({ id }: ProjectProps) => {
 							))}
 						</div>
 					</div>
-					<div className="border-t pt-8 lg:border-none lg:pt-0 flex flex-col md:flex-row lg:flex-col gap-4 items-center lg:items-end text-center lg:text-right w-full lg:w-fit h-full justify-center lg:justify-end">
-						{project?.href && (
-							<div className="flex flex-col gap-4 items-center lg:items-end w-full">
-								<Button
-									onClick={() => {
-										window.open(project.href ?? "", "_blank");
-									}}
-									className="items-center gap-2 text-md w-full"
-								>
-									<VscGlobe className="w-5 h-5" />
-									<p>Check the live project on web</p>
-								</Button>
-								<span className="flex flex-row gap-1 text-sm">
-									<p className="font-light text-neutral-500">Deployed on</p>
-									<p>{project?.deployedOn}</p>
-								</span>
-							</div>
-						)}
+					<div className="border-t pt-8 lg:border-none lg:pt-0 flex">
 						{project.id === "explotrack" ? (
 							<div className="flex flex-col w-full items-center lg:items-end gap-4">
 								<Button
@@ -95,6 +80,33 @@ const ProjectClient = ({ id }: ProjectProps) => {
 							</div>
 						)}
 					</div>
+				</div>
+				<div className="flex w-full flex-col xl:flex-row gap-4">
+					<div className="flex bg-primary text-rose-500 w-full min-h-96 text-center items-center justify-center rounded-xl">
+						HERE GOES THE VIDEO
+					</div>
+					{project?.href && (
+						<div
+							onClick={() => {
+								window.open(project.href ?? "", "_blank");
+							}}
+							className="cursor-pointer group flex flex-col items-center justify-center gap-2 border p-2 rounded-xl bg-background h-min border-black dark:border-purple-500"
+						>
+							<img
+								className="object-contain duration-500 group-hover:duration-200 group-hover:opacity-75 opacity-100 pointer-events-none max-h-[240px] rounded-xl hidden xl:block"
+								src={project.thumbnail ?? ""}
+								alt="Thumbnail"
+							/>
+							<Button className="items-center gap-2 text-md w-full">
+								<VscGlobe className="w-5 h-5" />
+								<p>Check the live project on web</p>
+							</Button>
+							<span className="flex flex-row gap-1 text-sm">
+								<p className="font-light text-neutral-500">Deployed on</p>
+								<p>{project?.deployedOn}</p>
+							</span>
+						</div>
+					)}
 				</div>
 				<div className="flex w-full items-start justify-start">
 					<div className="w-full lg:max-w-[1080px] text-left">

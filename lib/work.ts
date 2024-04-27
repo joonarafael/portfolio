@@ -1,11 +1,13 @@
+import DROPBOX_CONTENT from "@/constants/dropboxcontent";
 import { Work } from "@/types";
 
 const WORK: Work[] = [
 	{
-		image: "",
+		media: "",
 		title: "Explotrack",
 		deployedOn: "Vercel",
 		date: "Under development",
+		thumbnail: DROPBOX_CONTENT.thumbnail_explotrack,
 		id: "explotrack",
 		about: "Completed fullstack project built with a real customer.",
 		description:
@@ -54,8 +56,9 @@ const WORK: Work[] = [
 		],
 	},
 	{
-		image: "",
+		media: "",
 		href: "https://spotisaver.vercel.app",
+		thumbnail: DROPBOX_CONTENT.thumbnail_spotisaver,
 		deployedOn: "Vercel",
 		date: "Apr 2024",
 		title: "Spotisaver",
@@ -103,8 +106,9 @@ const WORK: Work[] = [
 		],
 	},
 	{
-		image: "",
+		media: "",
 		href: "https://visualpathfinder-production.up.railway.app/",
+		thumbnail: DROPBOX_CONTENT.thumbnail_visualpathfinder,
 		date: "Mar 2024",
 		deployedOn: "Railway App",
 		title: "Visual Pathfinder",
@@ -149,7 +153,7 @@ const WORK: Work[] = [
 		],
 	},
 	{
-		image: "",
+		media: "",
 		id: "tiirascraper",
 		date: "Apr 2024",
 		title: "Tiirascraper",
@@ -173,8 +177,9 @@ const WORK: Work[] = [
 		],
 	},
 	{
-		image: "",
+		media: "",
 		href: "https://blastcalc.pages.dev/",
+		thumbnail: DROPBOX_CONTENT.thumbnail_blastcalc,
 		deployedOn: "Cloudflare Pages",
 		date: "Under development",
 		id: "blast-calc",
@@ -231,7 +236,7 @@ const WORK: Work[] = [
 		],
 	},
 	{
-		image: "",
+		media: "",
 		id: "flaggame",
 		date: "May 2025",
 		title: "Flag Game",

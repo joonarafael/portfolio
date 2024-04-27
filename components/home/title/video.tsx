@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import DROPBOX_CONTENT from "@/constants/dropboxcontent";
 
 import VideoText from "./videotext";
 
@@ -14,9 +15,7 @@ const TitleVideo = () => {
 					loop
 					muted
 					className="relative w-full h-full object-cover rounded-xl z-30 pointer-events-none"
-					src={
-						"https://dl.dropboxusercontent.com/scl/fi/kfvrri1r7qdr3vn2z61bk/titlevideo.mp4?rlkey=t3xscp7prok74snt51dyj5qr0&st"
-					}
+					src={DROPBOX_CONTENT.titleVideo}
 				/>
 				<div className="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
 					<VideoText text="loading video..." />
