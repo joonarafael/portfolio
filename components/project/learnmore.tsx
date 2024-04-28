@@ -43,7 +43,7 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 						onClick={() => {
 							window.open(`https://www.google.com`, "_blank");
 						}}
-						className="items-center gap-1 text-md w-full"
+						className="items-center gap-1 text-md w-full text-black bg-white hover:text-black/75 hover:bg-white/75"
 					>
 						<VscGlobe className="w-5 h-5" />
 						<p>

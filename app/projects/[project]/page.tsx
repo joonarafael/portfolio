@@ -1,10 +1,11 @@
-import { IoIosArrowDropleft } from 'react-icons/io';
+import { IoIosArrowDropleft } from "react-icons/io";
 
-import EmptyState from '@/components/emptystate';
-import ProjectNavbar from '@/components/project/projectnavbar';
-import { Button } from '@/components/ui/button';
+import EmptyState from "@/components/emptystate";
+import ProjectNavbar from "@/components/project/projectnavbar";
+import { Button } from "@/components/ui/button";
+import ACCEPTABLE_PROJECT_IDS from "@/constants/projects/acceptable";
 
-import ProjectClient from './project';
+import ProjectClient from "./project";
 
 interface IParams {
 	project?: string;
@@ -12,14 +13,6 @@ interface IParams {
 
 const ProjectPage = async ({ params }: { params: IParams }) => {
 	const { project } = params;
-	const acceptable = [
-		"blast-calc",
-		"explotrack",
-		"spotisaver",
-		"tiirascraper",
-		"visualpathfinder",
-		"flaggame",
-	];
 
 	if (!project) {
 		return (
@@ -38,21 +31,19 @@ const ProjectPage = async ({ params }: { params: IParams }) => {
 		);
 	}
 
-	if (!acceptable.includes(project)) {
+	if (!ACCEPTABLE_PROJECT_IDS.includes(project)) {
 		return (
 			<EmptyState>
 				<div className="flex flex-col gap-12 items-center justify-center">
 					<h1 className="text-4xl font-extrabold">Oopsie!</h1>
 					<span className="flex flex-row gap-1 items-center font-lg">
 						<p>{`I have not yet created a project named '`}</p>
-						<pre className="bg-neutral-500 rounded-xl p-1 text-white">
-							{project}
-						</pre>
+						<pre>{project}</pre>
 						<p>{`'!`}</p>
 					</span>
 					<a href="/projects">
 						<Button className="w-min items-center gap-2">
-							<IoIosArrowDropleft className="w-4 h-4" />
+							<IoIosArrowDropleft className="w-5 h-5" />
 							<p>Back to projects</p>
 						</Button>
 					</a>

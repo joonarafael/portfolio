@@ -19,7 +19,7 @@ const ProjectHeader = ({ project, sortedSkills }: ProjectHeaderProps) => {
 			<div className="flex flex-col gap-8 text-left w-full">
 				<a href="/projects">
 					<Button variant="outline" className="w-fit items-center gap-2">
-						<IoIosArrowDropleft className="w-4 h-4" />
+						<IoIosArrowDropleft className="w-5 h-5" />
 						<p>Back to projects</p>
 					</Button>
 				</a>

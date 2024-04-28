@@ -10,7 +10,7 @@ const ProjectVideo = ({ project }: ProjectVideoProps) => {
 	return (
 		<div className="flex flex-col gap-2">
 			<div className="relative flex bg-primary text-rose-500 w-full text-center items-center justify-center rounded-xl">
-				<div className="absolute z-0">LOADING VIDEO</div>
+				<div className="absolute z-0">LOADING VIDEO...</div>
 				<video
 					autoPlay
 					loop
