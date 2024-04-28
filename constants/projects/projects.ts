@@ -12,7 +12,8 @@ import {
 
 const PROJECTS: Project[] = [
 	{
-		media: "",
+		media: DROPBOX_CONTENT.media_tiirascraper,
+		mediaDescription: "Wrong video playing!",
 		title: "Explotrack",
 		deployedOn: "Vercel",
 		href: "https://www.google.com",
@@ -65,7 +66,8 @@ const PROJECTS: Project[] = [
 		],
 	},
 	{
-		media: "",
+		media: DROPBOX_CONTENT.media_tiirascraper,
+		mediaDescription: "Wrong video playing!",
 		href: "https://spotisaver.vercel.app",
 		thumbnail: DROPBOX_CONTENT.thumbnail_spotisaver,
 		deployedOn: "Vercel",
@@ -114,7 +116,8 @@ const PROJECTS: Project[] = [
 		],
 	},
 	{
-		media: "",
+		media: DROPBOX_CONTENT.media_tiirascraper,
+		mediaDescription: "Wrong video playing!",
 		href: "https://visualpathfinder-production.up.railway.app/",
 		thumbnail: DROPBOX_CONTENT.thumbnail_visualpathfinder,
 		date: "Mar 2024",
@@ -160,7 +163,9 @@ const PROJECTS: Project[] = [
 		],
 	},
 	{
-		media: "",
+		media: DROPBOX_CONTENT.media_tiirascraper,
+		mediaDescription:
+			"The scraper is used through the command line. It's built as a server, it can be left to run for as long as needed. Also note the utilization of the custom configuration files for filtering.",
 		id: "tiirascraper",
 		date: "Apr 2024",
 		title: "Tiirascraper",
@@ -183,7 +188,8 @@ const PROJECTS: Project[] = [
 		],
 	},
 	{
-		media: "",
+		media: DROPBOX_CONTENT.media_tiirascraper,
+		mediaDescription: "Wrong video playing!",
 		href: "https://blastcalc.pages.dev/",
 		thumbnail: DROPBOX_CONTENT.thumbnail_blastcalc,
 		deployedOn: "Cloudflare Pages",
@@ -241,9 +247,11 @@ const PROJECTS: Project[] = [
 		],
 	},
 	{
-		media: "",
+		media: DROPBOX_CONTENT.media_flaggame,
+		mediaDescription:
+			"User interface rendered with the Tkinter library. Note the various statistics calculated, game history, and the 5 different available game modes.",
 		id: "flaggame",
-		date: "May 2025",
+		date: "May 2023",
 		title: "Flag Game",
 		about: "Game built with Python and the Tkinter library.",
 		description: FLAGGAME_DESCRIPTION(),

@@ -17,6 +17,7 @@ export type Experience = {
 export type Project = {
 	thumbnail?: string | null;
 	media: string;
+	mediaDescription: string;
 	href?: string | null;
 	deployedOn?: string | null;
 	id: string;

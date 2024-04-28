@@ -44,7 +44,7 @@ const ProjectNavbarStatic = ({ currentProject }: ProjectNavbarStaticProps) => {
 	const nextProject = PROJECTS[(currentIndex + 1) % PROJECTS.length];
 
 	return (
-		<div className="flex lg:hidden flex-col w-full gap-2 items-center justify-center border-t pt-12">
+		<div className="flex lg:hidden flex-col w-full gap-8 items-center justify-center border-t pt-12">
 			<p className="font-light text-neutral-500 text-sm">
 				<em>Check the next project as well!</em>
 			</p>

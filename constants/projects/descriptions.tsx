@@ -105,16 +105,16 @@ export const FLAGGAME_DESCRIPTION = () => {
 			<p>
 				A completed Python desktop application built as an university
 				assignment. The flag game is a local single-player game where the user
-				has to guess the country of a flag. The game is built with Python and
-				the Tkinter library.
+				has to guess the correct country of a flag. The game is built with
+				Python and the user-friendly UI is powered by the Tkinter library.
 				<br />
 				<br />
 				The game has five different game modes included, each with different
-				pointing mechanisms, and a user-friendly UI. As an addition, the game
-				tracks game history and calculates the user&apos;s lifelong statistics!
-				During the development of this project, I learned a lot about the Python
-				programming language in general, and especially I finally understood the
-				importance of unit testing.
+				pointing mechanisms. As an addition, the game tracks game history and
+				calculates the user&apos;s lifelong statistics! During the development
+				of this project, I learned a lot about the Python programming language
+				in general, and especially I finally understood the importance of unit
+				testing.
 			</p>
 		</div>
 	);

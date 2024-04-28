@@ -44,8 +44,8 @@ const ProjectNavbar = ({ currentProject }: ProjectNavbarProps) => {
 	const nextProject = PROJECTS[(currentIndex + 1) % PROJECTS.length];
 
 	return (
-		<div className="pb-36 group fixed bottom-0 left-0 w-full justify-center items-center hidden lg:flex">
-			<div className="group-hover:shadow-lg group-hover:shadow-black/50 dark:group-hover:shadow-purple-500 dark:shadow-purple-800 shadow-black/25 bg-background border shadow-md min-w-[180px] w-full max-w-[720px] flex justify-between items-center rounded-xl p-2 transition group-hover:duration-200 duration-1000 flex-col sm:flex-row gap-2">
+		<div className="pb-36 z-50 pointer-events-none group fixed bottom-0 left-0 w-full justify-center items-center hidden lg:flex">
+			<div className="group-hover:shadow-lg group-hover:shadow-black/50 dark:group-hover:shadow-purple-500 dark:shadow-purple-800 shadow-black/25 bg-background border shadow-md min-w-[180px] w-full max-w-[720px] flex justify-between items-center rounded-xl p-2 transition group-hover:duration-200 duration-1000 flex-col sm:flex-row gap-2 pointer-events-auto">
 				<a className="w-full sm:w-fit" href={`/projects/${previousProject.id}`}>
 					<Button
 						className="items-center gap-2 w-full sm:w-fit"
