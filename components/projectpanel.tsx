@@ -16,7 +16,7 @@ const ProjectPanel = ({ project }: ProjectPanelProps) => {
 						autoPlay
 						loop
 						muted
-						className="relative z-30 w-full h-full object-cover pointer-events-none rounded-t-xl"
+						className="relative z-30 w-full h-full object-cover rounded-t-xl"
 						src={project.media}
 					/>
 				</div>

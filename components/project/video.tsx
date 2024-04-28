@@ -15,7 +15,8 @@ const ProjectVideo = ({ project }: ProjectVideoProps) => {
 					autoPlay
 					loop
 					muted
-					className="relative z-30 w-full h-full object-cover pointer-events-none rounded-xl"
+					controls
+					className="relative z-30 w-full h-full object-cover rounded-xl"
 					src={project.media}
 				/>
 			</div>
