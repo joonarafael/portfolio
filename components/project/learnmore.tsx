@@ -2,6 +2,7 @@
 
 import { RxGithubLogo } from "react-icons/rx";
 import { TbForbid2 } from "react-icons/tb";
+import { VscGlobe } from "react-icons/vsc";
 
 import { Button } from "@/components/ui/button";
 import { Project } from "@/types";
@@ -14,19 +15,42 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 	return (
 		<div className="flex flex-col lg:flex-row justify-between min-h-50 items-center gradient-background animate-gradientBackground rounded-xl p-16 w-full backdrop-blur-lg gap-4">
 			<div className="text-white text-center lg:text-left">
-				<h3 className="text-base sm:text-xl font-normal sm:font-bold">
-					Want to learn more about this project?
-				</h3>
-				<p className="hidden sm:block">
-					Check the source code and read the full project documentation on
-					GitHub!
-				</p>
+				{project.id === "explotrack" ? (
+					<>
+						<h3 className="text-base sm:text-xl font-normal sm:font-bold">
+							Unfortunately the source code is private.
+						</h3>
+						<p className="hidden sm:block">
+							You may still check the <strong>clone</strong> up and running on
+							the web!
+						</p>
+					</>
+				) : (
+					<>
+						<h3 className="text-base sm:text-xl font-normal sm:font-bold">
+							Want to learn more about this project?
+						</h3>
+						<p className="hidden sm:block">
+							Check the source code and read the full project documentation on
+							GitHub!
+						</p>
+					</>
+				)}
 			</div>
 			<div>
 				{project.id === "explotrack" ? (
-					<Button disabled className="items-center gap-2 text-md w-full">
-						<TbForbid2 className="w-5 h-5" />
-						<p>GitHub repo is private</p>
+					<Button
+						onClick={() => {
+							window.open(`https://www.google.com`, "_blank");
+						}}
+						className="items-center gap-1 text-md w-full"
+					>
+						<VscGlobe className="w-5 h-5" />
+						<p>
+							{project.id === "explotrack"
+								? "Check the demo project on web"
+								: "Check the live project on web"}
+						</p>
 					</Button>
 				) : (
 					<Button
