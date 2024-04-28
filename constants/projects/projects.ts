@@ -12,8 +12,8 @@ import {
 
 const PROJECTS: Project[] = [
 	{
-		media: DROPBOX_CONTENT.media_tiirascraper,
-		mediaDescription: "Wrong video playing!",
+		media: DROPBOX_CONTENT.media_todo,
+		mediaDescription: "The correct video has not yet been added.",
 		title: "Explotrack",
 		deployedOn: "Vercel",
 		href: "https://www.google.com",
@@ -66,8 +66,9 @@ const PROJECTS: Project[] = [
 		],
 	},
 	{
-		media: DROPBOX_CONTENT.media_tiirascraper,
-		mediaDescription: "Wrong video playing!",
+		media: DROPBOX_CONTENT.media_spotisaver,
+		mediaDescription:
+			"More analyzing tools are coming in the future, but already the user is provided with a lot of information. What comes to exporting, both a more simpler and concise version, as well as a highly detailed one, can be downloaded.",
 		href: "https://spotisaver.vercel.app",
 		thumbnail: DROPBOX_CONTENT.thumbnail_spotisaver,
 		deployedOn: "Vercel",
@@ -116,8 +117,9 @@ const PROJECTS: Project[] = [
 		],
 	},
 	{
-		media: DROPBOX_CONTENT.media_tiirascraper,
-		mediaDescription: "Wrong video playing!",
+		media: DROPBOX_CONTENT.media_visualpathfinder,
+		mediaDescription:
+			"The smaller map is interactive and shows the pathfinding result. So-called 'virtual maps' are non-interactive, and won't display any results. However, they are vastly larger and therefore yield more interesting results.",
 		href: "https://visualpathfinder-production.up.railway.app/",
 		thumbnail: DROPBOX_CONTENT.thumbnail_visualpathfinder,
 		date: "Mar 2024",
@@ -165,7 +167,7 @@ const PROJECTS: Project[] = [
 	{
 		media: DROPBOX_CONTENT.media_tiirascraper,
 		mediaDescription:
-			"The scraper is used through the command line. It's built as a server, it can be left to run for as long as needed. Also note the utilization of the custom configuration files for filtering.",
+			"The scraper is used through the command line. It's built as a server, so it can be left to run for as long as needed. Also note the utilization of the custom configuration files for filtering.",
 		id: "tiirascraper",
 		date: "Apr 2024",
 		title: "Tiirascraper",
@@ -188,8 +190,8 @@ const PROJECTS: Project[] = [
 		],
 	},
 	{
-		media: DROPBOX_CONTENT.media_tiirascraper,
-		mediaDescription: "Wrong video playing!",
+		media: DROPBOX_CONTENT.media_todo,
+		mediaDescription: "The correct video has not yet been added.",
 		href: "https://blastcalc.pages.dev/",
 		thumbnail: DROPBOX_CONTENT.thumbnail_blastcalc,
 		deployedOn: "Cloudflare Pages",

@@ -15,6 +15,12 @@ const DROPBOX_CONTENT = {
 		"https://dl.dropboxusercontent.com/scl/fi/zdq474pff1s8uzvbfnjtq/media_tiirascraper.mp4?rlkey=gbzd0v6eslfd45lslubm1eju9",
 	media_flaggame:
 		"https://dl.dropboxusercontent.com/scl/fi/0wmcgzs0ezn47ws5ull03/media_flaggame.mp4?rlkey=2l4v7h29qqefp9ooe21yaicja",
+	media_spotisaver:
+		"https://dl.dropboxusercontent.com/scl/fi/1hp254rj6np2gj264cnfw/media_spotisaver.mp4?rlkey=gx03j4jk46pt4g7gub2ccc48z",
+	media_visualpathfinder:
+		"https://dl.dropboxusercontent.com/scl/fi/pulcapqz0t3qjsrfk5bv4/media_visualpathfinder.mp4?rlkey=ezxeiyfbupvhq0f0t38dwm4je",
+	media_todo:
+		"https://dl.dropboxusercontent.com/scl/fi/wavvrf3qmyokdif42x0w9/todo.mp4?rlkey=q6q54fwnw773kbgkafso61k9t",
 };
 
 export default DROPBOX_CONTENT;
