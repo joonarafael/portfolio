@@ -10,10 +10,6 @@ interface ProjectNavbarStaticProps {
 
 const PROJECTS = [
 	{
-		id: "blast-calc",
-		title: "Blast Calc",
-	},
-	{
 		id: "explotrack",
 		title: "Explotrack",
 	},
@@ -22,12 +18,16 @@ const PROJECTS = [
 		title: "Spotisaver",
 	},
 	{
+		id: "visualpathfinder",
+		title: "Visual Pathfinder",
+	},
+	{
 		id: "tiirascraper",
 		title: "Tiirascraper",
 	},
 	{
-		id: "visualpathfinder",
-		title: "Visual Pathfinder",
+		id: "blast-calc",
+		title: "Blast Calc",
 	},
 	{
 		id: "flaggame",
@@ -44,19 +44,24 @@ const ProjectNavbarStatic = ({ currentProject }: ProjectNavbarStaticProps) => {
 	const nextProject = PROJECTS[(currentIndex + 1) % PROJECTS.length];
 
 	return (
-		<div className="flex lg:hidden min-w-[180px] w-full justify-between items-center rounded-xl p-2 transition group-hover:duration-200 duration-1000 flex-col sm:flex-row gap-2">
-			<a className="w-full" href={`/projects/${previousProject.id}`}>
-				<Button className="items-center gap-2 w-full" variant="outline">
-					<FaArrowLeft />
-					<p>{previousProject.title}</p>
-				</Button>
-			</a>
-			<a className="w-full" href={`/projects/${nextProject.id}`}>
-				<Button className="items-center gap-2 w-full">
-					<p>{nextProject.title}</p>
-					<FaArrowRight />
-				</Button>
-			</a>
+		<div className="flex lg:hidden flex-col w-full gap-2 items-center justify-center border-t pt-12">
+			<p className="font-light text-neutral-500 text-sm">
+				<em>Check the next project as well!</em>
+			</p>
+			<div className="flex min-w-[180px] w-full justify-between items-center flex-col sm:flex-row gap-2">
+				<a className="w-full" href={`/projects/${previousProject.id}`}>
+					<Button className="items-center gap-2 w-full" variant="outline">
+						<FaArrowLeft />
+						<p>{previousProject.title}</p>
+					</Button>
+				</a>
+				<a className="w-full" href={`/projects/${nextProject.id}`}>
+					<Button className="items-center gap-2 w-full">
+						<p>{nextProject.title}</p>
+						<FaArrowRight />
+					</Button>
+				</a>
+			</div>
 		</div>
 	);
 };

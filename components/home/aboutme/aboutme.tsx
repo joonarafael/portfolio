@@ -16,31 +16,32 @@ const AboutMe = () => {
 				</div>
 				<div className="text-left flex flex-col gap-3">
 					<h2 className="font-bold text-3xl">
-						Creative problem-solver and a worker of the future with a passion
-						for web development
+						Enthusiastic problem-solver dedicated to web development
 					</h2>
 					<p>
-						Over the past twelve months, I have immersed myself in web
-						development, building full-stack applications with React in
-						TypeScript for Next.js servers. Additionally, I have proactively
-						acquainted myself with GitLab Actions and other CI/CD solutions.
-						Currently, I am looking into more advanced deployment strategies,
-						including proxies and caching & rate limiting, Docker containers and
-						other cloud services.
+						Over the past year, I&apos;ve delved deep into web development,
+						crafting full-stack applications with React in TypeScript for
+						Next.js servers. I&apos;ve also familiarized myself with GitLab
+						Actions and other CI/CD solutions, with an ongoing exploration of
+						advanced deployment strategies like proxies, caching, and Docker
+						containers.
 					</p>
 					<p>
-						Front-End has been more interesting to me. Interacting with
-						customers, and understanding how they actually see your product, is
-						rewarding. I love to be part of the team to throw the spaghetti on
-						the wall and see what sticks.
+						While I find front-end development particularly captivating, I
+						understand the importance of a robust back-end. I&apos;ve dedicated
+						time to building user authentication protocols, RESTful APIs, and
+						database management. My academic background in computer science has
+						provided me with insights into computational theory, including
+						topics like automata, N vs NP, and computability, along with a
+						strong foundation in mathematics, including linear algebra,
+						calculus, and matrix algebra.
 					</p>
 					<p>
-						{`However, no service is completed without a back-end. I have also
-						spent my fair share of time learning about the server-side of
-						things; building user authentication protocols, RESTful APIs, and
-						dealing with databases. I've also gained insight into the theory
-						of computation from university; topics such as automata, formal
-						languages, and computability have been a part of my studies.`}
+						As a second-year computer science student, I&apos;m continuously
+						expanding my skills and knowledge, eager to contribute to innovative
+						projects and collaborate with diverse teams. I&apos;m committed to
+						my journey in web development and excited about the opportunities
+						ahead.
 					</p>
 				</div>
 			</div>

@@ -1,18 +1,14 @@
 "use client";
 
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6';
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
-import { Button } from '../ui/button';
+import { Button } from "../ui/button";
 
 interface ProjectNavbarProps {
 	currentProject: string;
 }
 
 const PROJECTS = [
-	{
-		id: "blast-calc",
-		title: "Blast Calc",
-	},
 	{
 		id: "explotrack",
 		title: "Explotrack",
@@ -22,12 +18,16 @@ const PROJECTS = [
 		title: "Spotisaver",
 	},
 	{
+		id: "visualpathfinder",
+		title: "Visual Pathfinder",
+	},
+	{
 		id: "tiirascraper",
 		title: "Tiirascraper",
 	},
 	{
-		id: "visualpathfinder",
-		title: "Visual Pathfinder",
+		id: "blast-calc",
+		title: "Blast Calc",
 	},
 	{
 		id: "flaggame",

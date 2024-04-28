@@ -14,7 +14,7 @@ export type Experience = {
 	skills: Skill[];
 };
 
-export type Work = {
+export type Project = {
 	thumbnail?: string | null;
 	media: string;
 	href?: string | null;
@@ -22,7 +22,7 @@ export type Work = {
 	id: string;
 	title: string;
 	about: string;
-	description: string;
+	description: React.ReactNode;
 	skills: Skill[];
 	date: string;
 };

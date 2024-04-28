@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from 'react';
-import { FiMinusCircle, FiPlusCircle } from 'react-icons/fi';
+import { useState } from "react";
+import { FiMinusCircle, FiPlusCircle } from "react-icons/fi";
 
-import { Button } from '@/components/ui/button';
-import useScreenSize from '@/hooks/useScreenSize';
-import SKILLS from '@/lib/skills';
+import { Button } from "@/components/ui/button";
+import SKILLS from "@/constants/skills";
+import useScreenSize from "@/hooks/useScreenSize";
 
-import SkillElement from './skillelement';
+import SkillElement from "./skillelement";
 
 const SkillList = () => {
 	const [expand, setExpand] = useState(false);

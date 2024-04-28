@@ -1,25 +1,24 @@
 "use client";
 
+import ProjectPanel from '@/components/projectpanel';
+import Subtitle from '@/components/subtitle';
 import { Button } from '@/components/ui/button';
-import WORK from '@/lib/work';
+import PROJECTS from '@/constants/projects/projects';
 
-import Subtitle from '../../subtitle';
-import WorkPanel from '../../workpanel';
-
-const Work = () => {
-	const firstFour = WORK.slice(0, 4);
+const Projects = () => {
+	const firstFour = PROJECTS.slice(0, 4);
 
 	return (
 		<div
-			id="work"
+			id="projects"
 			className="items-center justify-center w-full flex flex-col gap-12"
 		>
-			<Subtitle text="WORK" />
+			<Subtitle text="PROJECTS" />
 			<div className="flex flex-col gap-12 w-full items-center justify-center">
 				<h2 className="font-bold text-3xl">{`Things I've built so far`}</h2>
 				<div className="gap-8 grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-					{firstFour.map((work, i) => (
-						<WorkPanel key={i} work={work} />
+					{firstFour.map((project, i) => (
+						<ProjectPanel key={i} project={project} />
 					))}
 				</div>
 				<Button
@@ -36,4 +35,4 @@ const Work = () => {
 	);
 };
 
-export default Work;
+export default Projects;

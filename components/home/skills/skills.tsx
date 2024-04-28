@@ -1,11 +1,11 @@
 "use client";
 
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-import SKILLS_LEARNING from '@/lib/learning';
+import SKILLS_LEARNING from "@/constants/learning";
 
-import Subtitle from '../../subtitle';
-import SkillElement from './skillelement';
+import Subtitle from "../../subtitle";
+import SkillElement from "./skillelement";
 
 const SkillList = dynamic(() => import("./skilllist"), { ssr: false });
 

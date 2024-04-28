@@ -4,9 +4,9 @@ import Container from "@/components/container";
 import AboutMe from "@/components/home/aboutme/aboutme";
 import Experience from "@/components/home/experience/experience";
 import NewProject from "@/components/home/newproject/newproject";
+import Projects from "@/components/home/projects/projects";
 import Skills from "@/components/home/skills/skills";
 import Title from "@/components/home/title/title";
-import Work from "@/components/home/work/work";
 
 const HomePage = () => {
 	return (
@@ -15,7 +15,7 @@ const HomePage = () => {
 				<Title />
 				<AboutMe />
 				<Skills />
-				<Work />
+				<Projects />
 				<Experience />
 				<NewProject />
 			</div>

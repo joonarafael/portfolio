@@ -1,9 +1,9 @@
 "use client";
 
-import EXPERIENCES from '@/lib/experiences';
+import EXPERIENCES from "@/constants/experiences";
 
-import Subtitle from '../../subtitle';
-import ExperienceElement from './experienceelement';
+import Subtitle from "../../subtitle";
+import ExperienceElement from "./experienceelement";
 
 const Experience = () => {
 	return (

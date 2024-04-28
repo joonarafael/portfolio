@@ -34,12 +34,12 @@ const Shortcuts = () => {
 			</Button>
 			<Button
 				onClick={() => {
-					const element = document.getElementById("work");
+					const element = document.getElementById("projects");
 					element?.scrollIntoView({ behavior: "smooth", block: "center" });
 				}}
 				variant="link"
 			>
-				Work
+				Projects
 			</Button>
 			<Button
 				onClick={() => {
