@@ -16,6 +16,7 @@ const ProjectVideo = ({ project }: ProjectVideoProps) => {
 					loop
 					muted
 					controls
+					playsInline
 					className="relative z-30 w-full h-full object-cover rounded-xl"
 					src={project.media}
 				/>
@@ -24,8 +25,10 @@ const ProjectVideo = ({ project }: ProjectVideoProps) => {
 				{project.mediaDescription}
 			</p>
 			<p className="block sm:hidden text-rose-500 font-light text-sm">
-				You are viewing the video on a really small screen! If possible,
-				I&apos;d suggest to switch to landscape mode for a better view.
+				You are viewing the video on a really small screen!
+				<br />
+				If possible, I&apos;d suggest switching to landscape mode for a better
+				view.
 			</p>
 		</div>
 	);

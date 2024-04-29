@@ -1,6 +1,6 @@
 "use client";
 
-import { Project } from "@/types";
+import { Project } from '@/types';
 
 interface ProjectPanelProps {
 	project: Project;
@@ -15,8 +15,9 @@ const ProjectPanel = ({ project }: ProjectPanelProps) => {
 					<video
 						autoPlay
 						loop
+						playsInline
 						muted
-						className="relative z-30 w-full h-full object-cover rounded-t-xl"
+						className="relative z-30 w-full h-full object-cover rounded-t-xl pointer-events-none"
 						src={project.media}
 					/>
 				</div>
@@ -24,7 +25,7 @@ const ProjectPanel = ({ project }: ProjectPanelProps) => {
 					<h3 className="text-2xl font-bold group-hover:underline">
 						{project.title}
 					</h3>
-					<p className="text-neutral-500 font-light hidden sm:flex">
+					<p className="text-neutral-500 font-light text-sm sm:text-base">
 						{project.about}
 					</p>
 				</div>

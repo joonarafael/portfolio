@@ -33,8 +33,8 @@ export default function RootLayout({
 					disableTransitionOnChange
 				>
 					<Navbar />
-					<main className="min-h-screen bg-repeat bg-[url(../public/background.png),_url(../public/background.png)] dark:bg-[url(../public/background-invert.png),_url(../public/background-invert.png)]">
-						<div className="bg-background/95 flex flex-col gap-32 w-full pt-56 sm:pt-52 items-center min-h-screen">
+					<main className="bg-repeat bg-[url(../public/background.png),_url(../public/background.png)] dark:bg-[url(../public/background-invert.png),_url(../public/background-invert.png)]">
+						<div className="bg-background/95 flex flex-col gap-32 w-full pt-56 sm:pt-52 items-center">
 							{children}
 							<Footer />
 						</div>

@@ -55,8 +55,8 @@ const ProjectNavbar = ({ currentProject }: ProjectNavbarProps) => {
 						<p>{previousProject.title}</p>
 					</Button>
 				</a>
-				<div className="hidden md:flex font-light text-neutral-500 text-sm">
-					<em>Check the next project as well!</em>
+				<div className="hidden md:flex font-light text-neutral-500">
+					<em>Check other projects as well!</em>
 				</div>
 				<a className="w-full sm:w-fit" href={`/projects/${nextProject.id}`}>
 					<Button className="items-center gap-2 w-full sm:w-fit">
