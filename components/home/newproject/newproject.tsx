@@ -15,7 +15,9 @@ const NewProject = () => {
 			<Backdrop>
 				<div className="w-full flex flex-col gap-4 sm:flex-row items-center justify-between p-12">
 					<h2 className="text-3xl font-bold text-white">Get started!</h2>
-					<p className="text-white hidden lg:flex">{`Did I catch your interest? Let's chat.`}</p>
+					<p className="text-white hidden lg:flex">
+						Got a project in mind? Let&apos;s chat.
+					</p>
 					<ContactButton />
 				</div>
 			</Backdrop>

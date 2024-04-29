@@ -42,18 +42,15 @@ const ProjectHeader = ({ project, sortedSkills }: ProjectHeaderProps) => {
 					</div>
 				) : (
 					<div className="flex flex-col w-full items-center lg:items-end gap-4">
-						<Button
-							onClick={() => {
-								window.open(
-									`https://github.com/joonarafael/${project.id}`,
-									"_blank"
-								);
-							}}
-							className="items-center gap-2 text-md w-full"
+						<a
+							href={`https://github.com/joonarafael/${project.id}`}
+							target="_blank"
 						>
-							<RxGithubLogo className="w-5 h-5" />
-							<p>View source code on GitHub</p>
-						</Button>
+							<Button className="items-center gap-2 text-md w-full">
+								<RxGithubLogo className="w-5 h-5" />
+								<p>View source code on GitHub</p>
+							</Button>
+						</a>
 						<pre className="text-neutral-500 w-fit">{project.date}</pre>
 					</div>
 				)}

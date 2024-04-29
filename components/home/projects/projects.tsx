@@ -1,9 +1,9 @@
 "use client";
 
-import ProjectPanel from '@/components/projectpanel';
-import Subtitle from '@/components/subtitle';
-import { Button } from '@/components/ui/button';
-import PROJECTS from '@/constants/projects/projects';
+import ProjectPanel from "@/components/projectpanel";
+import Subtitle from "@/components/subtitle";
+import { Button } from "@/components/ui/button";
+import PROJECTS from "@/constants/projects/projects";
 
 const Projects = () => {
 	const firstFour = PROJECTS.slice(0, 4);
@@ -21,15 +21,14 @@ const Projects = () => {
 						<ProjectPanel key={i} project={project} />
 					))}
 				</div>
-				<Button
-					variant="ghost"
-					onClick={() => {
-						window.open("/projects", "_self");
-					}}
-					className="gradient-text w-fit text-transparent animate-gradient text-2xl"
-				>
-					and more...
-				</Button>
+				<a href="/projects">
+					<Button
+						variant="ghost"
+						className="gradient-text w-fit text-transparent animate-gradient text-2xl"
+					>
+						and more...
+					</Button>
+				</a>
 			</div>
 		</div>
 	);

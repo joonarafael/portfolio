@@ -50,25 +50,29 @@ const Title = () => {
 							</DialogDescription>
 						</DialogHeader>
 						<div className="flex flex-col items-center gap-2 w-full">
-							<Button
-								onClick={() => {
-									window.open("https://t.me/joonarafael", "_blank");
-								}}
-								className="w-full gap-2 items-center"
+							<a
+								className="w-full"
+								href="https://t.me/joonarafael"
+								target="_blank"
 							>
-								<FaTelegramPlane className="w-5 h-5" />
-								<p>Telegram @joonarafael</p>
-							</Button>
-							<Button
-								onClick={() => {
-									window.open("mailto:joonarafael@gmail.com", "_blank");
-								}}
-								variant="secondary"
-								className="w-full items-center gap-2"
+								<Button className="w-full gap-2 items-center">
+									<FaTelegramPlane className="w-5 h-5" />
+									<p>Telegram @joonarafael</p>
+								</Button>
+							</a>
+							<a
+								className="w-full"
+								href="mailto:joonarafael@gmail.com"
+								target="_blank"
 							>
-								<IoMail className="w-5 h-5" />
-								<p>joonarafael@gmail.com</p>
-							</Button>
+								<Button
+									variant="secondary"
+									className="w-full items-center gap-2"
+								>
+									<IoMail className="w-5 h-5" />
+									<p>joonarafael@gmail.com</p>
+								</Button>
+							</a>
 						</div>
 						<DialogFooter className="w-full">
 							<DialogClose asChild>

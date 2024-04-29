@@ -7,6 +7,7 @@ import ProjectHeader from "@/components/project/header";
 import ProjectLearnMore from "@/components/project/learnmore";
 import ProjectNavbarStatic from "@/components/project/projectnavbarstatic";
 import ProjectVideo from "@/components/project/video";
+import VideoNotWorking from "@/components/project/videonotworking";
 import PROJECTS from "@/constants/projects/projects";
 
 interface ProjectProps {
@@ -30,7 +31,10 @@ const ProjectClient = ({ id }: ProjectProps) => {
 				<ProjectHeader project={project} sortedSkills={sortedSkills} />
 				<div className="flex w-full flex-col xl:flex-row gap-8">
 					<ProjectVideo project={project} />
-					{project?.href && <DemoLink project={project} />}
+					<div className="flex flex-col w-full xl:w-fit md:flex-row xl:flex-col gap-4">
+						{project?.href && <DemoLink project={project} />}
+						<VideoNotWorking project={project} />
+					</div>
 				</div>
 				<div className="flex flex-col text-left w-full gap-4">
 					<h2 className="font-bold text-2xl">Description</h2>

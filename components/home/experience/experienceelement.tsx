@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from 'react';
-import { FiLink, FiMinusCircle, FiPlusCircle } from 'react-icons/fi';
-import { SiGooglemaps } from 'react-icons/si';
+import { useState } from "react";
+import { FiLink, FiMinusCircle, FiPlusCircle } from "react-icons/fi";
+import { SiGooglemaps } from "react-icons/si";
 
-import { Button } from '@/components/ui/button';
-import { Experience } from '@/types';
+import { Button } from "@/components/ui/button";
+import { Experience } from "@/types";
 
 interface ExperienceElementProps {
 	experience: Experience;
@@ -72,29 +72,21 @@ const ExperienceElement = ({
 						</p>
 					</div>
 					<div className="flex items-start justify-start flex-col sm:flex-row gap-2 sm:gap-4">
-						<Button
-							onClick={() => {
-								window.open(`http://maps.google.com/?q=${location}`, "_blank");
-							}}
-							variant="link"
-							className="gap-2 items-center px-0"
-						>
-							<SiGooglemaps className="w-5 h-5" />
-							<p className="font-light text-neutral">{location}</p>
-						</Button>
-						{href && (
-							<Button
-								onClick={() => {
-									window.open(href ?? "", "_blank");
-								}}
-								variant="link"
-								className="gap-2 items-center px-0"
-							>
-								<FiLink className="w-4 h-4 " />
-								<p className="font-light text-neutral">
-									{href.replace("https://", "").replace("www.", "")}
-								</p>
+						<a href={`http://maps.google.com/?q=${location}`} target="_blank">
+							<Button variant="link" className="gap-2 items-center px-0">
+								<SiGooglemaps className="w-5 h-5" />
+								<p className="font-light text-neutral">{location}</p>
 							</Button>
+						</a>
+						{href && (
+							<a href={href} target="_blank">
+								<Button variant="link" className="gap-2 items-center px-0">
+									<FiLink className="w-4 h-4 " />
+									<p className="font-light text-neutral">
+										{href.replace("https://", "").replace("www.", "")}
+									</p>
+								</Button>
+							</a>
 						)}
 					</div>
 					<div>

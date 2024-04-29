@@ -4,17 +4,17 @@ export const EXPLOTRACK_DESCRIPTION = () => {
 			<p>
 				Fullstack application built with the Next.js framework and utilizing the
 				React library. The application is hosted on Vercel and uses a Postgres
-				database. The application is a tracking tool for a company that keeps
-				track of company orders and the flow of explosive products. The
-				application includes user authentication, extensive logging, and
-				advanced middleware.
+				database. The application is a bookkeeping tool for a company that keeps
+				track of company orders and the flow and transactions of explosive
+				products. The application includes user authentication, extensive
+				logging, and advanced middleware.
 				<br />
 				<br />
 				With this project, I&apos;ve really tried to understand various security
-				aspects of web development, and I&apos;ve learned a lot about fullstack
-				development. How to handle a production database, how to manage sessions
-				client-side but also validate on server-side, how to validate user
-				inputs, email verifications, etc.
+				aspects of web development. I&apos;ve learned a lot about fullstack
+				development; how to handle production databases, how to manage sessions
+				client-side but also perform appropriate validations server-side, how to
+				validate user input, email verifications, etc.
 			</p>
 		</div>
 	);
@@ -25,9 +25,9 @@ export const SPOTISAVER_DESCRIPTION = () => {
 		<div>
 			<p>
 				A useful and simple service that allows users to analyze and export
-				their Spotify playlists. The service is built with Next.js and React,
-				and is hosted on Vercel. The service is built with a focus on user
-				experience and simplicity.
+				their Spotify playlists. The service is built with Next.js and React.
+				Hosted on Vercel. The service is built with a focus on user experience
+				and simplicity.
 				<br />
 				<br />
 				The data is fetched and parsed from JSON responses provided by the
@@ -43,10 +43,11 @@ export const VISUALPATHFINDER_DESCRIPTION = () => {
 	return (
 		<div>
 			<p>
-				Fun pathfinder application built as an university assignment. The
-				application is built with React and Next.js, and is hosted on Railway.
-				The application allows users to compare three different pathfinding
-				algorithms: Dijkstra&apos;s, A* and Jump Point Search.
+				Fun pathfinder application built as a university assignment. The
+				application is built with React and Next.js. Hosted on Railway. The
+				application allows users see three different pathfinding algorithms,
+				Dijkstra&apos;s, A* and Jump Point Search, in action, as well as compare
+				their performance.
 				<br />
 				<br />
 				Building the algorithms with TypeScript was maybe not the most optimal
@@ -64,15 +65,21 @@ export const TIIRASCRAPER_DESCRIPTION = () => {
 		<div>
 			<p>
 				Simple web scraper built with Python to scrape bird observations from
-				the Finnish bird observation service Tiira.fi. The scraper is built with
-				the BeautifulSoup library and the requests library.
+				the Finnish bird observation service{" "}
+				<a className="hover:underline" href="https://www.tiira.fi/">
+					<em>Tiira.fi</em>
+				</a>
+				. The scraper is built with the BeautifulSoup library and the requests
+				library. The scraper is also built as a server, so it can be left
+				running for as long as needed.
 				<br />
 				<br />
 				The scraper has built-in filtering functionality, which enables the user
 				to create their own configuration files to allow/block certain species
-				and/or cities. On top of all of that, the scraper has a built-in
-				Telegram messaging system, which can be configured to send user updates
-				when new observations matching the predetermined criteria are found.
+				and/or cities. The scraper has a built-in Telegram messaging system,
+				which can be configured to send user updates when new observations
+				matching the predetermined criteria are found. The scraper also keeps
+				track of recent history so no single observation is ever sent twice.
 			</p>
 		</div>
 	);
@@ -82,18 +89,18 @@ export const BLASTCALC_DESCRIPTION = () => {
 	return (
 		<div>
 			<p>
-				Highly sophisticated calculator tool built with React and Next.js. The
-				application is hosted on Cloudflare Pages. The application is a tool for
-				mining engineers to create blasting circuit diagrams and calculate
-				detonation delays. The application has a modern and responsive UI built
-				with the Radix UI library.
+				Highly sophisticated calculator tool for mining engineers to create
+				blasting circuit diagrams and calculate detonation delays. Application
+				is built with React and Next.js. The application is hosted on Cloudflare
+				Pages. The application has a modern and responsive UI built with the
+				Radix UI library.
 				<br />
 				<br />
 				The application has been built based on a real client request (initial
 				software requirements specification). The application involves many
-				useful user tools, multiple layers of different analyzing calculations,
-				and pathfinding algorithms to create accurate and safe blasting circuit
-				diagrams.
+				useful tools for real-life applications, multiple layers of different
+				analyzing calculations, and pathfinding algorithms to create accurate
+				and safe blasting circuit diagrams.
 			</p>
 		</div>
 	);
@@ -103,10 +110,10 @@ export const FLAGGAME_DESCRIPTION = () => {
 	return (
 		<div>
 			<p>
-				A completed Python desktop application built as an university
-				assignment. The flag game is a local single-player game where the user
-				has to guess the correct country of a flag. The game is built with
-				Python and the user-friendly UI is powered by the Tkinter library.
+				A completed Python desktop application built as a university assignment.
+				The app is a local single-player game where the user has to guess the
+				correct country of a flag. The game is built with Python and the
+				user-friendly UI is powered by the Tkinter library.
 				<br />
 				<br />
 				The game has five different game modes included, each with different

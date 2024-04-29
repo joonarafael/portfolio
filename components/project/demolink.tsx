@@ -12,11 +12,10 @@ interface DemoLinkProps {
 
 const DemoLink = ({ project }: DemoLinkProps) => {
 	return (
-		<div
-			onClick={() => {
-				window.open(project.href ?? "", "_blank");
-			}}
-			className="cursor-pointer group flex flex-col items-center justify-center gap-2 border p-2 rounded-xl bg-background h-min border-black dark:border-purple-500"
+		<a
+			href={project.href ?? ""}
+			target="_blank"
+			className="cursor-pointer group flex flex-col items-center justify-center gap-2 border p-2 rounded-xl bg-background h-min border-black dark:border-purple-500 w-full xl:w-min"
 		>
 			<img
 				className="object-contain duration-500 group-hover:duration-200 group-hover:opacity-75 opacity-100 pointer-events-none max-h-[240px] rounded-xl hidden xl:block"
@@ -35,7 +34,7 @@ const DemoLink = ({ project }: DemoLinkProps) => {
 				<p className="font-light text-neutral-500">Deployed on</p>
 				<p>{project?.deployedOn}</p>
 			</span>
-		</div>
+		</a>
 	);
 };
 

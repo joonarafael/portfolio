@@ -1,7 +1,6 @@
 "use client";
 
 import { RxGithubLogo } from "react-icons/rx";
-import { TbForbid2 } from "react-icons/tb";
 import { VscGlobe } from "react-icons/vsc";
 
 import { Button } from "@/components/ui/button";
@@ -39,32 +38,26 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 			</div>
 			<div>
 				{project.id === "explotrack" ? (
-					<Button
-						onClick={() => {
-							window.open(`https://www.google.com`, "_blank");
-						}}
-						className="items-center gap-1 text-md w-full text-black bg-white hover:text-black/75 hover:bg-white/75"
-					>
-						<VscGlobe className="w-5 h-5" />
-						<p>
-							{project.id === "explotrack"
-								? "Check the demo project on web"
-								: "Check the live project on web"}
-						</p>
-					</Button>
+					<a href={`https://www.google.com`} target="_blank">
+						<Button className="items-center gap-1 text-md w-full text-black bg-white hover:text-black/75 hover:bg-white/75">
+							<VscGlobe className="w-5 h-5" />
+							<p>
+								{project.id === "explotrack"
+									? "Check the demo project on web"
+									: "Check the live project on web"}
+							</p>
+						</Button>
+					</a>
 				) : (
-					<Button
-						onClick={() => {
-							window.open(
-								`https://github.com/joonarafael/${project.id}`,
-								"_blank"
-							);
-						}}
-						className="items-center gap-2 text-md w-full text-black bg-white hover:text-black/75 hover:bg-white/75"
+					<a
+						href={`https://github.com/joonarafael/${project.id}`}
+						target="_blank"
 					>
-						<RxGithubLogo className="w-5 h-5" />
-						<p>Check the GitHub repo</p>
-					</Button>
+						<Button className="items-center gap-2 text-md w-full text-black bg-white hover:text-black/75 hover:bg-white/75">
+							<RxGithubLogo className="w-5 h-5" />
+							<p>Check the GitHub repo</p>
+						</Button>
+					</a>
 				)}
 			</div>
 		</div>

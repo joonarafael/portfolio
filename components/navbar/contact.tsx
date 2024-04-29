@@ -37,44 +37,47 @@ const ContactButton = () => {
 				</DialogHeader>
 				<div className="flex flex-col items-center gap-2 w-full">
 					<div className="flex flex-row gap-2 w-full">
-						<Button
-							onClick={() => {
-								window.open("https://github.com/joonarafael", "_blank");
-							}}
-							className="px-3 py-0 w-full"
+						<a
+							className="w-full"
+							href="https://github.com/joonarafael"
+							target="_blank"
 						>
-							<RxGithubLogo className="w-5 h-5" />
-						</Button>
-						<Button
-							onClick={() => {
-								window.open(
-									"https://www.linkedin.com/in/joonakettunen/",
-									"_blank"
-								);
-							}}
-							className="px-3 py-0 w-full"
+							<Button className="px-3 py-0 w-full">
+								<RxGithubLogo className="w-5 h-5" />
+							</Button>
+						</a>
+						<a
+							className="w-full"
+							href="https://www.linkedin.com/in/joonakettunen/"
+							target="_blank"
 						>
-							<FaLinkedin className="w-5 h-5" />
-						</Button>
-						<Button
-							onClick={() => {
-								window.open("https://t.me/joonarafael", "_blank");
-							}}
-							className="px-3 py-0 w-full"
+							<Button className="px-3 py-0 w-full">
+								<FaLinkedin className="w-5 h-5" />
+							</Button>
+						</a>
+						<a
+							className="w-full"
+							href="https://t.me/joonarafael"
+							target="_blank"
 						>
-							<FaTelegramPlane className="w-5 h-5" />
-						</Button>
+							<Button className="px-3 py-0 w-full">
+								<FaTelegramPlane className="w-5 h-5" />
+							</Button>
+						</a>
 					</div>
-					<Button
-						onClick={() => {
-							window.open("mailto:joonarafael@gmail.com", "_blank");
-						}}
-						variant="secondary"
-						className="px-3 py-0 w-full items-center gap-2"
+					<a
+						className="w-full"
+						href="mailto:joonarafael@gmail.com"
+						target="_blank"
 					>
-						<IoMail className="w-5 h-5" />
-						<p>joonarafael@gmail.com</p>
-					</Button>
+						<Button
+							variant="secondary"
+							className="px-3 py-0 w-full items-center gap-2"
+						>
+							<IoMail className="w-5 h-5" />
+							<p>joonarafael@gmail.com</p>
+						</Button>
+					</a>
 				</div>
 				<DialogFooter className="w-full">
 					<DialogClose asChild>
