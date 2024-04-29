@@ -18,7 +18,7 @@ const DemoLink = ({ project }: DemoLinkProps) => {
 			className="cursor-pointer group flex flex-col items-center justify-center gap-2 border p-2 rounded-xl bg-background h-min border-black dark:border-purple-500 w-full xl:w-min"
 		>
 			<img
-				className="object-contain duration-500 group-hover:duration-200 group-hover:opacity-75 opacity-100 pointer-events-none max-h-[240px] rounded-xl hidden xl:block"
+				className="object-contain brightness-75 duration-500 group-hover:brightness-100 group-hover:duration-200 pointer-events-none max-h-[240px] rounded-xl hidden xl:block"
 				src={project.thumbnail ?? ""}
 				alt="Thumbnail"
 			/>

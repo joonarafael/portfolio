@@ -11,7 +11,7 @@ import Title from "@/components/home/title/title";
 const HomePage = () => {
 	return (
 		<Container>
-			<div className="flex flex-col gap-24 z-0">
+			<div className="flex flex-col gap-24 z-0 min-h-screen">
 				<Title />
 				<AboutMe />
 				<Skills />

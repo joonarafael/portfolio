@@ -16,32 +16,22 @@ const Footer = () => {
 			</div>
 			<div className="flex flex-col md:flex-row gap-2 items-center">
 				<div className="flex flex-row items-center gap-0">
-					<Button
-						onClick={() => {
-							window.open("mailto:joonarafael@gmail.com", "_blank");
-						}}
-						variant="link"
-					>
-						<p>joonarafael@gmail.com</p>
-					</Button>
-					<Button
-						onClick={() => {
-							window.open("https://github.com/joonarafael", "_blank");
-						}}
-						variant="ghost"
-					>
-						<RxGithubLogo className="w-4 h-4" />
-					</Button>
+					<a href="mailto:joonarafael@gmail.com" target="_blank">
+						<Button variant="link">
+							<p>joonarafael@gmail.com</p>
+						</Button>
+					</a>
+					<a href="https://github.com/joonarafael" target="_blank">
+						<Button variant="ghost">
+							<RxGithubLogo className="w-4 h-4" />
+						</Button>
+					</a>
 				</div>
-				<Button
-					onClick={() => {
-						window.open("https://www.freepik.com", "_blank");
-					}}
-					variant="link"
-					className="font-light"
-				>
-					favicon by Freepik
-				</Button>
+				<a href="https://www.freepik.com" target="_blank">
+					<Button variant="link" className="font-light">
+						favicon by Freepik
+					</Button>
+				</a>
 			</div>
 		</div>
 	);

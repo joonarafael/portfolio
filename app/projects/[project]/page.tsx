@@ -17,7 +17,7 @@ const ProjectPage = async ({ params }: { params: IParams }) => {
 	if (!project) {
 		return (
 			<EmptyState>
-				<div className="flex flex-col gap-12 items-center justify-center">
+				<div className="flex flex-col gap-12 items-center justify-center min-h-screen">
 					<h1 className="text-4xl font-extrabold">{`Something's missing!`}</h1>
 					<p>{`No project was specified in the URL.`}</p>
 					<a href="/projects">
@@ -34,7 +34,7 @@ const ProjectPage = async ({ params }: { params: IParams }) => {
 	if (!ACCEPTABLE_PROJECT_IDS.includes(project)) {
 		return (
 			<EmptyState>
-				<div className="flex flex-col gap-12 items-center justify-center">
+				<div className="flex flex-col gap-12 items-center justify-center min-h-screen">
 					<h1 className="text-4xl font-extrabold">Oopsie!</h1>
 					<span className="flex flex-row gap-1 items-center font-lg">
 						<p>{`I have not yet created a project named '`}</p>
@@ -53,7 +53,7 @@ const ProjectPage = async ({ params }: { params: IParams }) => {
 	}
 
 	return (
-		<div>
+		<div className="flex flex-col min-h-screen">
 			<ProjectClient id={project} />
 			<ProjectNavbar currentProject={project} />
 		</div>

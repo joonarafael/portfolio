@@ -14,6 +14,7 @@ const TitleVideo = () => {
 					autoPlay
 					loop
 					muted
+					playsInline
 					className="relative w-full h-full object-cover rounded-xl z-30 pointer-events-none"
 					src={DROPBOX_CONTENT.titleVideo}
 				/>

@@ -39,7 +39,7 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 			<div>
 				{project.id === "explotrack" ? (
 					<a href={`https://www.google.com`} target="_blank">
-						<Button className="items-center gap-1 text-md w-full text-black bg-white hover:text-black/75 hover:bg-white/75">
+						<Button className="items-center gap-1 text-md w-full text-black bg-white hover:bg-white/80">
 							<VscGlobe className="w-5 h-5" />
 							<p>
 								{project.id === "explotrack"
@@ -53,7 +53,7 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 						href={`https://github.com/joonarafael/${project.id}`}
 						target="_blank"
 					>
-						<Button className="items-center gap-2 text-md w-full text-black bg-white hover:text-black/75 hover:bg-white/75">
+						<Button className="items-center gap-2 text-md w-full text-black bg-white hover:bg-white/80">
 							<RxGithubLogo className="w-5 h-5" />
 							<p>Check the GitHub repo</p>
 						</Button>

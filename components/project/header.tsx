@@ -43,6 +43,7 @@ const ProjectHeader = ({ project, sortedSkills }: ProjectHeaderProps) => {
 				) : (
 					<div className="flex flex-col w-full items-center lg:items-end gap-4">
 						<a
+							className="w-full"
 							href={`https://github.com/joonarafael/${project.id}`}
 							target="_blank"
 						>
