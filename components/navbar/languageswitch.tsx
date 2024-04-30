@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslation } from "react-i18next";
+import { IoChevronDownOutline } from "react-icons/io5";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -9,19 +9,25 @@ import {
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useTranslationStore } from "@/hooks/useTranslation";
 
 const LanguageSwitch = () => {
-	const [t, i18n] = useTranslation("global");
+	const { language, setLanguage } = useTranslationStore();
 
-	const handleLanguageSwitch = (lang: string) => {
-		i18n.changeLanguage(lang);
+	const handleLanguageSwitch = (lang: "en" | "fi") => {
+		setLanguage(lang);
 	};
 
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
-				<Button variant="outline" size="icon">
-					{t("language")}
+				<Button
+					variant="ghost"
+					size="icon"
+					className="gap-1 items-center flex flex-row"
+				>
+					<p className="text-xs font-light">{language.toUpperCase()}</p>
+					<IoChevronDownOutline className="w-3 h-3" />
 				</Button>
 			</DropdownMenuTrigger>
 			<DropdownMenuContent align="end">
@@ -29,7 +35,7 @@ const LanguageSwitch = () => {
 					EN
 				</DropdownMenuItem>
 				<DropdownMenuItem onClick={() => handleLanguageSwitch("fi")}>
-					FI
+					FI (WIP)
 				</DropdownMenuItem>
 			</DropdownMenuContent>
 		</DropdownMenu>

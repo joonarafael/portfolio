@@ -6,10 +6,14 @@ import { FiMinusCircle, FiPlusCircle } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 import SKILLS from "@/constants/skills";
 import useScreenSize from "@/hooks/useScreenSize";
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
 
 import SkillElement from "./skillelement";
 
 const SkillList = () => {
+	const { language } = useTranslationStore();
+
 	const [expand, setExpand] = useState(false);
 
 	const screenSize = useScreenSize();
@@ -54,7 +58,7 @@ const SkillList = () => {
 								className="bg-black font-bold items-center gap-2 text-white dark:hover:text-black"
 							>
 								<FiMinusCircle className="h-4 w-4" />
-								<p>SHOW LESS</p>
+								<p>{TRANSLATION[language].index.skills.listBtn.showLess}</p>
 							</Button>
 						</>
 					) : (
@@ -75,7 +79,7 @@ const SkillList = () => {
 								className="bg-black font-bold items-center gap-2 text-white dark:hover:text-black"
 							>
 								<FiPlusCircle className="h-4 w-4" />
-								<p>SHOW MORE</p>
+								<p>{TRANSLATION[language].index.skills.listBtn.showMore}</p>
 							</Button>
 						</>
 					)}

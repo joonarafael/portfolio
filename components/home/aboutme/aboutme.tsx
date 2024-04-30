@@ -1,15 +1,20 @@
 "use client";
 
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
+
 import Subtitle from "../../subtitle";
 import ProfPic from "./profpic";
 
 const AboutMe = () => {
+	const { language } = useTranslationStore();
+
 	return (
 		<div
 			id="aboutMe"
 			className="items-center justify-center w-full flex flex-col gap-12"
 		>
-			<Subtitle text="ABOUT ME" />
+			<Subtitle text={TRANSLATION[language].index.aboutme.title} />
 			<div className="flex flex-row gap-12 justify-between w-full items-center">
 				<div className="hidden lg:flex min-w-[256px] min-h-[256px]">
 					<ProfPic />

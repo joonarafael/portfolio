@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import i18next from "i18next";
 import dynamic from "next/dynamic";
 import { Inter } from "next/font/google";
 
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/themeprovider";
-import global_en from "@/translations/en/global.json";
-import global_fi from "@/translations/fi/global.json";
 
 const Navbar = dynamic(() => import("../components/navbar/navbar"), {
 	ssr: false,
@@ -20,19 +17,6 @@ export const metadata: Metadata = {
 	title: "Portfolio",
 	description: "Portfolio of Joona Kettunen",
 };
-
-i18next.init({
-	interpolation: { escapeValue: false },
-	lng: "en",
-	resources: {
-		en: {
-			global: global_en,
-		},
-		fi: {
-			global: global_fi,
-		},
-	},
-});
 
 export default async function RootLayout({
 	children,

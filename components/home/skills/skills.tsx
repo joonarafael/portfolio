@@ -3,6 +3,8 @@
 import dynamic from "next/dynamic";
 
 import SKILLS_LEARNING from "@/constants/learning";
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
 
 import Subtitle from "../../subtitle";
 import SkillElement from "./skillelement";
@@ -10,6 +12,8 @@ import SkillElement from "./skillelement";
 const SkillList = dynamic(() => import("./skilllist"), { ssr: false });
 
 const Skills = () => {
+	const { language } = useTranslationStore();
+
 	SKILLS_LEARNING.sort((a, b) => {
 		if (a.name < b.name) return -1;
 		if (a.name > b.name) return 1;
@@ -21,13 +25,15 @@ const Skills = () => {
 			id="skills"
 			className="items-center justify-center w-full flex flex-col gap-12"
 		>
-			<Subtitle text="SKILLS" />
+			<Subtitle text={TRANSLATION[language].index.skills.title} />
 			<div className="flex flex-col gap-12">
 				<h2 className="font-bold text-3xl">
-					Technologies and tools I am good with
+					{TRANSLATION[language].index.skills.headers.skills}
 				</h2>
 				<SkillList />
-				<p className="font-bold text-xl">{`Additionally I'm currently learning`}</p>
+				<p className="font-bold text-xl">
+					{TRANSLATION[language].index.skills.headers.learning}
+				</p>
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 					{SKILLS_LEARNING.map((skill, i) => (
 						<div key={i} className="relative group">

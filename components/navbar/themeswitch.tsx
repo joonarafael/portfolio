@@ -1,16 +1,22 @@
 "use client";
 
-import { useTheme } from 'next-themes';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { IoSunny } from 'react-icons/io5';
+import { useTheme } from "next-themes";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import { IoSunny } from "react-icons/io5";
 
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 import {
-    DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger
-} from '@/components/ui/dropdown-menu';
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
 
 const ThemeSwitch = () => {
 	const { setTheme } = useTheme();
+	const { language } = useTranslationStore();
 
 	return (
 		<DropdownMenu>
@@ -23,13 +29,13 @@ const ThemeSwitch = () => {
 			</DropdownMenuTrigger>
 			<DropdownMenuContent align="end">
 				<DropdownMenuItem onClick={() => setTheme("light")}>
-					Light
+					{TRANSLATION[language].global.theme.light}
 				</DropdownMenuItem>
 				<DropdownMenuItem onClick={() => setTheme("dark")}>
-					Dark
+					{TRANSLATION[language].global.theme.dark}
 				</DropdownMenuItem>
 				<DropdownMenuItem onClick={() => setTheme("system")}>
-					System
+					{TRANSLATION[language].global.theme.system}
 				</DropdownMenuItem>
 			</DropdownMenuContent>
 		</DropdownMenu>

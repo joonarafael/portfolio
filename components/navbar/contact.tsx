@@ -14,10 +14,14 @@ import {
 	DialogTitle,
 	DialogTrigger,
 } from "@/components/ui/dialog";
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
 
 import { Button } from "../ui/button";
 
 const ContactButton = () => {
+	const { language } = useTranslationStore();
+
 	return (
 		<Dialog>
 			<DialogTrigger asChild>
@@ -25,14 +29,16 @@ const ContactButton = () => {
 					variant="ghost"
 					className="bg-purple-500 text-white hover:bg-purple-500/75 hover:text-white/75"
 				>
-					<p>Contact me</p>
+					<p>{TRANSLATION[language].global.contact.btnTxt}</p>
 				</Button>
 			</DialogTrigger>
 			<DialogContent className="sm:max-w-md">
 				<DialogHeader>
-					<DialogTitle>Contact me</DialogTitle>
+					<DialogTitle>
+						{TRANSLATION[language].global.contact.dialog.title}
+					</DialogTitle>
 					<DialogDescription>
-						Get in contact through your preferred social channel!
+						{TRANSLATION[language].global.contact.dialog.subtitle}
 					</DialogDescription>
 				</DialogHeader>
 				<div className="flex flex-col items-center gap-2 w-full">
@@ -82,7 +88,7 @@ const ContactButton = () => {
 				<DialogFooter className="w-full">
 					<DialogClose asChild>
 						<Button className="w-full" type="button" variant="outline">
-							Close
+							{TRANSLATION[language].global.contact.dialog.closeBtn}
 						</Button>
 					</DialogClose>
 				</DialogFooter>

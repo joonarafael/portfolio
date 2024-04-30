@@ -2,10 +2,14 @@
 
 import { Button } from "@/components/ui/button";
 import DROPBOX_CONTENT from "@/constants/dropboxcontent";
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
 
 import VideoText from "./videotext";
 
 const TitleVideo = () => {
+	const { language } = useTranslationStore();
+
 	return (
 		<div className="flex-col h-full hidden lg:flex w-2/5 items-center justify-center">
 			<div className="relative bg-gradient-to-t from-black to-purple-500 w-full h-full shadow-md shadow-black/50 dark:shadow-purple-800 rounded-xl">
@@ -22,10 +26,14 @@ const TitleVideo = () => {
 					<VideoText text="loading video..." />
 				</div>
 				<div className="absolute z-40 top-60 left-20">
-					<VideoText text="RESPONSIVE" />
+					<VideoText
+						text={TRANSLATION[language].index.title.video.overlays.responsive}
+					/>
 				</div>
 				<div className="absolute z-40 bottom-60 right-20">
-					<VideoText text="MODERN" />
+					<VideoText
+						text={TRANSLATION[language].index.title.video.overlays.modern}
+					/>
 				</div>
 			</div>
 			<Button
@@ -38,7 +46,7 @@ const TitleVideo = () => {
 				variant="link"
 				className="font-light text-neutral-500 text-xs w-min"
 			>
-				video by u_vt453kmgmm from Pixabay
+				{TRANSLATION[language].index.title.video.credits}
 			</Button>
 		</div>
 	);

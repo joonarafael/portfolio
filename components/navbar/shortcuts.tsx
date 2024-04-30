@@ -1,8 +1,13 @@
 "use client";
 
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
+
 import { Button } from "../ui/button";
 
 const Shortcuts = () => {
+	const { language } = useTranslationStore();
+
 	return (
 		<div className="flex flex-row gap-1 justify-center items-center">
 			<Button
@@ -12,7 +17,7 @@ const Shortcuts = () => {
 				}}
 				variant="link"
 			>
-				Home
+				{TRANSLATION[language].global.navbar.shortcuts[0]}
 			</Button>
 			<Button
 				onClick={() => {
@@ -21,7 +26,7 @@ const Shortcuts = () => {
 				}}
 				variant="link"
 			>
-				About
+				{TRANSLATION[language].global.navbar.shortcuts[1]}
 			</Button>
 			<Button
 				onClick={() => {
@@ -30,7 +35,7 @@ const Shortcuts = () => {
 				}}
 				variant="link"
 			>
-				Skills
+				{TRANSLATION[language].global.navbar.shortcuts[2]}
 			</Button>
 			<Button
 				onClick={() => {
@@ -39,7 +44,7 @@ const Shortcuts = () => {
 				}}
 				variant="link"
 			>
-				Projects
+				{TRANSLATION[language].global.navbar.shortcuts[3]}
 			</Button>
 			<Button
 				onClick={() => {
@@ -48,7 +53,7 @@ const Shortcuts = () => {
 				}}
 				variant="link"
 			>
-				Experience
+				{TRANSLATION[language].global.navbar.shortcuts[4]}
 			</Button>
 		</div>
 	);

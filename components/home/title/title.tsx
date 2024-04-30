@@ -13,11 +13,15 @@ import {
 	DialogTitle,
 	DialogTrigger,
 } from "@/components/ui/dialog";
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
 
 import { Button } from "../../ui/button";
 import TitleVideo from "./video";
 
 const Title = () => {
+	const { language } = useTranslationStore();
+
 	return (
 		<div
 			id="title"
@@ -25,7 +29,9 @@ const Title = () => {
 		>
 			<div className="flex flex-col gap-12 lg:w-3/5 pr-10">
 				<div className="w-full text-left flex flex-col gap-2">
-					<h2 className="text-2xl">{`Hello, I'm`}</h2>
+					<h2 className="text-2xl">
+						{TRANSLATION[language].index.title.header.hello}
+					</h2>
 					<h1 className="gradient-text w-fit text-transparent text-4xl sm:text-6xl font-extrabold animate-gradient">
 						Joona Kettunen,
 					</h1>
@@ -39,14 +45,16 @@ const Title = () => {
 					<DialogTrigger asChild>
 						<Button className="w-fit gap-2 items-center">
 							<IoMail className="w-4 h-4" />
-							<p>Send me a message</p>
+							<p>{TRANSLATION[language].index.title.messageBtn.btnTxt}</p>
 						</Button>
 					</DialogTrigger>
 					<DialogContent className="sm:max-w-md">
 						<DialogHeader>
-							<DialogTitle>Send me a message</DialogTitle>
+							<DialogTitle>
+								{TRANSLATION[language].index.title.messageBtn.dialog.title}
+							</DialogTitle>
 							<DialogDescription>
-								You reach me best via Telegram.
+								{TRANSLATION[language].index.title.messageBtn.dialog.subtitle}
 							</DialogDescription>
 						</DialogHeader>
 						<div className="flex flex-col items-center gap-2 w-full">
@@ -77,7 +85,7 @@ const Title = () => {
 						<DialogFooter className="w-full">
 							<DialogClose asChild>
 								<Button type="button" className="w-full" variant="outline">
-									Close
+									{TRANSLATION[language].index.title.messageBtn.dialog.closeBtn}
 								</Button>
 							</DialogClose>
 						</DialogFooter>

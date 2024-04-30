@@ -1,10 +1,11 @@
 "use client";
 
-import dynamic from "next/dynamic";
+import dynamic from 'next/dynamic';
 
-import ContactButton from "./contact";
-import Shortcuts from "./shortcuts";
-import ThemeSwitch from "./themeswitch";
+import ContactButton from './contact';
+import LanguageSwitch from './languageswitch';
+import Shortcuts from './shortcuts';
+import ThemeSwitch from './themeswitch';
 
 const Logo = dynamic(() => import("./logo"), { ssr: false });
 
@@ -20,6 +21,7 @@ const Navbar = () => {
 						</div>
 					)}
 				<div className="flex flex-row gap-2">
+					<LanguageSwitch />
 					<ThemeSwitch />
 					<ContactButton />
 				</div>
