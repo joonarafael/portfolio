@@ -10,7 +10,7 @@ import PROJECTS from "@/constants/projects/projects";
 const ProjectsPage = () => {
 	return (
 		<Container>
-			<div className="flex flex-col gap-12 items-start justify-start w-full min-h-screen">
+			<div className="flex flex-col gap-12 items-start justify-start w-full">
 				<h1 className="text-4xl sm:text-6xl font-extrabold">Projects</h1>
 				<p>Curated catalogue of my recent work.</p>
 				<div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full">

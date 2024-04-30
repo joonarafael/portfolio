@@ -21,22 +21,38 @@ const ProfPic = () => {
 			</div>
 			<div className="absolute rounded-xl p-2 left-0 right-0 -bottom-2 text-primary bg-foreground/50 backdrop-blur-lg font-bold text-lg shadow-lg text-white">
 				<div className="flex flex-row w-full item-center justify-center gap-1">
-					<a href="https://github.com/joonarafael" target="blank">
+					<a
+						href="https://github.com/joonarafael"
+						target="blank"
+						className="hover:animate-pulse"
+					>
 						<Button size="sm" variant="ghost" className="px-3 py-0">
 							<RxGithubLogo className="w-5 h-5" />
 						</Button>
 					</a>
-					<a href="https://www.linkedin.com/in/joonakettunen/" target="blank">
+					<a
+						href="https://www.linkedin.com/in/joonakettunen/"
+						target="blank"
+						className="hover:animate-pulse"
+					>
 						<Button size="sm" variant="ghost" className="px-3 py-0">
 							<FaLinkedin className="w-5 h-5" />
 						</Button>
 					</a>
-					<a href="https://t.me/joonarafael" target="blank">
+					<a
+						href="https://t.me/joonarafael"
+						target="blank"
+						className="hover:animate-pulse"
+					>
 						<Button size="sm" variant="ghost" className="px-3 py-0">
 							<FaTelegramPlane className="w-5 h-5" />
 						</Button>
 					</a>
-					<a href="mailto:joonarafael@gmail.com" target="blank">
+					<a
+						href="mailto:joonarafael@gmail.com"
+						target="blank"
+						className="hover:animate-pulse"
+					>
 						<Button size="sm" variant="ghost" className="px-3 py-0">
 							<IoMail className="w-5 h-5" />
 						</Button>

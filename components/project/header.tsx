@@ -34,7 +34,10 @@ const ProjectHeader = ({ project, sortedSkills }: ProjectHeaderProps) => {
 			<div className="border-t pt-8 lg:border-none lg:pt-0 flex">
 				{project.id === "explotrack" ? (
 					<div className="flex flex-col w-full items-center lg:items-end gap-4">
-						<Button disabled className="items-center gap-2 text-md w-full">
+						<Button
+							disabled
+							className="items-center gap-2 text-md w-full cursor-not-allowed"
+						>
 							<TbForbid2 className="w-5 h-5" />
 							<p>Source code is private</p>
 						</Button>
