@@ -1,8 +1,12 @@
 "use client";
 
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6';
+import { IoIosArrowDropleft } from 'react-icons/io';
 
-import { Button } from "../ui/button";
+import { useTranslationStore } from '@/hooks/useTranslation';
+import TRANSLATION from '@/translations/translation';
+
+import { Button } from '../ui/button';
 
 interface ProjectNavbarProps {
 	currentProject: string;
@@ -36,6 +40,8 @@ const PROJECTS = [
 ];
 
 const ProjectNavbar = ({ currentProject }: ProjectNavbarProps) => {
+	const { language } = useTranslationStore();
+
 	const currentIndex = PROJECTS.findIndex(
 		(project) => project.id === currentProject
 	);
@@ -44,24 +50,39 @@ const ProjectNavbar = ({ currentProject }: ProjectNavbarProps) => {
 	const nextProject = PROJECTS[(currentIndex + 1) % PROJECTS.length];
 
 	return (
-		<div className="pb-36 z-50 pointer-events-none group fixed bottom-0 left-0 w-full justify-center items-center hidden lg:flex">
-			<div className="group-hover:shadow-lg group-hover:shadow-black/50 dark:group-hover:shadow-purple-500 dark:shadow-purple-800 shadow-black/25 bg-background border shadow-md min-w-[180px] w-full max-w-[720px] flex justify-between items-center rounded-xl p-2 transition group-hover:duration-200 duration-1000 flex-col sm:flex-row gap-2 pointer-events-auto">
-				<a className="w-full sm:w-fit" href={`/projects/${previousProject.id}`}>
-					<Button
-						className="items-center gap-2 w-full sm:w-fit"
-						variant="secondary"
-					>
+		<div className="flex flex-col w-full gap-8 items-center justify-center border-t pt-12">
+			<p className="font-light text-neutral-500">
+				<em>{TRANSLATION[language].project.navbar.title}</em>
+			</p>
+			<div className="flex min-w-[180px] w-full justify-between items-center flex-col sm:flex-row gap-2">
+				<a className="w-full hidden xl:block" href={`/projects`}>
+					<Button className="items-center gap-2 w-full" variant="outline">
+						<IoIosArrowDropleft className="w-5 h-5" />
+						<p>
+							{TRANSLATION[language].project.header.backToProjectsBtn.btnText}
+						</p>
+					</Button>
+				</a>
+				<a className="w-full" href={`/projects/${previousProject.id}`}>
+					<Button className="items-center gap-2 w-full" variant="secondary">
 						<FaArrowLeft />
 						<p>{previousProject.title}</p>
 					</Button>
 				</a>
-				<div className="hidden md:flex font-light text-neutral-500">
-					<em>Check other projects as well!</em>
-				</div>
-				<a className="w-full sm:w-fit" href={`/projects/${nextProject.id}`}>
-					<Button className="items-center gap-2 w-full sm:w-fit">
+				<a className="w-full" href={`/projects/${nextProject.id}`}>
+					<Button className="items-center gap-2 w-full">
 						<p>{nextProject.title}</p>
 						<FaArrowRight />
+					</Button>
+				</a>
+			</div>
+			<div className="flex xl:hidden min-w-[180px] w-full justify-between items-center flex-col border-t pt-12">
+				<a className="w-full" href={`/projects`}>
+					<Button className="items-center gap-2 w-full" variant="outline">
+						<IoIosArrowDropleft className="w-5 h-5" />
+						<p>
+							{TRANSLATION[language].project.header.backToProjectsBtn.btnText}
+						</p>
 					</Button>
 				</a>
 			</div>

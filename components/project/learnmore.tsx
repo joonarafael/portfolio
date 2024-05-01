@@ -4,6 +4,8 @@ import { RxGithubLogo } from "react-icons/rx";
 import { VscGlobe } from "react-icons/vsc";
 
 import { Button } from "@/components/ui/button";
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
 import { Project } from "@/types";
 
 interface ProjectLearnMoreProps {
@@ -11,27 +13,27 @@ interface ProjectLearnMoreProps {
 }
 
 const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
+	const { language } = useTranslationStore();
+
 	return (
 		<div className="flex flex-col lg:flex-row justify-between min-h-50 items-center gradient-background animate-gradientBackground rounded-xl p-16 w-full backdrop-blur-lg gap-4">
 			<div className="text-white text-center lg:text-left">
 				{project.id === "explotrack" ? (
 					<>
 						<h3 className="text-base sm:text-xl font-normal sm:font-bold">
-							Unfortunately the source code is private.
+							{TRANSLATION[language].project.learnMore.private.header}
 						</h3>
 						<p className="hidden sm:block">
-							You may still check the <strong>clone</strong> up and running on
-							the web!
+							{TRANSLATION[language].project.learnMore.private.subtitle}
 						</p>
 					</>
 				) : (
 					<>
 						<h3 className="text-base sm:text-xl font-normal sm:font-bold">
-							Want to learn more about this project?
+							{TRANSLATION[language].project.learnMore.public.header}
 						</h3>
 						<p className="hidden sm:block">
-							Check the source code and read the full project documentation on
-							GitHub!
+							{TRANSLATION[language].project.learnMore.public.subtitle}
 						</p>
 					</>
 				)}
@@ -41,11 +43,7 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 					<a href={`https://www.google.com`} target="_blank">
 						<Button className="items-center gap-1 text-md w-full text-black bg-white hover:bg-white/80">
 							<VscGlobe className="w-5 h-5" />
-							<p>
-								{project.id === "explotrack"
-									? "Check the demo project on web"
-									: "Check the live project on web"}
-							</p>
+							<p>{TRANSLATION[language].project.learnMore.private.btnText}</p>
 						</Button>
 					</a>
 				) : (
@@ -55,7 +53,7 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 					>
 						<Button className="items-center gap-2 text-md w-full text-black bg-white hover:bg-white/80">
 							<RxGithubLogo className="w-5 h-5" />
-							<p>Check the GitHub repo</p>
+							<p>{TRANSLATION[language].project.learnMore.public.btnText}</p>
 						</Button>
 					</a>
 				)}

@@ -6,6 +6,15 @@ interface TranslationState {
 }
 
 export const useTranslationStore = create<TranslationState>((set) => ({
-	language: "en",
-	setLanguage: (language: "en" | "fi") => set({ language }),
+	language: (() => {
+		if (typeof window !== "undefined") {
+			return localStorage.getItem("language") === "fi" ? "fi" : "en";
+		}
+
+		return "en";
+	})(),
+	setLanguage: (language: "en" | "fi") => {
+		set({ language });
+		localStorage.setItem("language", language);
+	},
 }));

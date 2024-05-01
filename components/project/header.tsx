@@ -4,6 +4,8 @@ import { IoIosArrowDropleft } from "react-icons/io";
 import { RxGithubLogo } from "react-icons/rx";
 import { TbForbid2 } from "react-icons/tb";
 
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
 import { Project, Skill } from "@/types";
 
 import { Button } from "../ui/button";
@@ -14,13 +16,17 @@ interface ProjectHeaderProps {
 }
 
 const ProjectHeader = ({ project, sortedSkills }: ProjectHeaderProps) => {
+	const { language } = useTranslationStore();
+
 	return (
 		<div className="flex gap-6 flex-col lg:flex-row w-full">
 			<div className="flex flex-col gap-8 text-left w-full">
-				<a href="/projects">
+				<a href="/projects" className="w-fit">
 					<Button variant="outline" className="w-fit items-center gap-2">
 						<IoIosArrowDropleft className="w-5 h-5" />
-						<p>Back to projects</p>
+						<p>
+							{TRANSLATION[language].project.header.backToProjectsBtn.btnText}
+						</p>
 					</Button>
 				</a>
 				<h1 className="text-4xl sm:text-6xl font-extrabold">{project.title}</h1>
@@ -39,7 +45,9 @@ const ProjectHeader = ({ project, sortedSkills }: ProjectHeaderProps) => {
 							className="items-center gap-2 text-md w-full cursor-not-allowed"
 						>
 							<TbForbid2 className="w-5 h-5" />
-							<p>Source code is private</p>
+							<p>
+								{TRANSLATION[language].project.header.sourceCodeBtn.private}
+							</p>
 						</Button>
 						<pre className="text-neutral-500 w-fit">{project.date}</pre>
 					</div>
@@ -52,7 +60,9 @@ const ProjectHeader = ({ project, sortedSkills }: ProjectHeaderProps) => {
 						>
 							<Button className="items-center gap-2 text-md w-full">
 								<RxGithubLogo className="w-5 h-5" />
-								<p>View source code on GitHub</p>
+								<p>
+									{TRANSLATION[language].project.header.sourceCodeBtn.btnText}
+								</p>
 							</Button>
 						</a>
 						<pre className="text-neutral-500 w-fit">{project.date}</pre>

@@ -72,7 +72,7 @@ const PROJECTS: Project[] = [
 		href: "https://spotisaver.vercel.app",
 		thumbnail: DROPBOX_CONTENT.thumbnail_spotisaver,
 		deployedOn: "Vercel",
-		date: "Apr 2024",
+		date: "04/2024",
 		title: "Spotisaver",
 		id: "spotisaver",
 		about: "Service to analyze and export Spotify playlists.",
@@ -122,7 +122,7 @@ const PROJECTS: Project[] = [
 			"The smaller map is interactive and shows the pathfinding result. So-called 'virtual maps' are non-interactive, and won't display any results. However, they are vastly larger and therefore yield more interesting results.",
 		href: "https://visualpathfinder-production.up.railway.app/",
 		thumbnail: DROPBOX_CONTENT.thumbnail_visualpathfinder,
-		date: "Mar 2024",
+		date: "03/2024",
 		deployedOn: "Railway App",
 		title: "Visual Pathfinder",
 		id: "visualpathfinder",
@@ -169,7 +169,7 @@ const PROJECTS: Project[] = [
 		mediaDescription:
 			"The scraper is used through the command line. It's built as a server, so it can be left to run for as long as needed. Also note the utilization of the custom configuration files for filtering.",
 		id: "tiirascraper",
-		date: "Apr 2024",
+		date: "04/2024",
 		title: "Tiirascraper",
 		about:
 			"Python web scraper to scrape, filter and process bird observations from Tiira.fi.",
@@ -253,7 +253,7 @@ const PROJECTS: Project[] = [
 		mediaDescription:
 			"User interface rendered with the Tkinter library. Note the various statistics calculated, game history, and the 5 different available game modes.",
 		id: "flaggame",
-		date: "May 2023",
+		date: "05/2023",
 		title: "Flag Game",
 		about: "Game built with Python and the Tkinter library.",
 		description: FLAGGAME_DESCRIPTION(),

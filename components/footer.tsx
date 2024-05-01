@@ -16,7 +16,7 @@ const Footer = () => {
 			<div className="flex flex-col lg:flex-row items-center justify-center gap-2">
 				<Logo />
 				<p className="text-sm text-neutral-500 font-light text-center">
-					{TRANSLATION[language].global.footer.updated} 2024/4/30
+					{TRANSLATION[language].global.footer.updated} 2024-05-01
 				</p>
 			</div>
 			<div className="flex flex-col md:flex-row gap-2 items-center">
@@ -34,7 +34,7 @@ const Footer = () => {
 				</div>
 				<a href="https://www.freepik.com" target="_blank">
 					<Button variant="link" className="font-light">
-						favicon by Freepik
+						{TRANSLATION[language].global.footer.favicon}
 					</Button>
 				</a>
 			</div>

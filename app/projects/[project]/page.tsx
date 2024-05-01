@@ -1,7 +1,6 @@
 import { IoIosArrowDropleft } from "react-icons/io";
 
 import EmptyState from "@/components/emptystate";
-import ProjectNavbar from "@/components/project/projectnavbar";
 import { Button } from "@/components/ui/button";
 import ACCEPTABLE_PROJECT_IDS from "@/constants/projects/acceptable";
 
@@ -55,7 +54,6 @@ const ProjectPage = async ({ params }: { params: IParams }) => {
 	return (
 		<div className="flex flex-col min-h-screen">
 			<ProjectClient id={project} />
-			<ProjectNavbar currentProject={project} />
 		</div>
 	);
 };

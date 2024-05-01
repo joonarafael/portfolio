@@ -4,6 +4,8 @@
 import { VscGlobe } from "react-icons/vsc";
 
 import { Button } from "@/components/ui/button";
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
 import { Project } from "@/types";
 
 interface DemoLinkProps {
@@ -11,6 +13,8 @@ interface DemoLinkProps {
 }
 
 const DemoLink = ({ project }: DemoLinkProps) => {
+	const { language } = useTranslationStore();
+
 	return (
 		<a
 			href={project.href ?? ""}
@@ -26,12 +30,14 @@ const DemoLink = ({ project }: DemoLinkProps) => {
 				<VscGlobe className="w-5 h-5" />
 				<p>
 					{project.id === "explotrack"
-						? "Check the demo project on web"
-						: "Check the live project on web"}
+						? TRANSLATION[language].project.demoLink.explotrack
+						: TRANSLATION[language].project.demoLink.btnText}
 				</p>
 			</Button>
 			<span className="flex flex-row gap-1 text-sm">
-				<p className="font-light text-neutral-500">Deployed on</p>
+				<p className="font-light text-neutral-500">
+					{TRANSLATION[language].project.demoLink.deployedOn}
+				</p>
 				<p>{project?.deployedOn}</p>
 			</span>
 		</a>

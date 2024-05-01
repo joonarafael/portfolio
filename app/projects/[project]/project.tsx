@@ -5,16 +5,20 @@ import Container from "@/components/container";
 import DemoLink from "@/components/project/demolink";
 import ProjectHeader from "@/components/project/header";
 import ProjectLearnMore from "@/components/project/learnmore";
-import ProjectNavbarStatic from "@/components/project/projectnavbarstatic";
+import ProjectNavbar from "@/components/project/projectnavbar";
 import ProjectVideo from "@/components/project/video";
 import VideoNotWorking from "@/components/project/videonotworking";
 import PROJECTS from "@/constants/projects/projects";
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
 
 interface ProjectProps {
 	id: string;
 }
 
 const ProjectClient = ({ id }: ProjectProps) => {
+	const { language } = useTranslationStore();
+
 	const project = PROJECTS.filter((project) => project.id === id)[0];
 
 	const sortedSkills = project.skills;
@@ -37,11 +41,13 @@ const ProjectClient = ({ id }: ProjectProps) => {
 					</div>
 				</div>
 				<div className="flex flex-col text-left w-full gap-4">
-					<h2 className="font-bold text-2xl">Description</h2>
+					<h2 className="font-bold text-2xl">
+						{TRANSLATION[language].project.description.title}
+					</h2>
 					<span>{project.description}</span>
 				</div>
 				<ProjectLearnMore project={project} />
-				<ProjectNavbarStatic currentProject={project.id} />
+				<ProjectNavbar currentProject={project.id} />
 			</div>
 		</Container>
 	);

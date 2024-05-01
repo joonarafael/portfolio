@@ -45,6 +45,13 @@ const Skills = () => {
 					))}
 				</div>
 			</div>
+			<a
+				href="https://shields.io/"
+				target="_blank"
+				className="font-light text-sm w-fit hover:underline text-neutral-500"
+			>
+				<em>{TRANSLATION[language].index.skills.imgCredits}</em>
+			</a>
 		</div>
 	);
 };
