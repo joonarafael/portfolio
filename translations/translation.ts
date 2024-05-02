@@ -16,6 +16,10 @@ const TRANSLATION = {
 			navbar: {
 				shortcuts: ["Home", "About", "Skills", "Projects", "Experience"],
 			},
+			projectPanel: {
+				flagShip: "FLAGSHIP",
+				newProject: "NEW",
+			},
 			theme: {
 				light: "Light",
 				dark: "Dark",
@@ -89,11 +93,19 @@ const TRANSLATION = {
 					"Find even more projects and the source code for this portfolio website on my GitHub!",
 				btnText: "Check my GitHub",
 			},
+			newProject: {
+				new: "NEW",
+				dialog: {
+					title: "New project in mind?",
+					subtitle: "Tell me about it and let's see how we can proceed.",
+					closeBtn: "Close",
+				},
+			},
 		},
 		project: {
 			header: {
 				backToProjectsBtn: {
-					btnText: "Back to projects",
+					btnText: "Back to list",
 				},
 				sourceCodeBtn: {
 					btnText: "View source code on GitHub",
@@ -153,6 +165,10 @@ const TRANSLATION = {
 			},
 			navbar: {
 				shortcuts: ["Koti", "Lyhyesti", "Taidot", "Projektit", "Työkokemus"],
+			},
+			projectPanel: {
+				flagShip: "LIPPULAIVA",
+				newProject: "UUSI",
 			},
 			theme: {
 				light: "Vaalea",
@@ -227,11 +243,19 @@ const TRANSLATION = {
 					"Löydä kaikki projektini ja lähdekoodi tälle portfolio-nettisivulle GitHubistani!",
 				btnText: "Näytä GitHub-profiilini",
 			},
+			newProject: {
+				new: "UUSI",
+				dialog: {
+					title: "Projekti mielessä?",
+					subtitle: "Ota yhteyttä ja katsotaan miten edettäisiin.",
+					closeBtn: "Sulje",
+				},
+			},
 		},
 		project: {
 			header: {
 				backToProjectsBtn: {
-					btnText: "Takaisin projektilistaan",
+					btnText: "Takaisin listaan",
 				},
 				sourceCodeBtn: {
 					btnText: "Näytä lähdekoodi GitHubissa",
@@ -259,8 +283,8 @@ const TRANSLATION = {
 			},
 			learnMore: {
 				private: {
-					header: "Valitettavasti tämän projektin lähdekoodi on yksityinen.",
-					subtitle: "Voit silti edelleen tsekata demo-projektin netissä!",
+					header: "Valitettavasti projektin lähdekoodi on yksityinen.",
+					subtitle: "Voit silti tsekata demo-projektin netissä!",
 					btnText: "Tsekkaa demo-projekti netissä",
 				},
 				public: {

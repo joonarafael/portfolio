@@ -1,13 +1,10 @@
 "use client";
 
-import dynamic from 'next/dynamic';
-
-import ContactButton from './contact';
-import LanguageSwitch from './languageswitch';
-import Shortcuts from './shortcuts';
-import ThemeSwitch from './themeswitch';
-
-const Logo = dynamic(() => import("./logo"), { ssr: false });
+import ContactButton from "./contact";
+import LanguageSwitch from "./languageswitch";
+import Logo from "./logo";
+import Shortcuts from "./shortcuts";
+import ThemeSwitch from "./themeswitch";
 
 const Navbar = () => {
 	return (

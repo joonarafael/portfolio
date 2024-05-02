@@ -1,15 +1,12 @@
 "use client";
 
-import dynamic from "next/dynamic";
-
 import SKILLS_LEARNING from "@/constants/learning";
 import { useTranslationStore } from "@/hooks/useTranslation";
 import TRANSLATION from "@/translations/translation";
 
 import Subtitle from "../../subtitle";
 import SkillElement from "./skillelement";
-
-const SkillList = dynamic(() => import("./skilllist"), { ssr: false });
+import SkillList from "./skilllist";
 
 const Skills = () => {
 	const { language } = useTranslationStore();

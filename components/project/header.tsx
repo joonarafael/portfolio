@@ -9,6 +9,7 @@ import TRANSLATION from "@/translations/translation";
 import { Project, Skill } from "@/types";
 
 import { Button } from "../ui/button";
+import FlagShip from "./flagship";
 
 interface ProjectHeaderProps {
 	project: Project;
@@ -30,6 +31,9 @@ const ProjectHeader = ({ project, sortedSkills }: ProjectHeaderProps) => {
 					</Button>
 				</a>
 				<h1 className="text-4xl sm:text-6xl font-extrabold">{project.title}</h1>
+				{project.id === "explotrack" && (
+					<FlagShip text={TRANSLATION[language].global.projectPanel.flagShip} />
+				)}
 				<p className="text-lg">{project.about}</p>
 				<div className="flex flex-wrap gap-4 text-sm font-light text-primary/50">
 					{sortedSkills.map((skill, i) => (

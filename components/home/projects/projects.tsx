@@ -1,6 +1,6 @@
 "use client";
 
-import ProjectPanel from "@/components/projectpanel";
+import ProjectPanel from "@/components/project/projectpanel/projectpanel";
 import Subtitle from "@/components/subtitle";
 import { Button } from "@/components/ui/button";
 import PROJECTS from "@/constants/projects/projects";

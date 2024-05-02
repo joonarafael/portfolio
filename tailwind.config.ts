@@ -68,6 +68,10 @@ const config = {
 				gradient: "gradient 12s linear infinite",
 				gradientBackground: "gradient 18s linear infinite",
 			},
+			boxShadow: {
+				light: "0 0 5px theme('colors.slate.500')",
+				neon: "0 0 5px theme('colors.violet.600'), 0 0 10px theme('colors.violet.800')",
+			},
 		},
 	},
 	plugins: [require("tailwindcss-animate")],

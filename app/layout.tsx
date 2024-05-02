@@ -4,10 +4,13 @@ import "./globals.css";
 import dynamic from "next/dynamic";
 import { Inter } from "next/font/google";
 
-import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/themeprovider";
 
 const Navbar = dynamic(() => import("../components/navbar/navbar"), {
+	ssr: false,
+});
+
+const Footer = dynamic(() => import("../components/footer"), {
 	ssr: false,
 });
 
