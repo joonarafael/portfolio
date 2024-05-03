@@ -33,14 +33,16 @@ const ProjectPanel = ({ project }: ProjectPanelProps) => {
 					/>
 				</div>
 				<div className="flex flex-col text-left gap-2 h-1/3 sm:h-1/2 rounded-b-xl p-2 sm:p-4">
-					<h3 className="text-xl sm:text-2xl font-bold group-hover:underline">
-						{project.title}
-					</h3>
-					{project.id === "explotrack" && (
-						<FlagShip
-							text={TRANSLATION[language].global.projectPanel.flagShip}
-						/>
-					)}
+					<div className="flex w-full justify-between flex-row sm:justify-start sm:flex-col gap-2">
+						<h3 className="text-xl sm:text-2xl font-bold group-hover:underline">
+							{project.title}
+						</h3>
+						{project.id === "explotrack" && (
+							<FlagShip
+								text={TRANSLATION[language].global.projectPanel.flagShip}
+							/>
+						)}
+					</div>
 					<p className="text-neutral-500 font-light text-sm sm:text-base">
 						{project.about}
 					</p>

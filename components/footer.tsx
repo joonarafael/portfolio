@@ -1,12 +1,12 @@
 "use client";
 
-import { RxGithubLogo } from 'react-icons/rx';
+import { RxGithubLogo } from "react-icons/rx";
 
-import { useTranslationStore } from '@/hooks/useTranslation';
-import TRANSLATION from '@/translations/translation';
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
 
-import Logo from './navbar/logo';
-import { Button } from './ui/button';
+import Logo from "./navbar/logo";
+import { Button } from "./ui/button";
 
 const Footer = () => {
 	const { language } = useTranslationStore();
@@ -16,7 +16,7 @@ const Footer = () => {
 			<div className="flex flex-col lg:flex-row items-center justify-center gap-2">
 				<Logo />
 				<p className="text-sm text-neutral-500 font-light text-center">
-					{TRANSLATION[language].global.footer.updated} 2024-05-02
+					{TRANSLATION[language].global.footer.updated} 2024-05-03
 				</p>
 			</div>
 			<div className="flex flex-col md:flex-row gap-2 items-center">
