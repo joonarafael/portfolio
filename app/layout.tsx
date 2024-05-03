@@ -10,6 +10,10 @@ const Navbar = dynamic(() => import("../components/navbar/navbar"), {
 	ssr: false,
 });
 
+const CookiesConsent = dynamic(() => import("../components/cookiesconsent"), {
+	ssr: false,
+});
+
 const Footer = dynamic(() => import("../components/footer"), {
 	ssr: false,
 });
@@ -40,6 +44,7 @@ export default async function RootLayout({
 						<div className="bg-background/95 flex flex-col gap-32 w-full pt-56 sm:pt-52 items-center">
 							{children}
 							<Footer />
+							<CookiesConsent />
 						</div>
 					</main>
 				</ThemeProvider>

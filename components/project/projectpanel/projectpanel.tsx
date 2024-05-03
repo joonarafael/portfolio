@@ -32,8 +32,8 @@ const ProjectPanel = ({ project }: ProjectPanelProps) => {
 						src={project.media}
 					/>
 				</div>
-				<div className="flex flex-col text-left gap-2 h-1/3 sm:h-1/2 rounded-b-xl p-4">
-					<h3 className="text-2xl font-bold group-hover:underline">
+				<div className="flex flex-col text-left gap-2 h-1/3 sm:h-1/2 rounded-b-xl p-2 sm:p-4">
+					<h3 className="text-xl sm:text-2xl font-bold group-hover:underline">
 						{project.title}
 					</h3>
 					{project.id === "explotrack" && (

@@ -1,12 +1,12 @@
 "use client";
 
-import { RxGithubLogo } from "react-icons/rx";
+import { RxGithubLogo } from 'react-icons/rx';
 
-import { useTranslationStore } from "@/hooks/useTranslation";
-import TRANSLATION from "@/translations/translation";
+import { useTranslationStore } from '@/hooks/useTranslation';
+import TRANSLATION from '@/translations/translation';
 
-import Logo from "./navbar/logo";
-import { Button } from "./ui/button";
+import Logo from './navbar/logo';
+import { Button } from './ui/button';
 
 const Footer = () => {
 	const { language } = useTranslationStore();

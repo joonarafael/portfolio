@@ -1,6 +1,16 @@
 const TRANSLATION = {
 	en: {
 		global: {
+			cookies: {
+				title: "Cookies",
+				description:
+					"This website uses cookies to ensure you get the best experience. Information about language and theme preferences are stored in cookies.",
+				buttons: {
+					accept: "Accept cookies",
+					acceptNecessary: "Accept necessary only",
+					decline: "Decline all cookies",
+				},
+			},
 			contact: {
 				btnTxt: "Contact me",
 				dialog: {
@@ -97,7 +107,7 @@ const TRANSLATION = {
 				new: "NEW",
 				dialog: {
 					title: "New project in mind?",
-					subtitle: "Tell me about it and let's see how we can proceed.",
+					subtitle: "Get in contact and let's discuss how to proceed.",
 					closeBtn: "Close",
 				},
 			},
@@ -151,6 +161,16 @@ const TRANSLATION = {
 	},
 	fi: {
 		global: {
+			cookies: {
+				title: "Evästeet",
+				description:
+					"Tämä verkkosivu hyödyntää evästeitä parhaan käyttökokemuksen varmistamiseksi. Tieto kielivalinnasta ja teemasta tallennetaan evästeisiin.",
+				buttons: {
+					accept: "Hyväksy evästeet",
+					acceptNecessary: "Hyväksy vain välttämättömät",
+					decline: "Kiellä kaikki evästeet",
+				},
+			},
 			contact: {
 				btnTxt: "Ota yhteyttä",
 				dialog: {
@@ -247,7 +267,7 @@ const TRANSLATION = {
 				new: "UUSI",
 				dialog: {
 					title: "Projekti mielessä?",
-					subtitle: "Ota yhteyttä ja katsotaan miten edettäisiin.",
+					subtitle: "Ota yhteyttä ja keskustellaan miten edettäisiin.",
 					closeBtn: "Sulje",
 				},
 			},
