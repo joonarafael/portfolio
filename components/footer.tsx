@@ -16,7 +16,7 @@ const Footer = () => {
 			<div className="flex flex-col lg:flex-row items-center justify-center gap-2">
 				<Logo />
 				<p className="text-sm text-neutral-500 font-light text-center">
-					{TRANSLATION[language].global.footer.updated} 2024-05-03
+					{TRANSLATION[language].global.footer.updated} 2024-05-06
 				</p>
 			</div>
 			<div className="flex flex-col md:flex-row gap-2 items-center">

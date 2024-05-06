@@ -285,7 +285,7 @@ const TRANSLATION = {
 			demoLink: {
 				btnText: "Tsekkaa live-projekti netissä",
 				explotrack: "Tsekkaa demo-projekti netissä",
-				deployedOn: "Projektin hostaaja",
+				deployedOn: "Projektin hostaa",
 			},
 			video: {
 				notWorking: {

@@ -33,7 +33,7 @@ const CookiesConsent = () => {
 	};
 
 	return (
-		<div className="fixed bottom-0 w-full bg-background">
+		<div className="fixed bottom-0 w-full bg-background z-[99]">
 			<div className="shadow-light dark:shadow-neon relative z-[100] flex w-full items-center justify-center flex-col gap-4 pt-8 pb-8 md:pb-16 px-4 border-t">
 				<div className="flex flex-row gap-3 items-center">
 					<RxCookie className="w-8 h-8 text-foreground" />

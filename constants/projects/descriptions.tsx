@@ -7,7 +7,7 @@ export const EXPLOTRACK_DESCRIPTION = () => {
 				database. The application is a bookkeeping tool for a company that keeps
 				track of company orders and the flow and transactions of explosive
 				products. The application includes user authentication, extensive
-				logging, and advanced middleware.
+				logging (with PostHog), and advanced middleware.
 				<br />
 				<br />
 				With this project, I&apos;ve really tried to understand various security
