@@ -40,7 +40,7 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 			</div>
 			<div>
 				{project.id === "explotrack" ? (
-					<a href={`https://www.google.com`} target="_blank">
+					<a href={`https://explotrack-demo.vercel.app/`} target="_blank">
 						<Button className="items-center gap-1 text-md w-full text-black bg-white hover:bg-white/80">
 							<VscGlobe className="w-5 h-5" />
 							<p>{TRANSLATION[language].project.learnMore.private.btnText}</p>
