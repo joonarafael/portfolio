@@ -21,7 +21,7 @@ const AboutMe = () => {
 				</div>
 				<div className="text-left flex flex-col gap-3">
 					<h2 className="font-bold text-3xl">
-						Enthusiastic problem-solver dedicated to web development
+						{TRANSLATION[language].index.aboutme.subtitle}
 					</h2>
 					<p>
 						Over the past year, I&apos;ve delved deep into web development,

@@ -36,9 +36,7 @@ const Title = () => {
 						Joona Kettunen,
 					</h1>
 					<p className="text-xl">
-						a passionate computer science student dedicated to mastering
-						cutting-edge technologies and shaping the future as a skilled
-						problem-solver and worker of the digital age.
+						{TRANSLATION[language].index.title.header.subtitle}
 					</p>
 				</div>
 				<Dialog>

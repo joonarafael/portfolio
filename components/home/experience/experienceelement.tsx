@@ -5,6 +5,8 @@ import { FiLink, FiMinusCircle, FiPlusCircle } from "react-icons/fi";
 import { SiGooglemaps } from "react-icons/si";
 
 import { Button } from "@/components/ui/button";
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
 import { Experience } from "@/types";
 
 interface ExperienceElementProps {
@@ -16,6 +18,7 @@ const ExperienceElement = ({
 	experience,
 	initialExpand,
 }: ExperienceElementProps) => {
+	const { language } = useTranslationStore();
 	const [expand, setExpand] = useState(initialExpand);
 
 	const { title, company, from, to, location, href, description, skills } =
@@ -41,7 +44,7 @@ const ExperienceElement = ({
 				</div>
 				<div className="flex flex-row gap-4 items-center">
 					<p className="hidden sm:block">
-						{from} - {to ?? "Present"}
+						{from} - {to ?? TRANSLATION[language].index.experience.present}
 					</p>
 					{expand ? (
 						<Button
@@ -68,7 +71,7 @@ const ExperienceElement = ({
 				<div className="border-t flex flex-col justify-start items-start pt-4 gap-4 text-left">
 					<div className="block sm:hidden border-b w-full pb-4">
 						<p>
-							{from} - {to ?? "Present"}
+							{from} - {to ?? TRANSLATION[language].index.experience.present}
 						</p>
 					</div>
 					<div className="flex items-start justify-start flex-col sm:flex-row gap-2 sm:gap-4">

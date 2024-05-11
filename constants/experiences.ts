@@ -4,7 +4,7 @@ const EXPERIENCES: Experience[] = [
 	{
 		title: "Software Developer",
 		company: "Freelancer",
-		from: "Jan 2024",
+		from: "01/2024",
 		href: "https://joonakettunen.netlify.app",
 		to: null,
 		location: "Helsinki, Finland",

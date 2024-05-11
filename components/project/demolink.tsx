@@ -21,6 +21,9 @@ const DemoLink = ({ project }: DemoLinkProps) => {
 			target="_blank"
 			className="cursor-pointer group flex flex-col items-center justify-center gap-2 border p-2 rounded-xl bg-background h-min border-black dark:border-purple-500 w-full xl:w-min"
 		>
+			{project.id === "explotrack" && language === "en" && (
+				<p className="font-light">NOTE: The project is in Finnish.</p>
+			)}
 			<img
 				className="object-contain brightness-75 duration-500 group-hover:brightness-100 group-hover:duration-200 pointer-events-none max-h-[240px] rounded-xl hidden xl:block"
 				src={project.thumbnail ?? ""}

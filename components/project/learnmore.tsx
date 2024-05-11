@@ -16,7 +16,7 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 	const { language } = useTranslationStore();
 
 	return (
-		<div className="flex flex-col lg:flex-row justify-between min-h-50 items-center gradient-background animate-gradientBackground rounded-xl p-16 w-full backdrop-blur-lg gap-4">
+		<div className="flex flex-col lg:flex-row justify-between min-h-48 items-center gradient-background animate-gradientBackground rounded-xl px-16 w-full backdrop-blur-lg gap-4">
 			<div className="text-white text-center lg:text-left">
 				{project.id === "explotrack" ? (
 					<>
@@ -40,12 +40,19 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 			</div>
 			<div>
 				{project.id === "explotrack" ? (
-					<a href={`https://explotrack-demo.vercel.app/`} target="_blank">
-						<Button className="items-center gap-1 text-md w-full text-black bg-white hover:bg-white/80">
-							<VscGlobe className="w-5 h-5" />
-							<p>{TRANSLATION[language].project.learnMore.private.btnText}</p>
-						</Button>
-					</a>
+					<div className="flex flex-col gap-2">
+						{project.id === "explotrack" && language === "en" && (
+							<p className="font-light text-white">
+								NOTE: The project is in Finnish.
+							</p>
+						)}
+						<a href={`https://explotrack-demo.vercel.app/`} target="_blank">
+							<Button className="items-center gap-1 text-md w-full text-black bg-white hover:bg-white/80">
+								<VscGlobe className="w-5 h-5" />
+								<p>{TRANSLATION[language].project.learnMore.private.btnText}</p>
+							</Button>
+						</a>
+					</div>
 				) : (
 					<a
 						href={`https://github.com/joonarafael/${project.id}`}

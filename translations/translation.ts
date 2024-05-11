@@ -39,10 +39,12 @@ const TRANSLATION = {
 		index: {
 			aboutme: {
 				title: "ABOUT ME",
+				subtitle: "Enthusiastic problem-solver dedicated to web development",
 			},
 			experience: {
 				title: "EXPERIENCE",
 				header: "Quick summary of my most recent experiences",
+				present: "Present",
 			},
 			newproject: {
 				title: "CONTACT",
@@ -199,10 +201,13 @@ const TRANSLATION = {
 		index: {
 			aboutme: {
 				title: "LYHYESTI",
+				subtitle:
+					"Motivoitunut web-kehitykseen erikoistunut ongelmanratkaisija",
 			},
 			experience: {
 				title: "TYÖKOKEMUS",
 				header: "Lyhyt luettelo viimeisistä työkokemuksistani",
+				present: "Nykyhetki",
 			},
 			newproject: {
 				title: "OTA YHTEYTTÄ",
@@ -234,7 +239,7 @@ const TRANSLATION = {
 				header: {
 					hello: "Hei, olen",
 					subtitle:
-						"a passionate computer science student dedicated to mastering cutting-edge technologies and shaping the future as a skilled problem-solver and worker of the digital age.",
+						"omistautunut tietojenkäsittelytieteen opiskelija, joka pyrkii hallitsemaan viimeisimpiä teknologioita ja muokkaamaan tulevaisuutta taitavana ongelmanratkaisijana ja digiajan työntekijänä.",
 				},
 				messageBtn: {
 					btnTxt: "Lähetä minulle viesti",
