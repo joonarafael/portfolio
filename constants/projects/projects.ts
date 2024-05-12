@@ -15,8 +15,6 @@ const PROJECTS: Project[] = [
 		media: DROPBOX_CONTENT.media_todo,
 		mediaDescription: "The correct video has not yet been added.",
 		title: "Explotrack",
-		deployedOn: "Vercel",
-		href: "https://explotrack-demo.vercel.app/",
 		date: "05/2024",
 		thumbnail: DROPBOX_CONTENT.thumbnail_explotrack,
 		id: "explotrack",

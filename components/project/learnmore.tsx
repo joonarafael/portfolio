@@ -8,6 +8,8 @@ import { useTranslationStore } from "@/hooks/useTranslation";
 import TRANSLATION from "@/translations/translation";
 import { Project } from "@/types";
 
+import ContactButton from "../navbar/contact";
+
 interface ProjectLearnMoreProps {
 	project: Project;
 }
@@ -40,19 +42,9 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 			</div>
 			<div>
 				{project.id === "explotrack" ? (
-					<div className="flex flex-col gap-2">
-						{project.id === "explotrack" && language === "en" && (
-							<p className="font-light text-white">
-								NOTE: The project is in Finnish.
-							</p>
-						)}
-						<a href={`https://explotrack-demo.vercel.app/`} target="_blank">
-							<Button className="items-center gap-1 text-md w-full text-black bg-white hover:bg-white/80">
-								<VscGlobe className="w-5 h-5" />
-								<p>{TRANSLATION[language].project.learnMore.private.btnText}</p>
-							</Button>
-						</a>
-					</div>
+					<ContactButton
+						btnTxt={TRANSLATION[language].project.learnMore.private.btnText}
+					/>
 				) : (
 					<a
 						href={`https://github.com/joonarafael/${project.id}`}

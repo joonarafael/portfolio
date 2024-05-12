@@ -132,7 +132,7 @@ const TRANSLATION = {
 			video: {
 				notWorking: {
 					title: "Video not working?",
-					btnText: "Open the video on Dropbox",
+					btnText: "Open the video in Dropbox",
 				},
 				smallScreen: {
 					title: "You are viewing this video on a really small screen!",
@@ -146,8 +146,9 @@ const TRANSLATION = {
 			learnMore: {
 				private: {
 					header: "Unfortunately the source code is private.",
-					subtitle: "You may still check the clone up and running on the web!",
-					btnText: "Check the demo project on web",
+					subtitle:
+						"I'll still be happy to answer any questions you might have!",
+					btnText: "Contact me fore more info",
 				},
 				public: {
 					header: "Want to learn more about this project?",
@@ -309,8 +310,8 @@ const TRANSLATION = {
 			learnMore: {
 				private: {
 					header: "Valitettavasti projektin lähdekoodi on yksityinen.",
-					subtitle: "Voit silti tsekata demo-projektin netissä!",
-					btnText: "Tsekkaa demo-projekti netissä",
+					subtitle: "Vastaan silti mielelläni kaikkiin kysymyksiin!",
+					btnText: "Ota yhteyttä ja kysy lisää",
 				},
 				public: {
 					header: "Haluaisitko tietää projektista vielä lisää?",

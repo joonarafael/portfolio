@@ -19,7 +19,11 @@ import TRANSLATION from "@/translations/translation";
 
 import { Button } from "../ui/button";
 
-const ContactButton = () => {
+interface ContactButtonProps {
+	btnTxt?: string;
+}
+
+const ContactButton = ({ btnTxt }: ContactButtonProps) => {
 	const { language } = useTranslationStore();
 
 	return (
@@ -29,7 +33,7 @@ const ContactButton = () => {
 					variant="ghost"
 					className="bg-purple-500 text-white hover:bg-purple-500/75 hover:text-white/75"
 				>
-					<p>{TRANSLATION[language].global.contact.btnTxt}</p>
+					<p>{btnTxt ?? TRANSLATION[language].global.contact.btnTxt}</p>
 				</Button>
 			</DialogTrigger>
 			<DialogContent className="sm:max-w-md">
