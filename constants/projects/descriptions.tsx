@@ -13,8 +13,8 @@ export const EXPLOTRACK_DESCRIPTION = () => {
 				With this project, I&apos;ve really tried to understand various security
 				aspects of web development. I&apos;ve learned a lot about fullstack
 				development; how to handle production databases, how to manage sessions
-				client-side but also perform appropriate validations server-side, how to
-				validate user input, email verifications, etc.
+				client-side but also perform appropriate session authentication
+				server-side, how to validate user input, email verifications, etc.
 			</p>
 		</div>
 	);

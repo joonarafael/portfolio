@@ -1,19 +1,16 @@
-import DROPBOX_CONTENT from "@/constants/dropboxcontent";
-import { Project } from "@/types";
+import DROPBOX_CONTENT from '@/constants/dropboxcontent';
+import { Project } from '@/types';
 
 import {
-	BLASTCALC_DESCRIPTION,
-	EXPLOTRACK_DESCRIPTION,
-	FLAGGAME_DESCRIPTION,
-	SPOTISAVER_DESCRIPTION,
-	TIIRASCRAPER_DESCRIPTION,
-	VISUALPATHFINDER_DESCRIPTION,
-} from "./descriptions";
+    BLASTCALC_DESCRIPTION, EXPLOTRACK_DESCRIPTION, FLAGGAME_DESCRIPTION, SPOTISAVER_DESCRIPTION,
+    TIIRASCRAPER_DESCRIPTION, VISUALPATHFINDER_DESCRIPTION
+} from './descriptions';
 
 const PROJECTS: Project[] = [
 	{
-		media: DROPBOX_CONTENT.media_todo,
-		mediaDescription: "The correct video has not yet been added.",
+		media: DROPBOX_CONTENT.media_explotrack,
+		mediaDescription:
+			"The web application was built to be responsive and accessible. The user interface is clean and easy to use on mobile devices as well. Fine-tuning of the user experience was done closely with the customer to ensure the best possible outcome.",
 		title: "Explotrack",
 		date: "05/2024",
 		thumbnail: DROPBOX_CONTENT.thumbnail_explotrack,

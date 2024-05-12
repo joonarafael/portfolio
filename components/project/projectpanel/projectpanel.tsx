@@ -21,7 +21,7 @@ const ProjectPanel = ({ project }: ProjectPanelProps) => {
 				}`}
 			>
 				<div className="relative flex h-2/3 sm:h-1/2 bg-primary text-rose-500 rounded-t-xl items-center justify-center">
-					<div className="absolute z-40 rounded-xl w-full h-full shadow-[0_0_80px_rgba(0,0,0,0.3)_inset] left-0 top-0"></div>
+					<div className="absolute z-40 rounded-t-xl w-full h-full shadow-[0_0_80px_rgba(0,0,0,0.3)_inset] left-0 top-0"></div>
 					<div className="absolute z-0">LOADING VIDEO...</div>
 					<video
 						autoPlay

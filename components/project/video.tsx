@@ -1,8 +1,8 @@
 "use client";
 
-import { useTranslationStore } from "@/hooks/useTranslation";
-import TRANSLATION from "@/translations/translation";
-import { Project } from "@/types";
+import { useTranslationStore } from '@/hooks/useTranslation';
+import TRANSLATION from '@/translations/translation';
+import { Project } from '@/types';
 
 interface ProjectVideoProps {
 	project: Project;
