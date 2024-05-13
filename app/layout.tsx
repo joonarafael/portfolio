@@ -4,17 +4,19 @@ import "./globals.css";
 import dynamic from "next/dynamic";
 import { Inter } from "next/font/google";
 
-import { ThemeProvider } from "@/components/themeprovider";
-
-const Navbar = dynamic(() => import("../components/navbar/navbar"), {
-	ssr: false,
-});
-
 const CookiesConsent = dynamic(() => import("../components/cookiesconsent"), {
 	ssr: false,
 });
 
 const Footer = dynamic(() => import("../components/footer"), {
+	ssr: false,
+});
+
+const Navbar = dynamic(() => import("../components/navbar/navbar"), {
+	ssr: false,
+});
+
+const ThemeProvider = dynamic(() => import("../components/themeprovider"), {
 	ssr: false,
 });
 

@@ -5,10 +5,10 @@ import { ThemeProviderProps } from "next-themes/dist/types";
 
 import { useCookies } from "@/hooks/useCookies";
 
-export function ThemeProvider({
+const ThemeProvider = ({
 	children,
 	...props
-}: Readonly<ThemeProviderProps>) {
+}: Readonly<ThemeProviderProps>) => {
 	const cookieState = useCookies();
 
 	if (
@@ -19,4 +19,6 @@ export function ThemeProvider({
 	}
 
 	return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
-}
+};
+
+export default ThemeProvider;
