@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import { RxCookie } from "react-icons/rx";
 
+import { useCookies } from "@/hooks/useCookies";
 import { useTranslationStore } from "@/hooks/useTranslation";
 import TRANSLATION from "@/translations/translation";
 
@@ -12,24 +12,25 @@ const CookiesConsent = () => {
 	const { language } = useTranslationStore();
 
 	const consent = localStorage.getItem("cookies");
-	const [hide, setHide] = useState(false);
+	const cookieState = useCookies();
 
-	if (consent || hide) {
+	if (consent) {
 		return null;
 	}
 
 	const acceptCookies = () => {
 		localStorage.setItem("cookies", "accepted");
-		setHide(true);
+		cookieState.setCookies("accepted");
 	};
 
 	const declineUnnecessary = () => {
 		localStorage.setItem("cookies", "necessary");
-		setHide(true);
+		cookieState.setCookies("necessary");
 	};
 
 	const declineCookies = () => {
-		window.open("https://www.google.com", "_self");
+		localStorage.setItem("cookies", "declined");
+		cookieState.setCookies("declined");
 	};
 
 	return (

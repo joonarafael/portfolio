@@ -18,7 +18,7 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 	const { language } = useTranslationStore();
 
 	return (
-		<div className="flex flex-col lg:flex-row justify-between min-h-48 items-center gradient-background animate-gradientBackground rounded-xl px-16 w-full backdrop-blur-lg gap-4">
+		<div className="flex flex-col lg:flex-row justify-between min-h-48 items-center gradient-background animate-gradientBackground rounded-xl py-16 lg:py-0 lg:px-16 w-full backdrop-blur-lg gap-4">
 			<div className="text-white text-center lg:text-left">
 				{project.id === "explotrack" ? (
 					<>

@@ -14,6 +14,12 @@ export const useTranslationStore = create<TranslationState>((set) => ({
 		return "en";
 	})(),
 	setLanguage: (language: "en" | "fi") => {
+		const consent = localStorage.getItem("cookies");
+
+		if (consent !== "accepted" && consent !== "necessary") {
+			return;
+		}
+
 		set({ language });
 		localStorage.setItem("language", language);
 	},
