@@ -2,14 +2,19 @@ import { Experience } from "@/types";
 
 const EXPERIENCES: Experience[] = [
 	{
-		title: "Software Developer",
+		title: {
+			en: "Software Developer",
+			fi: "Ohjelmistokehittäjä",
+		},
 		company: "Freelancer",
 		from: "01/2024",
 		href: "https://joonakettunen.netlify.app",
 		to: null,
 		location: "Helsinki, Finland",
-		description:
-			"(Alongside studies) Building websites and web applications for real clients using modern web development technologies.",
+		description: {
+			en: "(Alongside studies) Building websites and web applications for real clients using modern web development technologies.",
+			fi: "(Opintojen ohella) Verkkosivujen ja web-sovellusten rakentamista oikeille asiakkaille käyttäen moderneja web-kehitysteknologioita.",
+		},
 		skills: [
 			{
 				name: "TypeScript",

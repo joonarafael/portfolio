@@ -39,7 +39,7 @@ const ExperienceElement = ({
 				className="flex flex-row w-full justify-between items-center"
 			>
 				<div className="flex flex-wrap gap-2 text-left items-center">
-					<h1 className="text-lg font-bold">{title}</h1>
+					<h1 className="text-lg font-bold">{title[language]}</h1>
 					<h2 className="text-lg font-light">@ {company}</h2>
 				</div>
 				<div className="flex flex-row gap-4 items-center">
@@ -93,7 +93,7 @@ const ExperienceElement = ({
 						)}
 					</div>
 					<div>
-						<p>{description}</p>
+						<p>{description[language]}</p>
 					</div>
 					<div className="flex flex-wrap gap-3 text-neutral-500 text-xs font-light">
 						{skills.map((skill, i) => (

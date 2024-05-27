@@ -11,6 +11,11 @@ const TRANSLATION = {
 					decline: "Decline all cookies",
 				},
 			},
+			cookiesPreferences: {
+				title: "Cookies preferences",
+				description:
+					"Accept necessary cookies to enable language and theme switching. To participate in analytics, accept all cookies.",
+			},
 			contact: {
 				btnTxt: "Contact me",
 				dialog: {
@@ -173,6 +178,11 @@ const TRANSLATION = {
 					acceptNecessary: "Hyväksy vain välttämättömät",
 					decline: "Kiellä kaikki evästeet",
 				},
+			},
+			cookiesPreferences: {
+				title: "Evästeasetukset",
+				description:
+					"Välttämättömät evästeet tarvitaan kielen ja teeman vaihtoon. Sivuston käytöstä kerätään analytiikkaa, mikäli hyväksyt kaikki evästeet.",
 			},
 			contact: {
 				btnTxt: "Ota yhteyttä",

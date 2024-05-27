@@ -4,13 +4,19 @@ export type Skill = {
 };
 
 export type Experience = {
-	title: string;
+	title: {
+		en: string;
+		fi: string;
+	};
 	company: string;
 	location: string;
 	href?: string | null;
 	from: string;
 	to?: string | null;
-	description: string;
+	description: {
+		en: string;
+		fi: string;
+	};
 	skills: Skill[];
 };
 
