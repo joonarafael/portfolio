@@ -71,6 +71,10 @@ const SKILLS: Skill[] = [
 		name: "Dependabot",
 		icon: "https://img.shields.io/badge/Dependabot-informational?style=for-the-badge&color=black&logo=dependabot&logoColor=blue",
 	},
+	{
+		name: "Docker",
+		icon: "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&color=black",
+	},
 ];
 
 export default SKILLS;
