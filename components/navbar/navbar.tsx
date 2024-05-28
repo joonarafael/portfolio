@@ -1,5 +1,7 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+
 import { useCookies } from "@/hooks/useCookies";
 
 import ContactButton from "./contact";
@@ -11,6 +13,7 @@ import ThemeSwitch from "./themeswitch";
 
 const Navbar = () => {
 	const cookieState = useCookies();
+	const pathName = usePathname();
 
 	return (
 		<div className="z-50 pointer-events-none p-12 group fixed flex w-full justify-center items-center bg-gradient-to-b from-background to-transparent">
@@ -21,12 +24,11 @@ const Navbar = () => {
 						<CookiesPreferences />
 					</div>
 				</div>
-				{typeof window !== "undefined" &&
-					!window.location.href.includes("projects") && (
-						<div className="hidden lg:block">
-							<Shortcuts />
-						</div>
-					)}
+				{typeof window !== "undefined" && !pathName.includes("projects") && (
+					<div className="hidden lg:block">
+						<Shortcuts />
+					</div>
+				)}
 				<div className="flex flex-row gap-2">
 					{cookieState.cookies !== "declined" && (
 						<>
