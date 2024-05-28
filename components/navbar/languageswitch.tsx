@@ -35,7 +35,7 @@ const LanguageSwitch = () => {
 					EN
 				</DropdownMenuItem>
 				<DropdownMenuItem onClick={() => handleLanguageSwitch("fi")}>
-					FI (WIP)
+					FI
 				</DropdownMenuItem>
 			</DropdownMenuContent>
 		</DropdownMenu>

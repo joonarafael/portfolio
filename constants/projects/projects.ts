@@ -1,14 +1,12 @@
-import DROPBOX_CONTENT from "@/constants/dropboxcontent";
-import { Project } from "@/types";
+import DROPBOX_CONTENT from '@/constants/dropboxcontent';
+import { Project } from '@/types';
 
 import {
-	BLASTCALC_DESCRIPTION,
-	EXPLOTRACK_DESCRIPTION,
-	FLAGGAME_DESCRIPTION,
-	SPOTISAVER_DESCRIPTION,
-	TIIRASCRAPER_DESCRIPTION,
-	VISUALPATHFINDER_DESCRIPTION,
-} from "./descriptions";
+    BLASTCALC_DESCRIPTION_EN, BLASTCALC_DESCRIPTION_FI, EXPLOTRACK_DESCRIPTION_EN,
+    EXPLOTRACK_DESCRIPTION_FI, FLAGGAME_DESCRIPTION_EN, FLAGGAME_DESCRIPTION_FI,
+    SPOTISAVER_DESCRIPTION_EN, SPOTISAVER_DESCRIPTION_FI, TIIRASCRAPER_DESCRIPTION_EN,
+    TIIRASCRAPER_DESCRIPTION_FI, VISUALPATHFINDER_DESCRIPTION_EN, VISUALPATHFINDER_DESCRIPTION_FI
+} from './descriptions';
 
 const PROJECTS: Project[] = [
 	{
@@ -25,7 +23,10 @@ const PROJECTS: Project[] = [
 			en: "Service to track and monitor explosives usage.",
 			fi: "Kirjanpitojärjestelmä räjähteiden seurantaan ja jäljittämiseen.",
 		},
-		description: EXPLOTRACK_DESCRIPTION(),
+		description: {
+			en: EXPLOTRACK_DESCRIPTION_EN(),
+			fi: EXPLOTRACK_DESCRIPTION_FI(),
+		},
 		skills: [
 			{
 				name: "TypeScript",
@@ -85,7 +86,10 @@ const PROJECTS: Project[] = [
 			en: "Service to analyze and export Spotify playlists.",
 			fi: "Palvelu Spotify-soittolistojen analysointiin ja vientiin.",
 		},
-		description: SPOTISAVER_DESCRIPTION(),
+		description: {
+			en: SPOTISAVER_DESCRIPTION_EN(),
+			fi: SPOTISAVER_DESCRIPTION_FI(),
+		},
 		skills: [
 			{
 				name: "TypeScript",
@@ -141,7 +145,10 @@ const PROJECTS: Project[] = [
 			en: "A visual pathfinding tool to compare three different pathfinding algorithms.",
 			fi: "Visuaalinen reitinhakutyökalu, jolla voi vertailla kolmea eri reitinhakualgoritmia.",
 		},
-		description: VISUALPATHFINDER_DESCRIPTION(),
+		description: {
+			en: VISUALPATHFINDER_DESCRIPTION_EN(),
+			fi: VISUALPATHFINDER_DESCRIPTION_FI(),
+		},
 		skills: [
 			{
 				name: "TypeScript",
@@ -190,7 +197,10 @@ const PROJECTS: Project[] = [
 			en: "Python web scraper to scrape, filter and process bird observations from Tiira.fi.",
 			fi: "Web-scraper lintuhavaintojen keräämiseen, suodattamiseen ja käsittelyyn.",
 		},
-		description: TIIRASCRAPER_DESCRIPTION(),
+		description: {
+			en: TIIRASCRAPER_DESCRIPTION_EN(),
+			fi: TIIRASCRAPER_DESCRIPTION_FI(),
+		},
 		skills: [
 			{
 				name: "GitHub Actions",
@@ -222,7 +232,10 @@ const PROJECTS: Project[] = [
 			en: "Application to create blasting circuit diagrams and calculate detonation delays.",
 			fi: "Sovellus räjähdysviiveiden laskemiseen ja kenttäkorttien luomiseen.",
 		},
-		description: BLASTCALC_DESCRIPTION(),
+		description: {
+			en: BLASTCALC_DESCRIPTION_EN(),
+			fi: BLASTCALC_DESCRIPTION_FI(),
+		},
 		skills: [
 			{
 				name: "GitHub Actions",
@@ -283,7 +296,10 @@ const PROJECTS: Project[] = [
 			en: "Game built with Python and the Tkinter library.",
 			fi: "Peli rakennettu Pythonilla ja Tkinter-kirjastolla.",
 		},
-		description: FLAGGAME_DESCRIPTION(),
+		description: {
+			en: FLAGGAME_DESCRIPTION_EN(),
+			fi: FLAGGAME_DESCRIPTION_FI(),
+		},
 		skills: [
 			{
 				name: "GitHub Actions",

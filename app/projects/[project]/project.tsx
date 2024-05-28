@@ -44,7 +44,7 @@ const ProjectClient = ({ id }: ProjectProps) => {
 					<h2 className="font-bold text-2xl">
 						{TRANSLATION[language].project.description.title}
 					</h2>
-					<span>{project.description}</span>
+					<span>{project.description[language]}</span>
 				</div>
 				<ProjectLearnMore project={project} />
 				<ProjectNavbar currentProject={project.id} />

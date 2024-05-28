@@ -35,7 +35,10 @@ export type Project = {
 		en: string;
 		fi: string;
 	};
-	description: React.ReactNode;
+	description: {
+		en: React.ReactNode;
+		fi: React.ReactNode;
+	};
 	skills: Skill[];
 	date: string;
 };
