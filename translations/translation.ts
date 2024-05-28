@@ -277,7 +277,7 @@ const TRANSLATION = {
 			footer: {
 				title:
 					"Löydä kaikki projektini ja lähdekoodi tälle portfolio-nettisivulle GitHubistani!",
-				btnText: "Näytä GitHub-profiilini",
+				btnText: "Avaa GitHub-profiilini",
 			},
 			newProject: {
 				new: "UUSI",
@@ -331,7 +331,7 @@ const TRANSLATION = {
 				},
 			},
 			navbar: {
-				title: "Katso myös muita projekteja!",
+				title: "Tutustu myös muihin projekteihin!",
 			},
 		},
 	},

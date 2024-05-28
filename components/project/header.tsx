@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { IoIosArrowDropleft } from "react-icons/io";
 import { RxGithubLogo } from "react-icons/rx";
 import { TbForbid2 } from "react-icons/tb";
@@ -17,24 +18,29 @@ interface ProjectHeaderProps {
 }
 
 const ProjectHeader = ({ project, sortedSkills }: ProjectHeaderProps) => {
+	const router = useRouter();
 	const { language } = useTranslationStore();
 
 	return (
 		<div className="flex gap-6 flex-col lg:flex-row w-full">
 			<div className="flex flex-col gap-8 text-left w-full">
-				<a href="/projects" className="w-fit">
-					<Button variant="outline" className="w-fit items-center gap-2">
-						<IoIosArrowDropleft className="w-5 h-5" />
-						<p>
-							{TRANSLATION[language].project.header.backToProjectsBtn.btnText}
-						</p>
-					</Button>
-				</a>
+				<Button
+					onClick={() => {
+						router.push("/projects");
+					}}
+					variant="outline"
+					className="w-fit items-center gap-2"
+				>
+					<IoIosArrowDropleft className="w-5 h-5" />
+					<p>
+						{TRANSLATION[language].project.header.backToProjectsBtn.btnText}
+					</p>
+				</Button>
 				<h1 className="text-4xl sm:text-6xl font-extrabold">{project.title}</h1>
 				{project.id === "explotrack" && (
 					<FlagShip text={TRANSLATION[language].global.projectPanel.flagShip} />
 				)}
-				<p className="text-lg">{project.about}</p>
+				<p className="text-lg">{project.about[language]}</p>
 				<div className="flex flex-wrap gap-4 text-sm font-light text-primary/50">
 					{sortedSkills.map((skill, i) => (
 						<p key={i}>{skill.name}</p>

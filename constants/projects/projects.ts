@@ -1,21 +1,30 @@
-import DROPBOX_CONTENT from '@/constants/dropboxcontent';
-import { Project } from '@/types';
+import DROPBOX_CONTENT from "@/constants/dropboxcontent";
+import { Project } from "@/types";
 
 import {
-    BLASTCALC_DESCRIPTION, EXPLOTRACK_DESCRIPTION, FLAGGAME_DESCRIPTION, SPOTISAVER_DESCRIPTION,
-    TIIRASCRAPER_DESCRIPTION, VISUALPATHFINDER_DESCRIPTION
-} from './descriptions';
+	BLASTCALC_DESCRIPTION,
+	EXPLOTRACK_DESCRIPTION,
+	FLAGGAME_DESCRIPTION,
+	SPOTISAVER_DESCRIPTION,
+	TIIRASCRAPER_DESCRIPTION,
+	VISUALPATHFINDER_DESCRIPTION,
+} from "./descriptions";
 
 const PROJECTS: Project[] = [
 	{
 		media: DROPBOX_CONTENT.media_explotrack,
-		mediaDescription:
-			"The web application was built to be responsive and accessible. The user interface is clean and easy to use on mobile devices as well. Fine-tuning of the user experience was done closely with the customer to ensure the best possible outcome.",
+		mediaDescription: {
+			en: "The web application was built to be responsive and accessible. The user interface is clean and easy to use on mobile devices as well. Fine-tuning of the user experience was done closely with the customer to ensure the best possible outcome.",
+			fi: "Web-applikaatio rakennettiin responsiiviseksi ja helppokäyttöiseksi. Käyttöliittymä on moderni ja yksinkertainen, ja sitä on mukava käyttää myös mobiililaitteilla. Käyttökokemuksen hienosäätö tehtiin tiiviissä yhteistyössä asiakkaan kanssa parhaan mahdollisen lopputuloksen saavuttamiseksi.",
+		},
 		title: "Explotrack",
 		date: "05/2024",
 		thumbnail: DROPBOX_CONTENT.thumbnail_explotrack,
 		id: "explotrack",
-		about: "Completed fullstack project built with a real customer.",
+		about: {
+			en: "Service to track and monitor explosives usage.",
+			fi: "Kirjanpitojärjestelmä räjähteiden seurantaan ja jäljittämiseen.",
+		},
 		description: EXPLOTRACK_DESCRIPTION(),
 		skills: [
 			{
@@ -62,15 +71,20 @@ const PROJECTS: Project[] = [
 	},
 	{
 		media: DROPBOX_CONTENT.media_spotisaver,
-		mediaDescription:
-			"More analyzing tools are coming in the future, but already the user is provided with a lot of information. What comes to exporting, both a more simpler and concise version, as well as a highly detailed one, can be downloaded.",
+		mediaDescription: {
+			en: "More analyzing tools are coming in the future, but already the user is provided with a lot of information. What comes to exporting, both a more simpler and concise version, as well as a highly detailed one, can be downloaded.",
+			fi: "Lisää analysointityökaluja on vielä tulossa, mutta jo nyt käyttäjä saa paljon relevanttia tietoa soittolistoistaan. Mitä tulee soittolistojen vientiin, on listasta mahdollista ladata sekä tiivistetty että erittäin yksityiskohtainen versio.",
+		},
 		href: "https://spotisaver.vercel.app",
 		thumbnail: DROPBOX_CONTENT.thumbnail_spotisaver,
 		deployedOn: "Vercel",
 		date: "04/2024",
 		title: "Spotisaver",
 		id: "spotisaver",
-		about: "Service to analyze and export Spotify playlists.",
+		about: {
+			en: "Service to analyze and export Spotify playlists.",
+			fi: "Palvelu Spotify-soittolistojen analysointiin ja vientiin.",
+		},
 		description: SPOTISAVER_DESCRIPTION(),
 		skills: [
 			{
@@ -113,16 +127,20 @@ const PROJECTS: Project[] = [
 	},
 	{
 		media: DROPBOX_CONTENT.media_visualpathfinder,
-		mediaDescription:
-			"The smaller map is interactive and shows the pathfinding result. So-called 'virtual maps' are non-interactive, and won't display any results. However, they are vastly larger and therefore yield more interesting results.",
+		mediaDescription: {
+			en: "The smaller map is interactive and shows the pathfinding result. So-called 'virtual maps' are non-interactive, and won't display any results. However, they are vastly larger and therefore yield more interesting results.",
+			fi: "Pienempi kartta on interaktiivinen ja siinä näkyy reitinhakutulokset. Niin sanotut 'virtuaalikartat' eivät ole interaktiivisia eivätkä näytä tuloksia, mutta ne ovat huomattavasti suurempia ja siksi tulosten kannalta ehkä mielenkiintoisempia.",
+		},
 		href: "https://visualpathfinder-production.up.railway.app/",
 		thumbnail: DROPBOX_CONTENT.thumbnail_visualpathfinder,
 		date: "03/2024",
 		deployedOn: "Railway App",
 		title: "Visual Pathfinder",
 		id: "visualpathfinder",
-		about:
-			"A visual pathfinding tool to compare three different pathfinding algorithms.",
+		about: {
+			en: "A visual pathfinding tool to compare three different pathfinding algorithms.",
+			fi: "Visuaalinen reitinhakutyökalu, jolla voi vertailla kolmea eri reitinhakualgoritmia.",
+		},
 		description: VISUALPATHFINDER_DESCRIPTION(),
 		skills: [
 			{
@@ -161,13 +179,17 @@ const PROJECTS: Project[] = [
 	},
 	{
 		media: DROPBOX_CONTENT.media_tiirascraper,
-		mediaDescription:
-			"The scraper is used through the command line. It's built as a server, so it can be left to run for as long as needed. Also note the utilization of the custom configuration files for filtering.",
+		mediaDescription: {
+			en: "The scraper is used through the command line. It's built as a server, so it can be left to run for as long as needed. Also note the utilization of the custom configuration files for filtering.",
+			fi: "Scraper käynnistetään komentoriviltä. Se on rakennettu palvelimeksi, joten sen voi jättää pyörimään niin pitkäksi aikaa kuin tarvitaan. Räätälöityjä konfiguraatiotiedostoja käytetään havaintojen personoituun suodattamiseen.",
+		},
 		id: "tiirascraper",
 		date: "04/2024",
 		title: "Tiirascraper",
-		about:
-			"Python web scraper to scrape, filter and process bird observations from Tiira.fi.",
+		about: {
+			en: "Python web scraper to scrape, filter and process bird observations from Tiira.fi.",
+			fi: "Web-scraper lintuhavaintojen keräämiseen, suodattamiseen ja käsittelyyn.",
+		},
 		description: TIIRASCRAPER_DESCRIPTION(),
 		skills: [
 			{
@@ -186,15 +208,20 @@ const PROJECTS: Project[] = [
 	},
 	{
 		media: DROPBOX_CONTENT.media_todo,
-		mediaDescription: "The correct video has not yet been added.",
+		mediaDescription: {
+			en: "The correct video has not yet been added.",
+			fi: "Oikeaa videota ei ole vielä lisätty.",
+		},
 		href: "https://blastcalc.pages.dev/",
 		thumbnail: DROPBOX_CONTENT.thumbnail_blastcalc,
 		deployedOn: "Cloudflare Pages",
 		date: "Under development",
 		id: "blast-calc",
 		title: "Blast Calc",
-		about:
-			"Application to create blasting circuit diagrams and calculate detonation delays.",
+		about: {
+			en: "Application to create blasting circuit diagrams and calculate detonation delays.",
+			fi: "Sovellus räjähdysviiveiden laskemiseen ja kenttäkorttien luomiseen.",
+		},
 		description: BLASTCALC_DESCRIPTION(),
 		skills: [
 			{
@@ -245,12 +272,17 @@ const PROJECTS: Project[] = [
 	},
 	{
 		media: DROPBOX_CONTENT.media_flaggame,
-		mediaDescription:
-			"User interface rendered with the Tkinter library. Note the various statistics calculated, game history, and the 5 different available game modes.",
+		mediaDescription: {
+			en: "User interface rendered with the Tkinter library. Note the various statistics calculated, game history, and the 5 different available game modes.",
+			fi: "Käyttöliittymä renderöidään Tkinter-kirjastolla. Eritystä huomiota kannattaa kiinnittää erilaisiin laskettaviin tilastoihin, pelihistoriaan ja jopa 5 eri pelitilaan.",
+		},
 		id: "flaggame",
 		date: "05/2023",
 		title: "Flag Game",
-		about: "Game built with Python and the Tkinter library.",
+		about: {
+			en: "Game built with Python and the Tkinter library.",
+			fi: "Peli rakennettu Pythonilla ja Tkinter-kirjastolla.",
+		},
 		description: FLAGGAME_DESCRIPTION(),
 		skills: [
 			{

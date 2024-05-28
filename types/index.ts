@@ -23,12 +23,18 @@ export type Experience = {
 export type Project = {
 	thumbnail?: string | null;
 	media: string;
-	mediaDescription: string;
+	mediaDescription: {
+		en: string;
+		fi: string;
+	};
 	href?: string | null;
 	deployedOn?: string | null;
 	id: string;
 	title: string;
-	about: string;
+	about: {
+		en: string;
+		fi: string;
+	};
 	description: React.ReactNode;
 	skills: Skill[];
 	date: string;

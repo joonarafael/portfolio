@@ -1,8 +1,8 @@
 "use client";
 
-import { useTranslationStore } from '@/hooks/useTranslation';
-import TRANSLATION from '@/translations/translation';
-import { Project } from '@/types';
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
+import { Project } from "@/types";
 
 interface ProjectVideoProps {
 	project: Project;
@@ -26,7 +26,7 @@ const ProjectVideo = ({ project }: ProjectVideoProps) => {
 				/>
 			</div>
 			<p className="hidden sm:block text-foreground/50 font-light text-sm text-left">
-				{project.mediaDescription}
+				{project.mediaDescription[language]}
 			</p>
 			<p className="block sm:hidden text-rose-500 font-light text-sm">
 				{TRANSLATION[language].project.video.smallScreen.title}
