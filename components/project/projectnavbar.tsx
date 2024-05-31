@@ -73,7 +73,7 @@ const ProjectNavbar = ({ currentProject }: ProjectNavbarProps) => {
 					onClick={() => {
 						router.push(`/projects/${previousProject.id}`);
 					}}
-					className="hidden xl:flex items-center gap-2 w-full"
+					className="flex items-center gap-2 w-full"
 					variant="secondary"
 				>
 					<FaArrowLeft />
@@ -83,7 +83,7 @@ const ProjectNavbar = ({ currentProject }: ProjectNavbarProps) => {
 					onClick={() => {
 						router.push(`/projects/${nextProject.id}`);
 					}}
-					className="hidden xl:flex items-center gap-2 w-full"
+					className="items-center gap-2 w-full"
 				>
 					<p>{nextProject.title}</p>
 					<FaArrowRight />
