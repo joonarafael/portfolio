@@ -2,7 +2,7 @@ export const EXPLOTRACK_DESCRIPTION_FI = () => {
 	return (
 		<div>
 			<p>
-				Fullstack-applikaatio rakennettu Next.js-frameworkilla ja hyödyntäen
+				Fullstack-applikaatio rakennettu Next.js-frameworkilla hyödyntäen
 				React-kirjastoa. Applikaation hostaa Vercel ja se hyödyntää
 				Postgres-tietokantaa. Applikaatio on kirjanpitotyökalu yritykselle, joka
 				pitää kirjaa yrityksen räjähdetilauksista ja seuraa tuotteiden kulkua
@@ -55,7 +55,7 @@ export const SPOTISAVER_DESCRIPTION_FI = () => {
 				<br />
 				Soittolistoihin liittyvä data haetaan Spotifyn virallisesta API:sta ja
 				parsitaan JSON-tiedostosta. Lopuksi data analysoidaan omalla
-				analysointilogiikallani. Tämä projekti oli myös ensimmäinen kerta, kun
+				analysointilogiikallani. Tämä projekti oli ensimmäinen kerta, kun
 				toteutin ratelimitterin ja ymmärsin API-reittien suojaamisen tärkeyden.
 			</p>
 		</div>
@@ -85,12 +85,11 @@ export const VISUALPATHFINDER_DESCRIPTION_FI = () => {
 	return (
 		<div>
 			<p>
-				Reitinhakutyökalu (ja visualisointityökalu) rakennettu Reactilla ja
-				Next.js:llä opintyönä yliopistolla. Hostauksen hoitaa Railway. Sovellus
-				mahdollistaa kolmen eri reitinhakualgoritmin, Dijkstran, A* ja Jump
-				Point Search, vertailun ja visualisoinnin. JPS-algoritmin implementointi
-				teoreettiseen tutkimuspaperiin pohjautuen oli oppimiskokemuksena
-				palkitseva.
+				Reitinhakutyökalu (ja visualisointi) rakennettu Reactilla ja Next.js:llä
+				opintyönä yliopistolla. Hostauksen hoitaa Railway. Sovellus mahdollistaa
+				kolmen eri reitinhakualgoritmin, Dijkstran, A* ja Jump Point Search,
+				vertailun ja visualisoinnin. JPS-algoritmin implementointi teoreettiseen
+				tutkimuspaperiin pohjautuen oli oppimiskokemuksena palkitseva.
 				<br />
 				<br />
 				Algoritmien implementointi TypeScriptillä ei ehkä ollut optimaalisin
@@ -118,8 +117,8 @@ export const VISUALPATHFINDER_DESCRIPTION_EN = () => {
 				Building the algorithms with TypeScript was maybe not the most optimal
 				choice (although you can always build anything with anything), but I
 				wanted to make a really great UI for the application, and involving
-				multiple languages would have made the project unnecessary complex as a
-				university assignment. I learned a ton of the Jest library during the
+				multiple languages would have made the project unnecessarily complex for
+				a university assignment. I learned a ton of the Jest library during the
 				development of this project.
 			</p>
 		</div>
@@ -136,7 +135,7 @@ export const TIIRASCRAPER_DESCRIPTION_FI = () => {
 					<em>Tiira.fi</em>
 				</a>
 				-palvelusta. Scraper on rakennettu palvelimena, joten se voidaan jättää
-				pyörimään niin kauan kuin tarvitaan.
+				pyörimään niin pitkäksi aikaa kuin tarvitaan.
 				<br />
 				<br />
 				Scraperissa on paljon muitakin ominaisuuksia: käyttäjä voi esimerkiksi
@@ -156,8 +155,8 @@ export const TIIRASCRAPER_DESCRIPTION_EN = () => {
 	return (
 		<div>
 			<p>
-				Highly useful web scraper built with Python to scrape bird observations
-				from the Finnish bird observation service{" "}
+				Useful web scraper built for real-life use with Python to scrape bird
+				observations from the Finnish bird observation service{" "}
 				<a className="hover:underline" href="https://www.tiira.fi/">
 					<em>Tiira.fi</em>
 				</a>

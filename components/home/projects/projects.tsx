@@ -1,5 +1,7 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
 import ProjectPanel from "@/components/project/projectpanel/projectpanel";
 import Subtitle from "@/components/subtitle";
 import { Button } from "@/components/ui/button";
@@ -9,6 +11,7 @@ import TRANSLATION from "@/translations/translation";
 
 const Projects = () => {
 	const { language } = useTranslationStore();
+	const router = useRouter();
 
 	const firstFour = PROJECTS.slice(0, 4);
 
@@ -27,14 +30,15 @@ const Projects = () => {
 						<ProjectPanel key={i} project={project} />
 					))}
 				</div>
-				<a href="/projects">
-					<Button
-						variant="ghost"
-						className="gradient-text w-fit text-transparent animate-gradient text-2xl"
-					>
-						{TRANSLATION[language].index.projects.moreBtn.btnText}
-					</Button>
-				</a>
+				<Button
+					variant="ghost"
+					onClick={() => {
+						router.push("/projects");
+					}}
+					className="gradient-text w-fit text-transparent animate-gradient text-2xl"
+				>
+					{TRANSLATION[language].index.projects.moreBtn.btnText}
+				</Button>
 			</div>
 		</div>
 	);

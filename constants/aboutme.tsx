@@ -35,7 +35,7 @@ export const AboutMeBodyFi = () => {
 		<>
 			<p>
 				Viimeisen 12 kuukauden aikana olen sukeltanut syvälle web-kehitykseen;
-				olen rakentanut full-stack-applikaatioita Reactilla Next.js servereitä
+				olen rakentanut fullstack-applikaatioita Reactilla Next.js servereitä
 				varten. Olen myös tutustunut useisiin CI/CD-ratkaisuihin, kuten
 				E2E-testaamiseen ja Docker-kontteihin. Uusien teknologioiden
 				opetteleminen on silti jatkuva prosessi; tällä hetkellä tutkin muita
@@ -50,7 +50,7 @@ export const AboutMeBodyFi = () => {
 				tietojenkäsittelytieteiden opinnoista on myös varustanut minut
 				monenlaisella laskettavuuteen liittyvällä teoreettisella tiedolla, kuten
 				automaattiteoria ja N vs NP -ongelma. Minulla on myös vahva
-				matemaattinen tausta, yliopisto-opintoni sisälsivät reippaan määrän
+				matemaattinen tausta, opintoni sisälsivät reippaan määrän
 				lineaarialgebraa, differentiaali- ja integraalilaskentaa.
 			</p>
 			<p>

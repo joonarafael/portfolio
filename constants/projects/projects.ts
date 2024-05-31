@@ -1,12 +1,20 @@
-import DROPBOX_CONTENT from '@/constants/dropboxcontent';
-import { Project } from '@/types';
+import DROPBOX_CONTENT from "@/constants/dropboxcontent";
+import { Project } from "@/types";
 
 import {
-    BLASTCALC_DESCRIPTION_EN, BLASTCALC_DESCRIPTION_FI, EXPLOTRACK_DESCRIPTION_EN,
-    EXPLOTRACK_DESCRIPTION_FI, FLAGGAME_DESCRIPTION_EN, FLAGGAME_DESCRIPTION_FI,
-    SPOTISAVER_DESCRIPTION_EN, SPOTISAVER_DESCRIPTION_FI, TIIRASCRAPER_DESCRIPTION_EN,
-    TIIRASCRAPER_DESCRIPTION_FI, VISUALPATHFINDER_DESCRIPTION_EN, VISUALPATHFINDER_DESCRIPTION_FI
-} from './descriptions';
+	BLASTCALC_DESCRIPTION_EN,
+	BLASTCALC_DESCRIPTION_FI,
+	EXPLOTRACK_DESCRIPTION_EN,
+	EXPLOTRACK_DESCRIPTION_FI,
+	FLAGGAME_DESCRIPTION_EN,
+	FLAGGAME_DESCRIPTION_FI,
+	SPOTISAVER_DESCRIPTION_EN,
+	SPOTISAVER_DESCRIPTION_FI,
+	TIIRASCRAPER_DESCRIPTION_EN,
+	TIIRASCRAPER_DESCRIPTION_FI,
+	VISUALPATHFINDER_DESCRIPTION_EN,
+	VISUALPATHFINDER_DESCRIPTION_FI,
+} from "./descriptions";
 
 const PROJECTS: Project[] = [
 	{
@@ -20,8 +28,8 @@ const PROJECTS: Project[] = [
 		thumbnail: DROPBOX_CONTENT.thumbnail_explotrack,
 		id: "explotrack",
 		about: {
-			en: "Service to track and monitor explosives usage.",
-			fi: "Kirjanpitojärjestelmä räjähteiden seurantaan ja jäljittämiseen.",
+			en: "Service to track and monitor the flow of explosive products.",
+			fi: "Kirjanpitojärjestelmä räjähdetuotteiden seurantaan ja jäljittämiseen.",
 		},
 		description: {
 			en: EXPLOTRACK_DESCRIPTION_EN(),

@@ -217,7 +217,7 @@ const TRANSLATION = {
 			},
 			experience: {
 				title: "TYÖKOKEMUS",
-				header: "Lyhyt luettelo viimeisistä työkokemuksistani",
+				header: "Työkokemus",
 				present: "Nykyhetki",
 			},
 			newproject: {
@@ -250,7 +250,7 @@ const TRANSLATION = {
 				header: {
 					hello: "Hei, olen",
 					subtitle:
-						"omistautunut tietojenkäsittelytieteen opiskelija, joka pyrkii hallitsemaan viimeisimpiä teknologioita ja muokkaamaan tulevaisuutta taitavana ongelmanratkaisijana ja digiajan työntekijänä.",
+						"omistautunut tietojenkäsittelytieteiden opiskelija, joka pyrkii hallitsemaan viimeisimpiä teknologioita ja muokkaamaan tulevaisuutta taitavana ongelmanratkaisijana ja digiajan työntekijänä.",
 				},
 				messageBtn: {
 					btnTxt: "Lähetä minulle viesti",
