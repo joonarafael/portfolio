@@ -4,6 +4,8 @@ import "./globals.css";
 import dynamic from "next/dynamic";
 import { Inter } from "next/font/google";
 
+import { CSPostHogProvider } from "@/components/posthogprovider";
+
 const CookiesConsent = dynamic(() => import("../components/cookiesconsent"), {
 	ssr: false,
 });
@@ -41,14 +43,16 @@ export default async function RootLayout({
 					enableSystem
 					disableTransitionOnChange
 				>
-					<Navbar />
-					<main className="bg-repeat bg-[url(../public/background.png),_url(../public/background.png)] dark:bg-[url(../public/background-invert.png),_url(../public/background-invert.png)] min-h-screen">
-						<div className="bg-background/95 flex flex-col gap-32 w-full pt-56 sm:pt-52 items-center">
-							{children}
-							<Footer />
-							<CookiesConsent />
-						</div>
-					</main>
+					<CSPostHogProvider>
+						<Navbar />
+						<main className="bg-repeat bg-[url(../public/background.png),_url(../public/background.png)] dark:bg-[url(../public/background-invert.png),_url(../public/background-invert.png)] min-h-screen">
+							<div className="bg-background/95 flex flex-col gap-32 w-full pt-56 sm:pt-52 items-center">
+								{children}
+								<Footer />
+								<CookiesConsent />
+							</div>
+						</main>
+					</CSPostHogProvider>
 				</ThemeProvider>
 			</body>
 		</html>

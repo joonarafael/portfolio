@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { FaLinkedin, FaTelegramPlane } from "react-icons/fa";
 import { HiPlusCircle } from "react-icons/hi";
 import { IoMail } from "react-icons/io5";
@@ -44,7 +45,7 @@ const NewProjectPanel = () => {
 				</DialogHeader>
 				<div className="flex flex-col items-center gap-2 w-full">
 					<div className="flex flex-row gap-2 w-full">
-						<a
+						<Link
 							className="w-full"
 							href="https://github.com/joonarafael"
 							target="_blank"
@@ -52,8 +53,8 @@ const NewProjectPanel = () => {
 							<Button className="px-3 py-0 w-full">
 								<RxGithubLogo className="w-5 h-5" />
 							</Button>
-						</a>
-						<a
+						</Link>
+						<Link
 							className="w-full"
 							href="https://www.linkedin.com/in/joonakettunen/"
 							target="_blank"
@@ -61,8 +62,8 @@ const NewProjectPanel = () => {
 							<Button className="px-3 py-0 w-full">
 								<FaLinkedin className="w-5 h-5" />
 							</Button>
-						</a>
-						<a
+						</Link>
+						<Link
 							className="w-full"
 							href="https://t.me/joonarafael"
 							target="_blank"
@@ -70,9 +71,9 @@ const NewProjectPanel = () => {
 							<Button className="px-3 py-0 w-full">
 								<FaTelegramPlane className="w-5 h-5" />
 							</Button>
-						</a>
+						</Link>
 					</div>
-					<a
+					<Link
 						className="w-full"
 						href="mailto:joonarafael@gmail.com"
 						target="_blank"
@@ -84,7 +85,7 @@ const NewProjectPanel = () => {
 							<IoMail className="w-5 h-5" />
 							<p>joonarafael@gmail.com</p>
 						</Button>
-					</a>
+					</Link>
 				</div>
 				<DialogFooter className="w-full">
 					<DialogClose asChild>

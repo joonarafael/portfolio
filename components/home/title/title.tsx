@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { FaTelegramPlane } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 
@@ -56,7 +57,7 @@ const Title = () => {
 							</DialogDescription>
 						</DialogHeader>
 						<div className="flex flex-col items-center gap-2 w-full">
-							<a
+							<Link
 								className="w-full"
 								href="https://t.me/joonarafael"
 								target="_blank"
@@ -65,8 +66,8 @@ const Title = () => {
 									<FaTelegramPlane className="w-5 h-5" />
 									<p>Telegram @joonarafael</p>
 								</Button>
-							</a>
-							<a
+							</Link>
+							<Link
 								className="w-full"
 								href="mailto:joonarafael@gmail.com"
 								target="_blank"
@@ -78,7 +79,7 @@ const Title = () => {
 									<IoMail className="w-5 h-5" />
 									<p>joonarafael@gmail.com</p>
 								</Button>
-							</a>
+							</Link>
 						</div>
 						<DialogFooter className="w-full">
 							<DialogClose asChild>

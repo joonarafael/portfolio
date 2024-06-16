@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { RxExternalLink } from "react-icons/rx";
 
 import Container from "@/components/container";
@@ -30,7 +31,7 @@ const ProjectsClient = () => {
 					<p className="text-foreground/75 font-light">
 						<em>{TRANSLATION[language].projects.footer.title}</em>
 					</p>
-					<a href="https://github.com/joonarafael" target="_blank">
+					<Link href="https://github.com/joonarafael" target="_blank">
 						<Button
 							variant="outline"
 							className="items-center gap-2 w-fit text-2xl p-6 font-bold"
@@ -38,7 +39,7 @@ const ProjectsClient = () => {
 							<p>{TRANSLATION[language].projects.footer.btnText}</p>
 							<RxExternalLink className="w-5 h-5" />
 						</Button>
-					</a>
+					</Link>
 				</div>
 			</div>
 		</Container>

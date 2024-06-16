@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const EXPLOTRACK_DESCRIPTION_FI = () => {
 	return (
 		<div>
@@ -131,9 +133,9 @@ export const TIIRASCRAPER_DESCRIPTION_FI = () => {
 			<p>
 				Hyödyllinen Pythonilla ja Beautifulsoup-kirjastolla rakennettu
 				web-scraper, joka hakee ja parsii lintuhavaintotietoja{" "}
-				<a className="hover:underline" href="https://www.tiira.fi/">
+				<Link className="hover:underline" href="https://www.tiira.fi/">
 					<em>Tiira.fi</em>
-				</a>
+				</Link>
 				-palvelusta. Scraper on rakennettu palvelimena, joten se voidaan jättää
 				pyörimään niin pitkäksi aikaa kuin tarvitaan.
 				<br />
@@ -157,9 +159,9 @@ export const TIIRASCRAPER_DESCRIPTION_EN = () => {
 			<p>
 				Useful web scraper built for real-life use with Python to scrape bird
 				observations from the Finnish bird observation service{" "}
-				<a className="hover:underline" href="https://www.tiira.fi/">
+				<Link className="hover:underline" href="https://www.tiira.fi/">
 					<em>Tiira.fi</em>
-				</a>
+				</Link>
 				. The scraper is built with the BeautifulSoup library and the requests
 				library. The scaper is also built as a server, so it can be left running
 				for as long as needed.

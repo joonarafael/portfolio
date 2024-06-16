@@ -1,16 +1,17 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import { IoIosArrowDropleft } from "react-icons/io";
-import { RxGithubLogo } from "react-icons/rx";
-import { TbForbid2 } from "react-icons/tb";
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { IoIosArrowDropleft } from 'react-icons/io';
+import { RxGithubLogo } from 'react-icons/rx';
+import { TbForbid2 } from 'react-icons/tb';
 
-import { useTranslationStore } from "@/hooks/useTranslation";
-import TRANSLATION from "@/translations/translation";
-import { Project, Skill } from "@/types";
+import { useTranslationStore } from '@/hooks/useTranslation';
+import TRANSLATION from '@/translations/translation';
+import { Project, Skill } from '@/types';
 
-import { Button } from "../ui/button";
-import FlagShip from "./flagship";
+import { Button } from '../ui/button';
+import FlagShip from './flagship';
 
 interface ProjectHeaderProps {
 	project: Project;
@@ -63,7 +64,7 @@ const ProjectHeader = ({ project, sortedSkills }: ProjectHeaderProps) => {
 					</div>
 				) : (
 					<div className="flex flex-col w-full items-center lg:items-end gap-4">
-						<a
+						<Link
 							className="w-full"
 							href={`https://github.com/joonarafael/${project.id}`}
 							target="_blank"
@@ -74,7 +75,7 @@ const ProjectHeader = ({ project, sortedSkills }: ProjectHeaderProps) => {
 									{TRANSLATION[language].project.header.sourceCodeBtn.btnText}
 								</p>
 							</Button>
-						</a>
+						</Link>
 						<pre className="text-neutral-500 w-fit">{project.date}</pre>
 					</div>
 				)}

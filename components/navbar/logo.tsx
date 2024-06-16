@@ -1,12 +1,16 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+
 import { Button } from "../ui/button";
 
 const Logo = () => {
+	const pathname = usePathname();
+
 	return (
 		<Button
 			onClick={() => {
-				if (window.location.href.includes("projects")) {
+				if (pathname !== "/") {
 					window.open("/", "_self");
 				} else {
 					const element = document.getElementById("title");

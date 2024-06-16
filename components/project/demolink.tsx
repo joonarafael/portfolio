@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { VscGlobe } from "react-icons/vsc";
+import Link from 'next/link';
+import { VscGlobe } from 'react-icons/vsc';
 
-import { Button } from "@/components/ui/button";
-import { useTranslationStore } from "@/hooks/useTranslation";
-import TRANSLATION from "@/translations/translation";
-import { Project } from "@/types";
+import { Button } from '@/components/ui/button';
+import { useTranslationStore } from '@/hooks/useTranslation';
+import TRANSLATION from '@/translations/translation';
+import { Project } from '@/types';
 
 interface DemoLinkProps {
 	project: Project;
@@ -16,7 +17,7 @@ const DemoLink = ({ project }: DemoLinkProps) => {
 	const { language } = useTranslationStore();
 
 	return (
-		<a
+		<Link
 			href={project.href ?? ""}
 			target="_blank"
 			className="cursor-pointer group flex flex-col items-center justify-center gap-2 border p-2 rounded-xl bg-background h-min border-black dark:border-purple-500 w-full xl:w-min"
@@ -36,7 +37,7 @@ const DemoLink = ({ project }: DemoLinkProps) => {
 				</p>
 				<p>{project?.deployedOn}</p>
 			</span>
-		</a>
+		</Link>
 	);
 };
 

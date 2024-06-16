@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { IoVideocamOutline } from "react-icons/io5";
+import Link from 'next/link';
+import { IoVideocamOutline } from 'react-icons/io5';
 
-import { Button } from "@/components/ui/button";
-import { useTranslationStore } from "@/hooks/useTranslation";
-import TRANSLATION from "@/translations/translation";
-import { Project } from "@/types";
+import { Button } from '@/components/ui/button';
+import { useTranslationStore } from '@/hooks/useTranslation';
+import TRANSLATION from '@/translations/translation';
+import { Project } from '@/types';
 
 interface VideoNotWorkingProps {
 	project: Project;
@@ -20,7 +21,7 @@ const VideoNotWorking = ({ project }: VideoNotWorkingProps) => {
 			<p className="text-foreground/50 font-light text-sm">
 				{TRANSLATION[language].project.video.notWorking.title}
 			</p>
-			<a href={project.media} target="_blank">
+			<Link href={project.media} target="_blank">
 				<Button
 					variant="secondary"
 					className="items-center gap-2 text-md w-full"
@@ -28,7 +29,7 @@ const VideoNotWorking = ({ project }: VideoNotWorkingProps) => {
 					<IoVideocamOutline className="w-5 h-5" />
 					<p>{TRANSLATION[language].project.video.notWorking.btnText}</p>
 				</Button>
-			</a>
+			</Link>
 		</div>
 	);
 };

@@ -1,14 +1,15 @@
 "use client";
 
-import { RxGithubLogo } from "react-icons/rx";
-import { VscGlobe } from "react-icons/vsc";
+import Link from 'next/link';
+import { RxGithubLogo } from 'react-icons/rx';
+import { VscGlobe } from 'react-icons/vsc';
 
-import { Button } from "@/components/ui/button";
-import { useTranslationStore } from "@/hooks/useTranslation";
-import TRANSLATION from "@/translations/translation";
-import { Project } from "@/types";
+import { Button } from '@/components/ui/button';
+import { useTranslationStore } from '@/hooks/useTranslation';
+import TRANSLATION from '@/translations/translation';
+import { Project } from '@/types';
 
-import ContactButton from "../navbar/contact";
+import ContactButton from '../navbar/contact';
 
 interface ProjectLearnMoreProps {
 	project: Project;
@@ -46,7 +47,7 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 						btnTxt={TRANSLATION[language].project.learnMore.private.btnText}
 					/>
 				) : (
-					<a
+					<Link
 						href={`https://github.com/joonarafael/${project.id}`}
 						target="_blank"
 					>
@@ -54,7 +55,7 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 							<RxGithubLogo className="w-5 h-5" />
 							<p>{TRANSLATION[language].project.learnMore.public.btnText}</p>
 						</Button>
-					</a>
+					</Link>
 				)}
 			</div>
 		</div>

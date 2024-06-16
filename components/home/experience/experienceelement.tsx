@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { FiLink, FiMinusCircle, FiPlusCircle } from "react-icons/fi";
 import { SiGooglemaps } from "react-icons/si";
@@ -75,21 +76,24 @@ const ExperienceElement = ({
 						</p>
 					</div>
 					<div className="flex items-start justify-start flex-col sm:flex-row gap-2 sm:gap-4">
-						<a href={`http://maps.google.com/?q=${location}`} target="_blank">
+						<Link
+							href={`http://maps.google.com/?q=${location}`}
+							target="_blank"
+						>
 							<Button variant="link" className="gap-2 items-center px-0">
 								<SiGooglemaps className="w-5 h-5" />
 								<p className="font-light text-neutral">{location}</p>
 							</Button>
-						</a>
+						</Link>
 						{href && (
-							<a href={href} target="_blank">
+							<Link href={href} target="_blank">
 								<Button variant="link" className="gap-2 items-center px-0">
 									<FiLink className="w-4 h-4 " />
 									<p className="font-light text-neutral">
 										{href.replace("https://", "").replace("www.", "")}
 									</p>
 								</Button>
-							</a>
+							</Link>
 						)}
 					</div>
 					<div>
