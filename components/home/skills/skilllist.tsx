@@ -55,7 +55,8 @@ const SkillList = () => {
 									setExpand(false);
 								}}
 								size="xl"
-								className="bg-black font-bold items-center gap-2 text-white dark:hover:text-black"
+								variant="secondary"
+								className="items-center gap-2 border"
 							>
 								<FiMinusCircle className="h-4 w-4" />
 								<p>{TRANSLATION[language].index.skills.listBtn.showLess}</p>
@@ -76,7 +77,8 @@ const SkillList = () => {
 									setExpand(true);
 								}}
 								size="xl"
-								className="bg-black font-bold items-center gap-2 text-white dark:hover:text-black"
+								variant="secondary"
+								className="items-center gap-2 border"
 							>
 								<FiPlusCircle className="h-4 w-4" />
 								<p>{TRANSLATION[language].index.skills.listBtn.showMore}</p>
