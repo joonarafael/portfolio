@@ -166,6 +166,12 @@ const TRANSLATION = {
 				title: "Check other projects as well!",
 			},
 		},
+		notFound: {
+			title: "404",
+			subtitle:
+				"This is not the page you are looking for. Please check the URL.",
+			btnText: "Return home",
+		},
 	},
 	fi: {
 		global: {
@@ -333,6 +339,11 @@ const TRANSLATION = {
 			navbar: {
 				title: "Tutustu myös muihin projekteihin!",
 			},
+		},
+		notFound: {
+			title: "404",
+			subtitle: "Tällaista sivua ei ole olemassakaan! Varmista oikea osoite.",
+			btnText: "Takaisin etusivulle",
 		},
 	},
 };
