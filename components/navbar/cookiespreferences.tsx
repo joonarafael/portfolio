@@ -18,6 +18,19 @@ import TRANSLATION from "@/translations/translation";
 
 import { Button } from "../ui/button";
 
+const COOKIE_SELECTION_TITLES = {
+	en: {
+		accepted: "All accepted",
+		necessary: "Necessary only",
+		declined: "All declined",
+	},
+	fi: {
+		accepted: "Kaikki hyväksytty",
+		necessary: "Vain välttämättömät",
+		declined: "Kaikki kielletty",
+	},
+};
+
 const CookiesPreferences = () => {
 	const { language } = useTranslationStore();
 	const cookieState = useCookies();
@@ -25,17 +38,19 @@ const CookiesPreferences = () => {
 	const acceptCookies = () => {
 		localStorage.setItem("cookies", "accepted");
 		cookieState.setCookies("accepted");
+		window.open("/", "_self");
 	};
 
 	const declineUnnecessary = () => {
 		localStorage.setItem("cookies", "necessary");
 		cookieState.setCookies("necessary");
+		window.open("/", "_self");
 	};
 
 	const declineCookies = () => {
 		localStorage.clear();
 		localStorage.setItem("cookies", "declined");
-		window.location.reload();
+		window.open("/", "_self");
 	};
 
 	return (
@@ -54,6 +69,18 @@ const CookiesPreferences = () => {
 						{TRANSLATION[language].global.cookiesPreferences.description}
 					</DialogDescription>
 				</DialogHeader>
+				<div className="flex flex-row w-full items-center justify-center border rounded-lg p-2">
+					<div className="flex flex-row gap-1">
+						<p className="text-muted-foreground">
+							{TRANSLATION[language].global.cookiesPreferences.currentSelection}
+							:
+						</p>
+						<p>
+							{COOKIE_SELECTION_TITLES[language][cookieState.cookies] ??
+								"All declined"}
+						</p>
+					</div>
+				</div>
 				<div className="flex flex-col items-center gap-2 w-full">
 					<DialogClose asChild>
 						<Button

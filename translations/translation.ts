@@ -15,6 +15,7 @@ const TRANSLATION = {
 				title: "Cookies preferences",
 				description:
 					"Accept necessary cookies to enable language and theme switching. To participate in analytics, accept all cookies.",
+				currentSelection: "Current selection",
 			},
 			contact: {
 				btnTxt: "Contact me",
@@ -187,6 +188,7 @@ const TRANSLATION = {
 			},
 			cookiesPreferences: {
 				title: "Evästeasetukset",
+				currentSelection: "Nykyinen valinta",
 				description:
 					"Välttämättömät evästeet tarvitaan kielen ja teeman vaihtoon. Sivuston käytöstä kerätään analytiikkaa, mikäli hyväksyt kaikki evästeet.",
 			},
