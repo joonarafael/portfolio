@@ -1,6 +1,6 @@
 "use client";
 
-import { Skill } from '@/types';
+import { Skill } from "@/types";
 
 const SKILLS: Skill[] = [
 	{
@@ -74,6 +74,10 @@ const SKILLS: Skill[] = [
 	{
 		name: "Docker",
 		icon: "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&color=black",
+	},
+	{
+		name: "Cypress",
+		icon: "https://img.shields.io/badge/-Cypress-%23E5E5E5?style=for-the-badge&color=black&logo=cypress",
 	},
 ];
 
