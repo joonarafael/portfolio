@@ -48,7 +48,7 @@ const ProjectPanel = ({ project }: ProjectPanelProps) => {
 						/>
 					)}
 				</div>
-				<p className="text-neutral-500 font-light text-sm sm:text-base">
+				<p className="text-muted-foreground font-light text-sm sm:text-base">
 					{project.about[language]}
 				</p>
 			</div>

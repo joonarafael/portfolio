@@ -53,7 +53,7 @@ const ProjectNavbar = ({ currentProject }: ProjectNavbarProps) => {
 
 	return (
 		<div className="flex flex-col w-full gap-8 items-center justify-center border-t pt-12">
-			<p className="font-light text-neutral-500">
+			<p className="font-light text-muted-foreground">
 				<em>{TRANSLATION[language].project.navbar.title}</em>
 			</p>
 			<div className="flex min-w-[180px] w-full justify-between items-center flex-col sm:flex-row gap-2">

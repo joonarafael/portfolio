@@ -20,7 +20,7 @@ const ProfPic = () => {
 					alt="Profile"
 				/>
 			</div>
-			<div className="absolute rounded-xl p-2 left-0 right-0 -bottom-2 text-primary bg-foreground/50 backdrop-blur-lg font-bold text-lg shadow-lg text-white">
+			<div className="absolute rounded-xl p-2 left-0 right-0 -bottom-2 text-primary bg-foreground/50 dark:bg-background/75 backdrop-blur-lg font-bold text-lg shadow-lg text-white">
 				<div className="flex flex-row w-full item-center justify-center gap-1">
 					<Link
 						href="https://github.com/joonarafael"

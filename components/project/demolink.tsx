@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import Link from 'next/link';
-import { VscGlobe } from 'react-icons/vsc';
+import Link from "next/link";
+import { VscGlobe } from "react-icons/vsc";
 
-import { Button } from '@/components/ui/button';
-import { useTranslationStore } from '@/hooks/useTranslation';
-import TRANSLATION from '@/translations/translation';
-import { Project } from '@/types';
+import { Button } from "@/components/ui/button";
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
+import { Project } from "@/types";
 
 interface DemoLinkProps {
 	project: Project;
@@ -32,7 +32,7 @@ const DemoLink = ({ project }: DemoLinkProps) => {
 				<p>{TRANSLATION[language].project.demoLink.btnText}</p>
 			</Button>
 			<span className="flex flex-row gap-1 text-sm">
-				<p className="font-light text-neutral-500">
+				<p className="font-light text-muted-foreground">
 					{TRANSLATION[language].project.demoLink.deployedOn}
 				</p>
 				<p>{project?.deployedOn}</p>

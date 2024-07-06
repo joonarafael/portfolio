@@ -44,7 +44,7 @@ const Navbar = () => {
 				scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
 			}`}
 		>
-			<div className="group-hover:shadow-lg group-hover:shadow-black/50 dark:group-hover:shadow-purple-500 dark:shadow-purple-800 shadow-black/25 bg-background border shadow-md min-w-[180px] w-full max-w-[2440px] flex justify-between items-center rounded-xl p-2 transition group-hover:duration-200 duration-1000 flex-col sm:flex-row gap-2 pointer-events-auto">
+			<div className="group-hover:shadow-lg group-hover:shadow-black/50 dark:group-hover:shadow-purple-500 dark:shadow-purple-800 shadow-black/25 bg-background shadow-md min-w-[180px] w-full max-w-[2440px] flex justify-between items-center rounded-xl p-2 transition group-hover:duration-200 duration-1000 flex-col sm:flex-row gap-2 pointer-events-auto">
 				<div className="flex flex-row gap-2">
 					<Logo />
 					<div className="block sm:hidden">

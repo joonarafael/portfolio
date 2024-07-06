@@ -99,7 +99,7 @@ const ExperienceElement = ({
 					<div>
 						<p>{description[language]}</p>
 					</div>
-					<div className="flex flex-wrap gap-3 text-neutral-500 text-xs font-light">
+					<div className="flex flex-wrap gap-3 text-muted-foreground text-xs font-light">
 						{skills.map((skill, i) => (
 							<div key={i}>{skill.name}</div>
 						))}

@@ -1,14 +1,14 @@
 "use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 
-import SKILLS_LEARNING from '@/constants/learning';
-import { useTranslationStore } from '@/hooks/useTranslation';
-import TRANSLATION from '@/translations/translation';
+import SKILLS_LEARNING from "@/constants/learning";
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
 
-import Subtitle from '../../subtitle';
-import SkillElement from './skillelement';
-import SkillList from './skilllist';
+import Subtitle from "../../subtitle";
+import SkillElement from "./skillelement";
+import SkillList from "./skilllist";
 
 const Skills = () => {
 	const { language } = useTranslationStore();
@@ -47,7 +47,7 @@ const Skills = () => {
 			<Link
 				href="https://shields.io/"
 				target="_blank"
-				className="font-light text-sm w-fit hover:underline text-neutral-500"
+				className="font-light text-sm w-fit hover:underline text-muted-foreground"
 			>
 				<em>{TRANSLATION[language].index.skills.imgCredits}</em>
 			</Link>

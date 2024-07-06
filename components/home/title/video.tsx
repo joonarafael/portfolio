@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { Button } from "@/components/ui/button";
 import DROPBOX_CONTENT from "@/constants/dropboxcontent";
 import { useTranslationStore } from "@/hooks/useTranslation";
@@ -36,18 +38,13 @@ const TitleVideo = () => {
 					/>
 				</div>
 			</div>
-			<Button
-				onClick={() => {
-					window.open(
-						"https://pixabay.com/users/u_vt453kmgmm-28659814/",
-						"_blank"
-					);
-				}}
-				variant="link"
-				className="font-light text-neutral-500 text-xs w-min"
+			<Link
+				href="https://pixabay.com/users/u_vt453kmgmm-28659814/"
+				target="_blank"
+				className="w-full font-light text-muted-foreground text-xs hover:underline pt-2"
 			>
 				{TRANSLATION[language].index.title.video.credits}
-			</Button>
+			</Link>
 		</div>
 	);
 };
