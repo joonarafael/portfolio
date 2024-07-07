@@ -38,19 +38,19 @@ const CookiesPreferences = () => {
 	const acceptCookies = () => {
 		localStorage.setItem("cookies", "accepted");
 		cookieState.setCookies("accepted");
-		window.open("/", "_self");
+		window.open(window.location.href, "_self");
 	};
 
 	const declineUnnecessary = () => {
 		localStorage.setItem("cookies", "necessary");
 		cookieState.setCookies("necessary");
-		window.open("/", "_self");
+		window.open(window.location.href, "_self");
 	};
 
 	const declineCookies = () => {
 		localStorage.clear();
 		localStorage.setItem("cookies", "declined");
-		window.open("/", "_self");
+		window.open(window.location.href, "_self");
 	};
 
 	return (
