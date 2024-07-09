@@ -1,19 +1,19 @@
 "use client";
 
-import Link from 'next/link';
-import { RxGithubLogo } from 'react-icons/rx';
+import Link from "next/link";
+import { RxGithubLogo } from "react-icons/rx";
 
-import { useTranslationStore } from '@/hooks/useTranslation';
-import TRANSLATION from '@/translations/translation';
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
 
-import Logo from './navbar/logo';
-import { Button } from './ui/button';
+import Logo from "./navbar/logo";
+import { Button } from "./ui/button";
 
 const Footer = () => {
 	const { language } = useTranslationStore();
 
 	return (
-		<div className="border drop-shadow-md rounded-t-xl px-14 py-10 min-w-[200px] w-[100vw] max-w-[2440px] flex justify-between items-center transition group-hover:duration-200 duration-1000 flex-col sm:flex-row bg-background gap-2">
+		<div className="border-t border-x drop-shadow-md rounded-t-xl px-14 py-10 min-w-[200px] w-[100vw] max-w-[2440px] flex justify-between items-center transition group-hover:duration-200 duration-1000 flex-col sm:flex-row bg-background gap-2">
 			<Logo />
 			<div className="flex flex-col md:flex-row gap-2 items-center">
 				<div className="flex flex-row items-center gap-0">

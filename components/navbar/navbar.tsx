@@ -51,7 +51,7 @@ const Navbar = () => {
 						<CookiesPreferences />
 					</div>
 				</div>
-				{typeof window !== "undefined" && !pathName.includes("projects") && (
+				{typeof window !== "undefined" && pathName === "/" && (
 					<div className="hidden lg:block">
 						<Shortcuts />
 					</div>

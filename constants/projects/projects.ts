@@ -140,7 +140,7 @@ const PROJECTS: Project[] = [
 	{
 		media: DROPBOX_CONTENT.media_visualpathfinder,
 		mediaDescription: {
-			en: "The smaller map is interactive and shows the pathfinding result. So-called 'virtual maps' are non-interactive, and won't display any results. However, they are vastly larger and therefore yield more interesting results.",
+			en: "The smaller map is interactive and shows the pathfinding result. So-called 'Virtual Maps' are non-interactive and won't display any results. However, they are vastly larger and therefore yield more interesting pathfinding results.",
 			fi: "Pienempi kartta on interaktiivinen ja siinä näkyy reitinhakutulokset. Niin sanotut 'virtuaalikartat' eivät ole interaktiivisia eivätkä näytä tuloksia, mutta ne ovat huomattavasti suurempia ja siksi tulosten kannalta ehkä mielenkiintoisempia.",
 		},
 		href: "https://visualpathfinder-production.up.railway.app/",
