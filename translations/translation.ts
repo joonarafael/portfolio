@@ -220,8 +220,7 @@ const TRANSLATION = {
 		index: {
 			aboutme: {
 				title: "LYHYESTI",
-				subtitle:
-					"Motivoitunut web-kehitykseen erikoistunut ongelmanratkaisija",
+				subtitle: "Motivoitunut web-kehitykseen erikoistunut moniosaaja",
 			},
 			experience: {
 				title: "TYÖKOKEMUS",

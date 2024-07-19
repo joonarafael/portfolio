@@ -21,7 +21,7 @@ export const AboutMeBodyEn = () => {
 				mathematics, including linear algebra, calculus, and matrix algebra.
 			</p>
 			<p>
-				As a second-year computer science student, I&apos;m continuously
+				As a third-year computer science student, I&apos;m continuously
 				expanding my skills and knowledge, eager to contribute to innovative
 				projects and collaborate with diverse teams. I&apos;m committed to my
 				journey in web development and excited about the opportunities ahead.
@@ -54,7 +54,7 @@ export const AboutMeBodyFi = () => {
 				lineaarialgebraa, differentiaali- ja integraalilaskentaa.
 			</p>
 			<p>
-				Toisen vuoden tietojenkäsittelytieteiden opiskelijana opettelen
+				Kolmannen vuoden tietojenkäsittelytieteiden opiskelijana opettelen
 				jatkuvasti entuudestaan itselleni tuntemattomia teknologioita ja teen
 				uusia aluevaltauksia. Olen vahva tiimipelaaja ja valmis työskentelemään
 				monenlaisissa ympäristöissä. Olen erityisen innoissani web-kehityksestä
