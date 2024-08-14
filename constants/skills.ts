@@ -83,6 +83,10 @@ const SKILLS: Skill[] = [
 		name: "Git",
 		icon: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&color=black&logo=git&logoColor=red",
 	},
+	{
+		name: "AWS",
+		icon: "https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&color=black&logo=amazon-aws&logoColor=white",
+	},
 ];
 
 export default SKILLS;

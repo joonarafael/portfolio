@@ -6,10 +6,39 @@ const EXPERIENCES: Experience[] = [
 			en: "Software Developer",
 			fi: "Ohjelmistokehittäjä",
 		},
+		company: "Aufwin Defence Systems Oy",
+		from: "07/2024",
+		href: "https://aufwindefence.fi",
+		to: null,
+		location: "Helsinki, Finland",
+		description: {
+			en: "(Alongside studies) Doing software development work for Aufwin Defence Systems Oy. Mainly working on various systems integrations with Python.",
+			fi: "(Opintojen ohella) Ohjelmistokehitystyötä Aufwin Defence Systems Oy:lle. Pääasiassa erilaisten järjestelmäintegraatioiden toteutusta Pythonilla.",
+		},
+		skills: [
+			{
+				name: "AWS",
+				icon: "https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&color=black&logo=amazon-aws&logoColor=white",
+			},
+			{
+				name: "Python",
+				icon: "https://img.shields.io/badge/-Python-informational?style=for-the-badge&color=black&logo=python",
+			},
+			{
+				name: "Docker",
+				icon: "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&color=black",
+			},
+		],
+	},
+	{
+		title: {
+			en: "Software Developer",
+			fi: "Ohjelmistokehittäjä",
+		},
 		company: "Freelancer",
 		from: "01/2024",
 		href: "https://joonakettunen.netlify.app",
-		to: null,
+		to: "07/2024",
 		location: "Helsinki, Finland",
 		description: {
 			en: "(Alongside studies) Building websites and web applications for real clients using modern web development technologies.",
