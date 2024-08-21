@@ -17,7 +17,7 @@ const AboutMe = () => {
 		>
 			<Subtitle text={TRANSLATION[language].index.aboutme.title} />
 			<div className="flex flex-row gap-12 justify-between w-full items-center">
-				<div className="hidden lg:flex min-w-[256px] min-h-[256px]">
+				<div className="hidden lg:flex min-w-[256px] max-w-[256px] min-h-[256px] max-h-[256px]">
 					<ProfPic />
 				</div>
 				<div className="text-left flex flex-col gap-3">

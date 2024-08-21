@@ -4,27 +4,29 @@ export const AboutMeBodyEn = () => {
 	return (
 		<>
 			<p>
-				Over the past year, I&apos;ve delved deep into web development, crafting
-				full-stack applications with React in TypeScript for Next.js servers.
-				I&apos;ve also familiarized myself with numerous CI/CD solutions, like
-				E2E testing and Docker containers, with an ongoing exploration of
-				advanced deployment strategies like proxies, load-balancing, and
-				caching.
+				Aspiring software developer with a passion for web development and a
+				strong foundation in computer science. Currently pursuing a degree in
+				Computer Science at the University of Helsinki, with a focus on web
+				development and software engineering (+ a lot of maths).
 			</p>
 			<p>
-				While I find front-end development particularly captivating, I
-				understand the importance of a robust back-end. I&apos;ve dedicated time
-				to building user authentication protocols, RESTful APIs, and database
-				management. My academic background in computer science has provided me
-				with insights into computational theory, including topics like automata,
-				N vs NP, and computability, along with a strong foundation in
-				mathematics, including linear algebra, calculus, and matrix algebra.
+				At Aufwin, I’ve gained hands-on experience in system integrations and
+				large-scale software infrastructure, while continuing to hone my skills
+				in frontend development. I’m particularly captivated by how technology
+				meets user experience, thriving in designing and discussing intuitive
+				and engaging user interfaces.
 			</p>
 			<p>
-				As a third-year computer science student, I&apos;m continuously
-				expanding my skills and knowledge, eager to contribute to innovative
-				projects and collaborate with diverse teams. I&apos;m committed to my
-				journey in web development and excited about the opportunities ahead.
+				My long-term goal is to become a bridge between technical and
+				non-technical teams, leveraging my programming expertise and strong
+				communication skills to drive collaborative success and deliver
+				impactful solutions.
+			</p>
+			<p>
+				I’m always open to connecting with like-minded professionals and
+				exploring new opportunities to grow and contribute in the tech industry.
+				Got a question or just want to connect? Shoot me an email — I’d love to
+				hear from you!
 			</p>
 		</>
 	);
@@ -34,31 +36,28 @@ export const AboutMeBodyFi = () => {
 	return (
 		<>
 			<p>
-				Viimeisen 12 kuukauden aikana olen sukeltanut syvälle web-kehitykseen;
-				olen rakentanut fullstack-applikaatioita Reactilla Next.js servereitä
-				varten. Olen myös tutustunut useisiin CI/CD-ratkaisuihin, kuten
-				E2E-testaamiseen ja Docker-kontteihin. Uusien teknologioiden
-				opetteleminen on silti jatkuva prosessi; tällä hetkellä tutkin muita
-				kehittyneempiä tuotantoon liittyviä palasia, joihin kuuluvat esimerkiksi
-				välityspalvelimet ja kuormituksen tasaaminen.
+				Kunnianhimoinen web-kehitykseen vihkiytynyt ohjelmistokehittäjä vahvalla
+				akateemisella taustalla. Kolmannen vuoden tietojenkäsittelytieteiden
+				opiskelija Helsingin yliopistossa, aihealueina erityisesti web-kehitys
+				ja ohjelmistotuotanto (+ matematiikka).
 			</p>
 			<p>
-				Työskentely frontin kanssa on minulle mielenkiintoisempaa, mutta
-				ymmärrän myös luotettavan bäkkärin tärkeyden. Olenkin kirjoitellut
-				autentikointiprotokollia, RESTful API -rajapintoja sekä tietokantoihin
-				liittyvää serverilogiikaa. Akateeminen taustani
-				tietojenkäsittelytieteiden opinnoista on myös varustanut minut
-				monenlaisella laskettavuuteen liittyvällä teoreettisella tiedolla, kuten
-				automaattiteoria ja N vs NP -ongelma. Minulla on myös vahva
-				matemaattinen tausta, opintoni sisälsivät reippaan määrän
-				lineaarialgebraa, differentiaali- ja integraalilaskentaa.
+				Aufwinillä olen saanut kokemusta työnteosta ohjelmistokehityksen
+				parissa. Olen lähinnä työskennellyt erinäisten
+				järjestelmäintegraatioiden parissa. Suuri kiinnostuksen kohteeni on
+				kuitenkin frontend-kehitys ja erityisesti käyttäjäkokemuksen
+				suunnittelu. Kuinka teknologia kohtaa käyttäjät?
 			</p>
 			<p>
-				Kolmannen vuoden tietojenkäsittelytieteiden opiskelijana opettelen
-				jatkuvasti entuudestaan itselleni tuntemattomia teknologioita ja teen
-				uusia aluevaltauksia. Olen vahva tiimipelaaja ja valmis työskentelemään
-				monenlaisissa ympäristöissä. Olen erityisen innoissani web-kehityksestä
-				ja kaikista tulevaisuuden mahdollisuuksista.
+				Pitkässä tähtäimessä tavoitteenani on toimia teknisen ja ei-teknisen
+				puolen risteyksessä, hyödyntäen ohjelmointiosaamistani ja vahvoja
+				viestintätaitojani. Haluaisinkin toimia eräänlaisena ’sillanrakentajana’
+				eri tiimien välillä.
+			</p>
+			<p>
+				Olen aina avoin uusille mahdollisuuksille ja uusille kontakteille,
+				sähköpostini Inbox-laatikko on aina auki! Kysymyksiä tai ideoita? Ota
+				yhteyttä, niin jutellaan miten edettäisiin!
 			</p>
 		</>
 	);

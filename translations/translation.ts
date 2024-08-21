@@ -153,7 +153,7 @@ const TRANSLATION = {
 				private: {
 					header: "Unfortunately the source code is private.",
 					subtitle:
-						"I'll still be happy to answer any questions you might have!",
+						"I'll still be happy to demo the project and/or answer any questions you might have!",
 					btnText: "Contact me fore more info",
 				},
 				public: {
@@ -283,7 +283,7 @@ const TRANSLATION = {
 			},
 			footer: {
 				title:
-					"Löydä kaikki projektini ja lähdekoodi tälle portfolio-nettisivulle GitHubistani!",
+					"Löydät kaikki projektini ja lähdekoodin tälle portfolio-nettisivulle GitHubistani!",
 				btnText: "Avaa GitHub-profiilini",
 			},
 			newProject: {
@@ -327,7 +327,8 @@ const TRANSLATION = {
 			learnMore: {
 				private: {
 					header: "Valitettavasti projektin lähdekoodi on yksityinen.",
-					subtitle: "Vastaan silti mielelläni kaikkiin kysymyksiin!",
+					subtitle:
+						"Vastaan silti mielelläni kaikkiin kysymyksiin ja/tai kerron projektista lisää!",
 					btnText: "Ota yhteyttä ja kysy lisää",
 				},
 				public: {
