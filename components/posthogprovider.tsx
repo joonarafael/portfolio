@@ -10,10 +10,10 @@ export function CSPostHogProvider({
 }: Readonly<{ children: React.ReactNode }>) {
 	const cookieState = useCookies();
 
-	if (
-		cookieState.cookies !== "accepted" &&
-		cookieState.cookies !== "necessary"
-	) {
+	if (cookieState.cookies !== "accepted") {
+		posthog.reset();
+		posthog.opt_out_capturing();
+
 		return <>{children}</>;
 	}
 
