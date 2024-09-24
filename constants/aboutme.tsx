@@ -17,6 +17,13 @@ export const AboutMeBodyEn = () => {
 				and engaging user interfaces.
 			</p>
 			<p>
+				Recently I've also started to operate my own registered business as a
+				freelance developer, where I manage all aspects of the business,
+				including taxes, billing, and accounting. This entrepreneurial
+				experience has sharpened my ability to deliver high-quality development
+				services while also handling the operational side of a business.
+			</p>
+			<p>
 				My long-term goal is to become a bridge between technical and
 				non-technical teams, leveraging my programming expertise and strong
 				communication skills to drive collaborative success and deliver
@@ -47,6 +54,13 @@ export const AboutMeBodyFi = () => {
 				järjestelmäintegraatioiden parissa. Suuri kiinnostuksen kohteeni on
 				kuitenkin frontend-kehitys ja erityisesti käyttäjäkokemuksen
 				suunnittelu. Kuinka teknologia kohtaa käyttäjät?
+			</p>
+			<p>
+				Olen nyt myös aloittanut oman yritystoiminnan freelance-kehittäjänä,
+				olen toiminimelläni vastuussa kaikista yrityksen osa-alueista, kuten
+				verotuksesta, laskutuksesta ja kirjanpidosta. Yrittäjyys on
+				terävöittänyt kykyjäni monialaisesti ja opettanut tärkeitä taitoja
+				pelkän koodaamisen lisäksi.
 			</p>
 			<p>
 				Pitkässä tähtäimessä tavoitteenani on toimia teknisen ja ei-teknisen

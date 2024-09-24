@@ -87,6 +87,30 @@ const SKILLS: Skill[] = [
 		name: "AWS",
 		icon: "https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&color=black&logo=amazon-aws&logoColor=white",
 	},
+	{
+		name: "Redis",
+		icon: "https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&color=black&logo=redis",
+	},
+	{
+		name: "Firebase",
+		icon: "https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&color=black&logoColor=ffcd34",
+	},
+	{
+		name: "Apollo GraphQL",
+		icon: "https://img.shields.io/badge/-ApolloGraphQL-311C87?style=for-the-badge&logo=apollo-graphql&color=black",
+	},
+	{
+		name: "Flask",
+		icon: "https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white&color=black",
+	},
+	{
+		name: "Webpack",
+		icon: "https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=white&color=black",
+	},
+	{
+		name: "Zod",
+		icon: "https://img.shields.io/badge/zod-%233068b7.svg?style=for-the-badge&logo=zod&logoColor=white&color=black",
+	},
 ];
 
 export default SKILLS;
