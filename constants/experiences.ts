@@ -30,6 +30,22 @@ const EXPERIENCES: Experience[] = [
 			},
 		],
 	},
+	{
+		title: {
+			en: "Entrepreneur",
+			fi: "Yrittäjä",
+		},
+		company: "Tmi Joona Kettunen",
+		from: "2024",
+		href: "https://joonakettunen.netlify.app",
+		to: null,
+		location: "Helsinki, Finland",
+		description: {
+			en: "Operating a registered business under my own trade name as a freelance developer. Responsible for managing all aspects of the business, including taxes, billing, and accounting, while delivering high-quality development services to clients.",
+			fi: "Korkealaatuisten ohjelmistojen ja ohjelmointipalveluiden tarjontaa oman toiminimen kautta freelance-kehittäjänä. Vastuussa kaikista yrityksen osa-alueista, kuten verotuksesta, laskutuksesta ja kirjanpidosta.",
+		},
+		skills: [],
+	},
 ];
 
 export default EXPERIENCES;

@@ -16,7 +16,7 @@ const Navbar = () => {
 	const cookieState = useCookies();
 	const pathName = usePathname();
 
-	const [scrollDirection, setScrollDirection] = useState("up");
+	const [scrollDirection, setScrollDirection] = useState<"up" | "down">("up");
 
 	useEffect(() => {
 		let lastScrollY = window.scrollY;
@@ -37,6 +37,22 @@ const Navbar = () => {
 			window.removeEventListener("scroll", updateScrollDirection);
 		};
 	}, []);
+
+	useEffect(() => {
+		let timeoutId: ReturnType<typeof setTimeout> | undefined;
+
+		if (scrollDirection === "down") {
+			timeoutId = setTimeout(() => {
+				setScrollDirection("up");
+			}, 7500);
+		}
+
+		return () => {
+			if (timeoutId) {
+				clearTimeout(timeoutId);
+			}
+		};
+	}, [scrollDirection]);
 
 	return (
 		<div

@@ -25,7 +25,7 @@ const ThemeProvider = dynamic(() => import("../components/themeprovider"), {
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Portfolio",
+	title: "Joona Kettunen | Portfolio",
 	description: "Portfolio of Joona Kettunen",
 };
 

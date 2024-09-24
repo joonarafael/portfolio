@@ -14,6 +14,11 @@ import TRANSLATION from "@/translations/translation";
 const ProjectsClient = () => {
 	const { language } = useTranslationStore();
 
+	document.title =
+		language === "en"
+			? "Projects | Joona Kettunen"
+			: "Projektit | Joona Kettunen";
+
 	return (
 		<Container>
 			<div className="flex flex-col gap-12 items-start justify-start w-full">
