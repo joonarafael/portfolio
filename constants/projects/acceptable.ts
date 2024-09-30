@@ -1,5 +1,5 @@
 const ACCEPTABLE_PROJECT_IDS = [
-	"blast-calc",
+	"jobba",
 	"explotrack",
 	"spotisaver",
 	"tiirascraper",

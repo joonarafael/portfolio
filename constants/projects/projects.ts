@@ -2,12 +2,11 @@ import DROPBOX_CONTENT from "@/constants/dropboxcontent";
 import { Project } from "@/types";
 
 import {
-	BLASTCALC_DESCRIPTION_EN,
-	BLASTCALC_DESCRIPTION_FI,
 	EXPLOTRACK_DESCRIPTION_EN,
-	EXPLOTRACK_DESCRIPTION_FI,
 	FLAGGAME_DESCRIPTION_EN,
 	FLAGGAME_DESCRIPTION_FI,
+	JOBBA_DESCRIPTION_EN,
+	JOBBA_DESCRIPTION_FI,
 	SPOTISAVER_DESCRIPTION_EN,
 	SPOTISAVER_DESCRIPTION_FI,
 	TIIRASCRAPER_DESCRIPTION_EN,
@@ -17,6 +16,94 @@ import {
 } from "./descriptions";
 
 const PROJECTS: Project[] = [
+	{
+		media: DROPBOX_CONTENT.media_todo,
+		mediaDescription: {
+			en: "The correct video has not yet been added.",
+			fi: "Oikeaa videota ei ole vielä lisätty.",
+		},
+		date: "Under development",
+		id: "jobba",
+		title: "Jobba",
+		about: {
+			en: "Revolutionary job-seeking platform built with a startup team. Still in development.",
+			fi: "Vallankumouksellinen työnhakualusta rakennettu startup-tiimin kanssa. Edelleen kehitysvaiheessa.",
+		},
+		description: {
+			en: JOBBA_DESCRIPTION_EN(),
+			fi: JOBBA_DESCRIPTION_FI(),
+		},
+		skills: [
+			{
+				name: "GitHub Actions",
+				icon: "https://img.shields.io/badge/GitHub%20Actions-%232671E5.svg?style=for-the-badge&color=black&logo=githubactions",
+			},
+			{
+				name: "JavaScript",
+				icon: "https://img.shields.io/badge/-JavaScript-informational?style=for-the-badge&color=black&logo=javascript",
+			},
+			{
+				name: "TypeScript",
+				icon: "https://img.shields.io/badge/-TypeScript-informational?style=for-the-badge&color=black&logo=typescript",
+			},
+			{
+				name: "Radix UI",
+				icon: "https://img.shields.io/badge/Radix%20UI-informational?style=for-the-badge&color=black&logo=radix-ui&logoColor=red",
+			},
+			{
+				name: "HTML5",
+				icon: "https://img.shields.io/badge/-HTML5-informational?style=for-the-badge&color=black&logo=html5",
+			},
+			{
+				name: "Tailwind CSS",
+				icon: "https://img.shields.io/badge/-TailwindCSS-informational?style=for-the-badge&color=black&logo=tailwindcss",
+			},
+			{
+				name: "React",
+				icon: "https://img.shields.io/badge/-React-informational?style=for-the-badge&color=black&logo=react",
+			},
+			{
+				name: "Next.js",
+				icon: "https://img.shields.io/badge/Next-informational?style=for-the-badge&color=black&logo=next.js&logoColor=white",
+			},
+			{
+				name: "Node.js",
+				icon: "https://img.shields.io/badge/-Node-informational?style=for-the-badge&color=black&logo=node.js",
+			},
+			{
+				name: "Jest",
+				icon: "https://img.shields.io/badge/-Jest-informational?style=for-the-badge&color=black&logo=jest&logoColor=red",
+			},
+			{
+				name: "ChatGPT",
+				icon: "https://img.shields.io/badge/ChatGPT-informational?style=for-the-badge&color=black&logo=openai&logoColor=green",
+			},
+			{
+				name: "Dependabot",
+				icon: "https://img.shields.io/badge/Dependabot-informational?style=for-the-badge&color=black&logo=dependabot&logoColor=blue",
+			},
+			{
+				name: "Docker",
+				icon: "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&color=black",
+			},
+			{
+				name: "Cypress",
+				icon: "https://img.shields.io/badge/-Cypress-%23E5E5E5?style=for-the-badge&color=black&logo=cypress",
+			},
+			{
+				name: "Git",
+				icon: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&color=black&logo=git&logoColor=red",
+			},
+			{
+				name: "Webpack",
+				icon: "https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=white&color=black",
+			},
+			{
+				name: "Zod",
+				icon: "https://img.shields.io/badge/zod-%233068b7.svg?style=for-the-badge&logo=zod&logoColor=white&color=black",
+			},
+		],
+	},
 	{
 		media: DROPBOX_CONTENT.media_explotrack,
 		mediaDescription: {
@@ -33,9 +120,13 @@ const PROJECTS: Project[] = [
 		},
 		description: {
 			en: EXPLOTRACK_DESCRIPTION_EN(),
-			fi: EXPLOTRACK_DESCRIPTION_FI(),
+			fi: JOBBA_DESCRIPTION_EN(),
 		},
 		skills: [
+			{
+				name: "JavaScript",
+				icon: "https://img.shields.io/badge/-JavaScript-informational?style=for-the-badge&color=black&logo=javascript",
+			},
 			{
 				name: "TypeScript",
 				icon: "https://img.shields.io/badge/-TypeScript-informational?style=for-the-badge&color=black&logo=typescript",
@@ -43,6 +134,10 @@ const PROJECTS: Project[] = [
 			{
 				name: "Radix UI",
 				icon: "https://img.shields.io/badge/Radix%20UI-informational?style=for-the-badge&color=black&logo=radix-ui&logoColor=red",
+			},
+			{
+				name: "HTML5",
+				icon: "https://img.shields.io/badge/-HTML5-informational?style=for-the-badge&color=black&logo=html5",
 			},
 			{
 				name: "Tailwind CSS",
@@ -59,6 +154,10 @@ const PROJECTS: Project[] = [
 			{
 				name: "Vercel",
 				icon: "https://img.shields.io/badge/Vercel-%23000000.svg?style=for-the-badge&color=black&logo=vercel&logoColor=white",
+			},
+			{
+				name: "Node.js",
+				icon: "https://img.shields.io/badge/-Node-informational?style=for-the-badge&color=black&logo=node.js",
 			},
 			{
 				name: "Postgres",
@@ -73,8 +172,20 @@ const PROJECTS: Project[] = [
 				icon: "https://img.shields.io/badge/Dependabot-informational?style=for-the-badge&color=black&logo=dependabot&logoColor=blue",
 			},
 			{
+				name: "Git",
+				icon: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&color=black&logo=git&logoColor=red",
+			},
+			{
 				name: "Redis",
 				icon: "https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&color=black&logo=redis",
+			},
+			{
+				name: "Webpack",
+				icon: "https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=white&color=black",
+			},
+			{
+				name: "Zod",
+				icon: "https://img.shields.io/badge/zod-%233068b7.svg?style=for-the-badge&logo=zod&logoColor=white&color=black",
 			},
 		],
 	},
@@ -84,8 +195,6 @@ const PROJECTS: Project[] = [
 			en: "More analyzing tools are coming in the future, but already the user is provided with a lot of information. What comes to exporting, both a more simpler and concise version, as well as a highly detailed one, can be downloaded.",
 			fi: "Lisää analysointityökaluja on vielä tulossa, mutta jo nyt käyttäjä saa paljon relevanttia tietoa soittolistoistaan. Mitä tulee soittolistojen vientiin, on listasta mahdollista ladata sekä tiivistetty että erittäin yksityiskohtainen versio.",
 		},
-		href: "https://spotisaver.vercel.app",
-		thumbnail: DROPBOX_CONTENT.thumbnail_spotisaver,
 		deployedOn: "Vercel",
 		date: "04/2024",
 		title: "Spotisaver",
@@ -100,12 +209,20 @@ const PROJECTS: Project[] = [
 		},
 		skills: [
 			{
+				name: "JavaScript",
+				icon: "https://img.shields.io/badge/-JavaScript-informational?style=for-the-badge&color=black&logo=javascript",
+			},
+			{
 				name: "TypeScript",
 				icon: "https://img.shields.io/badge/-TypeScript-informational?style=for-the-badge&color=black&logo=typescript",
 			},
 			{
 				name: "Radix UI",
 				icon: "https://img.shields.io/badge/Radix%20UI-informational?style=for-the-badge&color=black&logo=radix-ui&logoColor=red",
+			},
+			{
+				name: "HTML5",
+				icon: "https://img.shields.io/badge/-HTML5-informational?style=for-the-badge&color=black&logo=html5",
 			},
 			{
 				name: "Tailwind CSS",
@@ -124,6 +241,10 @@ const PROJECTS: Project[] = [
 				icon: "https://img.shields.io/badge/Vercel-%23000000.svg?style=for-the-badge&color=black&logo=vercel&logoColor=white",
 			},
 			{
+				name: "Node.js",
+				icon: "https://img.shields.io/badge/-Node-informational?style=for-the-badge&color=black&logo=node.js",
+			},
+			{
 				name: "ChatGPT",
 				icon: "https://img.shields.io/badge/ChatGPT-informational?style=for-the-badge&color=black&logo=openai&logoColor=green",
 			},
@@ -132,8 +253,16 @@ const PROJECTS: Project[] = [
 				icon: "https://img.shields.io/badge/Dependabot-informational?style=for-the-badge&color=black&logo=dependabot&logoColor=blue",
 			},
 			{
-				name: "Redis",
-				icon: "https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&color=black&logo=redis",
+				name: "Git",
+				icon: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&color=black&logo=git&logoColor=red",
+			},
+			{
+				name: "Webpack",
+				icon: "https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=white&color=black",
+			},
+			{
+				name: "Zod",
+				icon: "https://img.shields.io/badge/zod-%233068b7.svg?style=for-the-badge&logo=zod&logoColor=white&color=black",
 			},
 		],
 	},
@@ -159,12 +288,20 @@ const PROJECTS: Project[] = [
 		},
 		skills: [
 			{
+				name: "JavaScript",
+				icon: "https://img.shields.io/badge/-JavaScript-informational?style=for-the-badge&color=black&logo=javascript",
+			},
+			{
 				name: "TypeScript",
 				icon: "https://img.shields.io/badge/-TypeScript-informational?style=for-the-badge&color=black&logo=typescript",
 			},
 			{
 				name: "Radix UI",
 				icon: "https://img.shields.io/badge/Radix%20UI-informational?style=for-the-badge&color=black&logo=radix-ui&logoColor=red",
+			},
+			{
+				name: "HTML5",
+				icon: "https://img.shields.io/badge/-HTML5-informational?style=for-the-badge&color=black&logo=html5",
 			},
 			{
 				name: "Tailwind CSS",
@@ -179,6 +316,14 @@ const PROJECTS: Project[] = [
 				icon: "https://img.shields.io/badge/Next-informational?style=for-the-badge&color=black&logo=next.js&logoColor=white",
 			},
 			{
+				name: "Vercel",
+				icon: "https://img.shields.io/badge/Vercel-%23000000.svg?style=for-the-badge&color=black&logo=vercel&logoColor=white",
+			},
+			{
+				name: "Node.js",
+				icon: "https://img.shields.io/badge/-Node-informational?style=for-the-badge&color=black&logo=node.js",
+			},
+			{
 				name: "Jest",
 				icon: "https://img.shields.io/badge/-Jest-informational?style=for-the-badge&color=black&logo=jest&logoColor=red",
 			},
@@ -189,6 +334,14 @@ const PROJECTS: Project[] = [
 			{
 				name: "Dependabot",
 				icon: "https://img.shields.io/badge/Dependabot-informational?style=for-the-badge&color=black&logo=dependabot&logoColor=blue",
+			},
+			{
+				name: "Git",
+				icon: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&color=black&logo=git&logoColor=red",
+			},
+			{
+				name: "Webpack",
+				icon: "https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=white&color=black",
 			},
 		],
 	},
@@ -222,72 +375,13 @@ const PROJECTS: Project[] = [
 				name: "ChatGPT",
 				icon: "https://img.shields.io/badge/ChatGPT-informational?style=for-the-badge&color=black&logo=openai&logoColor=green",
 			},
-		],
-	},
-	{
-		media: DROPBOX_CONTENT.media_todo,
-		mediaDescription: {
-			en: "The correct video has not yet been added.",
-			fi: "Oikeaa videota ei ole vielä lisätty.",
-		},
-		href: "https://blastcalc.pages.dev/",
-		thumbnail: DROPBOX_CONTENT.thumbnail_blastcalc,
-		deployedOn: "Cloudflare Pages",
-		date: "Under development",
-		id: "blast-calc",
-		title: "Blast Calc",
-		about: {
-			en: "Application to create blasting circuit diagrams and calculate detonation delays.",
-			fi: "Sovellus räjähdysviiveiden laskemiseen ja kenttäkorttien luomiseen.",
-		},
-		description: {
-			en: BLASTCALC_DESCRIPTION_EN(),
-			fi: BLASTCALC_DESCRIPTION_FI(),
-		},
-		skills: [
 			{
-				name: "GitHub Actions",
-				icon: "https://img.shields.io/badge/GitHub%20Actions-%232671E5.svg?style=for-the-badge&color=black&logo=githubactions",
+				name: "Docker",
+				icon: "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&color=black",
 			},
 			{
-				name: "TypeScript",
-				icon: "https://img.shields.io/badge/-TypeScript-informational?style=for-the-badge&color=black&logo=typescript",
-			},
-			{
-				name: "Radix UI",
-				icon: "https://img.shields.io/badge/Radix%20UI-informational?style=for-the-badge&color=black&logo=radix-ui&logoColor=red",
-			},
-			{
-				name: "Tailwind CSS",
-				icon: "https://img.shields.io/badge/-TailwindCSS-informational?style=for-the-badge&color=black&logo=tailwindcss",
-			},
-			{
-				name: "React",
-				icon: "https://img.shields.io/badge/-React-informational?style=for-the-badge&color=black&logo=react",
-			},
-			{
-				name: "Next.js",
-				icon: "https://img.shields.io/badge/Next-informational?style=for-the-badge&color=black&logo=next.js&logoColor=white",
-			},
-			{
-				name: "Vercel",
-				icon: "https://img.shields.io/badge/Vercel-%23000000.svg?style=for-the-badge&color=black&logo=vercel&logoColor=white",
-			},
-			{
-				name: "Jest",
-				icon: "https://img.shields.io/badge/-Jest-informational?style=for-the-badge&color=black&logo=jest&logoColor=red",
-			},
-			{
-				name: "ChatGPT",
-				icon: "https://img.shields.io/badge/ChatGPT-informational?style=for-the-badge&color=black&logo=openai&logoColor=green",
-			},
-			{
-				name: "Dependabot",
-				icon: "https://img.shields.io/badge/Dependabot-informational?style=for-the-badge&color=black&logo=dependabot&logoColor=blue",
-			},
-			{
-				name: "Cloudflare",
-				icon: "https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&color=black&logo=Cloudflare",
+				name: "Git",
+				icon: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&color=black&logo=git&logoColor=red",
 			},
 		],
 	},
@@ -310,10 +404,6 @@ const PROJECTS: Project[] = [
 		},
 		skills: [
 			{
-				name: "GitHub Actions",
-				icon: "https://img.shields.io/badge/GitHub%20Actions-%232671E5.svg?style=for-the-badge&color=black&logo=githubactions",
-			},
-			{
 				name: "Poetry",
 				icon: "https://img.shields.io/badge/Poetry-%233B82F6.svg?style=for-the-badge&color=black&logo=poetry",
 			},
@@ -324,6 +414,10 @@ const PROJECTS: Project[] = [
 			{
 				name: "ChatGPT",
 				icon: "https://img.shields.io/badge/ChatGPT-informational?style=for-the-badge&color=black&logo=openai&logoColor=green",
+			},
+			{
+				name: "Git",
+				icon: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&color=black&logo=git&logoColor=red",
 			},
 		],
 	},

@@ -1,15 +1,15 @@
 "use client";
 
-import Link from 'next/link';
-import { RxGithubLogo } from 'react-icons/rx';
-import { VscGlobe } from 'react-icons/vsc';
+import Link from "next/link";
+import { RxGithubLogo } from "react-icons/rx";
+import { VscGlobe } from "react-icons/vsc";
 
-import { Button } from '@/components/ui/button';
-import { useTranslationStore } from '@/hooks/useTranslation';
-import TRANSLATION from '@/translations/translation';
-import { Project } from '@/types';
+import { Button } from "@/components/ui/button";
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
+import { Project } from "@/types";
 
-import ContactButton from '../navbar/contact';
+import ContactButton from "../navbar/contact";
 
 interface ProjectLearnMoreProps {
 	project: Project;
@@ -21,7 +21,7 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 	return (
 		<div className="flex flex-col lg:flex-row justify-between min-h-48 items-center gradient-background animate-gradientBackground rounded-xl py-16 lg:py-0 lg:px-16 w-full backdrop-blur-lg gap-4">
 			<div className="text-white text-center lg:text-left">
-				{project.id === "explotrack" ? (
+				{project.id === "explotrack" || project.id === "jobba" ? (
 					<>
 						<h3 className="text-base sm:text-xl font-normal sm:font-bold">
 							{TRANSLATION[language].project.learnMore.private.header}
@@ -42,7 +42,7 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 				)}
 			</div>
 			<div>
-				{project.id === "explotrack" ? (
+				{project.id === "explotrack" || project.id === "jobba" ? (
 					<ContactButton
 						btnTxt={TRANSLATION[language].project.learnMore.private.btnText}
 					/>

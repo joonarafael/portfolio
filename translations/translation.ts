@@ -28,6 +28,7 @@ const TRANSLATION = {
 			footer: {
 				updated: "updated lastly",
 				favicon: "favicon by Freepik",
+				vatId: "Finnish Business ID",
 			},
 			navbar: {
 				shortcuts: ["Home", "About", "Skills", "Projects", "Experience"],
@@ -203,6 +204,7 @@ const TRANSLATION = {
 			footer: {
 				updated: "päivitetty viimeksi",
 				favicon: "faviconin suunnitellut Freepik",
+				vatId: "Y-tunnus",
 			},
 			navbar: {
 				shortcuts: ["Koti", "Lyhyesti", "Taidot", "Projektit", "Työkokemus"],

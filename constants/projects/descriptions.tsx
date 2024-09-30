@@ -1,5 +1,45 @@
 import Link from "next/link";
 
+export const JOBBA_DESCRIPTION_EN = () => {
+	return (
+		<div>
+			<p>
+				A revolutionary job platform that aims to connect job seekers,
+				employers, and consultants all under the same roof. The application is
+				built to work as a full end-to-end experience, where the user can find a
+				job, apply for a job, and get a job all in the same place.
+				<br />
+				<br />
+				This project has been built over a long period of time with a startup
+				team consisting of multiple people. There are other software developers
+				involved, but also students from the commercial sector and marketing
+				professionals. The project has taught me a lot about teamwork, project
+				management, and how to build your own product from scratch.
+			</p>
+		</div>
+	);
+};
+
+export const JOBBA_DESCRIPTION_FI = () => {
+	return (
+		<div>
+			<p>
+				Uudenlainen työnhakualusta, jonka tarkotuksena on yhdistää työnhakijat,
+				työntajat ja konsultit kaikki saman katon alle. Applikaatio on
+				rakennettu toimimaan täysin 'e2e-kokemuksena', jossa käyttäjä löytää
+				työpaikan, hakee työpaikkaa ja saa työpaikan kaikki samassa paikassa.
+				<br />
+				<br />
+				Tätä projektia on rakennettu pitkään ja hartaasti usean henkilön
+				startup-tiimissä. Mukana on muita ohjelmistokehittäjiä, mutta myös
+				kaupallisen alan opiskelijoita ja markkinointiosaajia. Projekti on
+				opettanut minulle erittäin paljon tiimityöskentelystä,
+				projektinhallinnasta ja kuinka rakentaa oma tuote alusta lähtien.
+			</p>
+		</div>
+	);
+};
+
 export const EXPLOTRACK_DESCRIPTION_FI = () => {
 	return (
 		<div>
@@ -9,7 +49,7 @@ export const EXPLOTRACK_DESCRIPTION_FI = () => {
 				Postgres-tietokantaa. Applikaatio on kirjanpitotyökalu yritykselle, joka
 				pitää kirjaa yrityksen räjähdetilauksista ja seuraa tuotteiden kulkua
 				sovelluksen avulla. Applikaatio sisältää käyttäjäautentikaation,
-				lokitietojen kattavan seurannan (PostHog), ja edistyneen middlewaren.
+				lokitietojen kattavan seurannan, ja edistyneen middlewaren.
 				<br />
 				<br />
 				Tämän projektin kautta olen sisäistänyt paljon erilaisia web-kehitykseen
@@ -32,7 +72,7 @@ export const EXPLOTRACK_DESCRIPTION_EN = () => {
 				database. The application is a bookkeeping tool for a company that keeps
 				track of company orders and the flow and transactions of explosive
 				products. The application includes user authentication, extensive
-				logging (with PostHog), and advanced middleware.
+				logging, and advanced middleware.
 				<br />
 				<br />
 				With this project, I&apos;ve really tried to understand various security
@@ -173,47 +213,6 @@ export const TIIRASCRAPER_DESCRIPTION_EN = () => {
 				be configured to send user updates when new observations matching the
 				predetermined criteria are found. The scraper also keeps track of recent
 				history so no single observation is ever sent twice.
-			</p>
-		</div>
-	);
-};
-
-export const BLASTCALC_DESCRIPTION_FI = () => {
-	return (
-		<div>
-			<p>
-				Hienostunut laskentatyökalu panostajille ja muille kaivosinsinööreille
-				kenttäkorttien luomiseen ja räjähdysviiveiden laskemiseen. Applikaatio
-				on rakennettu Reactilla Next.js-serverille. Applikaatio on hostattuna
-				Cloudflare Pages -palvelussa. Applikaation moderni ja responsiivinen UI
-				on rakennettu hyödyntäen Radix UI -kirjastoa.
-				<br />
-				<br />
-				Applikaatio on rakennettu oikean asiakkaan pyynnöstä. Siksipä siihen on
-				suunniteltu oikeasti hyödyllisiä ominaisuuksia tärkeysjärjestyksessä.
-				Näitä ovat esimerkiksi laskenta-algoritmit, jotka polunetsinnän avulla
-				laskevat kumulatiivisia räjähdysviiveitä ja luovat tarkkoja ja
-				turvallisia kenttäkortteja.
-			</p>
-		</div>
-	);
-};
-
-export const BLASTCALC_DESCRIPTION_EN = () => {
-	return (
-		<div>
-			<p>
-				Highly sophisticated calculator tool for mining engineers to create
-				blasting circuit diagrams and calculate detonation delays. Application
-				is built with React and Next.js. The application is hosted on Cloudflare
-				Pages. The application has a modern and responsive UI built with the
-				Radix UI library.
-				<br />
-				<br />
-				The application has been built based on a real client request. The
-				application involves many useful tools for real-life applications,
-				multiple layers of different analyzing calculations, and pathfinding
-				algorithms to create accurate and safe blasting circuit diagrams.
 			</p>
 		</div>
 	);
