@@ -1,16 +1,18 @@
 "use client";
 
-import Link from 'next/link';
-import { IoIosArrowDropleft } from 'react-icons/io';
+import Link from "next/link";
+import { IoIosArrowDropleft } from "react-icons/io";
 
-import ClientOnly from '@/components/clientonly';
-import EmptyState from '@/components/emptystate';
-import { Button } from '@/components/ui/button';
-import { useTranslationStore } from '@/hooks/useTranslation';
-import TRANSLATION from '@/translations/translation';
+import ClientOnly from "@/components/clientonly";
+import EmptyState from "@/components/emptystate";
+import { Button } from "@/components/ui/button";
+import { useTranslationStore } from "@/hooks/useTranslation";
+import TRANSLATION from "@/translations/translation";
 
 const NotFound = () => {
 	const { language } = useTranslationStore();
+
+	document.title = "404 | Joona Kettunen";
 
 	return (
 		<ClientOnly>

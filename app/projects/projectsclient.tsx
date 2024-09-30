@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect } from "react";
 import { RxExternalLink } from "react-icons/rx";
 
 import Container from "@/components/container";
@@ -14,10 +15,18 @@ import TRANSLATION from "@/translations/translation";
 const ProjectsClient = () => {
 	const { language } = useTranslationStore();
 
-	document.title =
-		language === "en"
-			? "Projects | Joona Kettunen"
-			: "Projektit | Joona Kettunen";
+	document.title = "Projects | Joona Kettunen";
+
+	useEffect(() => {
+		const changeTitleToLangPreference = () => {
+			document.title =
+				language === "en"
+					? "Projects | Joona Kettunen"
+					: "Projektit | Joona Kettunen";
+		};
+
+		changeTitleToLangPreference();
+	}, [language]);
 
 	return (
 		<Container>
