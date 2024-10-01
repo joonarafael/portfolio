@@ -25,8 +25,23 @@ const ThemeProvider = dynamic(() => import("../components/themeprovider"), {
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://joonakettuen.netlify.app"),
 	title: "Portfolio | Joona Kettunen",
 	description: "Portfolio of Joona Kettunen",
+	twitter: {
+		card: "summary_large_image",
+	},
+	openGraph: {
+		images: [
+			{
+				url: new URL("https://joonakettunen.netlify.app/opengraph-image.png")
+					.href,
+				width: 1400,
+				height: 425,
+				alt: "Portfolio | Joona Kettunen",
+			},
+		],
+	},
 };
 
 export default async function RootLayout({
