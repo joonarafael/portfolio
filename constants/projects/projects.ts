@@ -22,7 +22,10 @@ const PROJECTS: Project[] = [
 			en: "The correct video has not yet been added.",
 			fi: "Oikeaa videota ei ole vielä lisätty.",
 		},
+		href: "https://jobba.app",
+		thumbnail: DROPBOX_CONTENT.thumbnail_jobba,
 		date: "Under development",
+		deployedOn: "Custom",
 		id: "jobba",
 		title: "Jobba",
 		about: {
@@ -275,7 +278,7 @@ const PROJECTS: Project[] = [
 		href: "https://visualpathfinder.vercel.app",
 		thumbnail: DROPBOX_CONTENT.thumbnail_visualpathfinder,
 		date: "03/2024",
-		deployedOn: "Railway App",
+		deployedOn: "Vercel",
 		title: "Visual Pathfinder",
 		id: "visualpathfinder",
 		about: {

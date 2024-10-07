@@ -128,7 +128,7 @@ export const VISUALPATHFINDER_DESCRIPTION_FI = () => {
 		<div>
 			<p>
 				Reitinhakutyökalu (ja visualisointi) rakennettu Reactilla ja Next.js:llä
-				opintyönä yliopistolla. Hostauksen hoitaa Railway. Sovellus mahdollistaa
+				opintyönä yliopistolla. Hostauksen hoitaa Vercel. Sovellus mahdollistaa
 				kolmen eri reitinhakualgoritmin, Dijkstran, A* ja Jump Point Search,
 				vertailun ja visualisoinnin. JPS-algoritmin implementointi teoreettiseen
 				tutkimuspaperiin pohjautuen oli oppimiskokemuksena palkitseva.
@@ -149,7 +149,7 @@ export const VISUALPATHFINDER_DESCRIPTION_EN = () => {
 		<div>
 			<p>
 				Fun pathfinder application built as a university assignment. The
-				application is built with React and Next.js. Hosted on Railway. The
+				application is built with React and Next.js. Hosted on Vercel. The
 				application allows users see three different pathfinding algorithms,
 				Dijkstra&apos;s, A* and Jump Point Search, in action, as well as compare
 				their performance. Learning to implement a pathfinding algorithm (JPS)

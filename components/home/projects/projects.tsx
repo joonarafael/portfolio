@@ -24,7 +24,7 @@ const Projects = () => {
 				<h2 className="font-bold text-3xl">
 					{TRANSLATION[language].index.projects.header}
 				</h2>
-				<div className="gap-8 grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+				<div className="gap-8 grid w-full grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
 					{firstFour.map((project, i) => (
 						<ProjectPanel key={i} project={project} />
 					))}

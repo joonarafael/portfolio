@@ -5,6 +5,8 @@ const DROPBOX_CONTENT = {
 		"https://dl.dropboxusercontent.com/scl/fi/bwipx7607ro1gb5akaarz/profpic.jpeg?rlkey=ec61wmz84rno3339ssxcngvky",
 	thumbnail_explotrack:
 		"https://dl.dropboxusercontent.com/scl/fi/yqczf9gm8jrxe220l5320/thumbnail_explotrack.png?rlkey=01jm9qwk60k7zixchsqttxex1",
+	thumbnail_jobba:
+		"https://dl.dropboxusercontent.com/scl/fi/02j3ae2tka7oid0eei73o/thumbnail_jobba.png?rlkey=4b3bz9prffn2bnbypmfgzl6db",
 	thumbnail_visualpathfinder:
 		"https://dl.dropboxusercontent.com/scl/fi/apo036v68uk3ukmu5750b/thumbnail_visualpathfinder.png?rlkey=cqhsheq8nu9yynlfxchn547sl",
 	media_explotrack:
