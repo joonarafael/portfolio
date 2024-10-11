@@ -3,6 +3,7 @@ import { Project } from "@/types";
 
 import {
 	EXPLOTRACK_DESCRIPTION_EN,
+	EXPLOTRACK_DESCRIPTION_FI,
 	FLAGGAME_DESCRIPTION_EN,
 	FLAGGAME_DESCRIPTION_FI,
 	JOBBA_DESCRIPTION_EN,
@@ -123,7 +124,7 @@ const PROJECTS: Project[] = [
 		},
 		description: {
 			en: EXPLOTRACK_DESCRIPTION_EN(),
-			fi: JOBBA_DESCRIPTION_EN(),
+			fi: EXPLOTRACK_DESCRIPTION_FI(),
 		},
 		skills: [
 			{

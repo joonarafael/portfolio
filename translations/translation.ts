@@ -83,7 +83,7 @@ const TRANSLATION = {
 				header: {
 					hello: "Hello, I'm",
 					subtitle:
-						"a passionate computer science student dedicated to mastering cutting-edge technologies and shaping the future as a skilled problem-solver and worker of the digital age.",
+						"a computer science student and software developer with a passion for designing scalable systems and solving complex problems. I bring hands-on experience from both industry and entrepreneurial projects, demonstrating a knack for system integrations, product design, and full-stack development.",
 				},
 				messageBtn: {
 					btnTxt: "Send me a message",
@@ -259,7 +259,7 @@ const TRANSLATION = {
 				header: {
 					hello: "Hei, olen",
 					subtitle:
-						"omistautunut tietojenkäsittelytieteiden opiskelija, joka pyrkii hallitsemaan viimeisimpiä teknologioita ja muokkaamaan tulevaisuutta taitavana ongelmanratkaisijana ja digiajan työntekijänä.",
+						"omistautunut ohjelmistokehittäjä ja tietojenkäsittelytieteiden opiskelija, jonka kiinnostuksena on tehokkaiden ja skaalautuvien ohjelmistojen suunnittelu ja kehitys. Kokemukseni sekä työelämästä mutta myös omista yritteliäistä projekteista takaa minulle vahvan osaamisen järjestelmäintegraatioista, tuotekehityksestä ja full-stack kehityksestä.",
 				},
 				messageBtn: {
 					btnTxt: "Lähetä minulle viesti",

@@ -27,7 +27,8 @@ export const AboutMeBodyEn = () => {
 				My long-term goal is to become a bridge between technical and
 				non-technical teams, leveraging my programming expertise and strong
 				communication skills to drive collaborative success and deliver
-				impactful solutions.
+				impactful solutions. I’ve been told that I can explain complex technical
+				topics in a way that makes everyone feel included and understood.
 			</p>
 			<p>
 				I’m always open to connecting with like-minded professionals and
@@ -63,10 +64,11 @@ export const AboutMeBodyFi = () => {
 				pelkän koodaamisen lisäksi.
 			</p>
 			<p>
-				Pitkässä tähtäimessä tavoitteenani on toimia teknisen ja ei-teknisen
-				puolen risteyksessä, hyödyntäen ohjelmointiosaamistani ja vahvoja
+				Pitkässä tähtäimessä tavoitteenani on toimia teknisten ja ei-teknisten
+				puolten risteyksessä, hyödyntäen ohjelmointiosaamistani ja vahvoja
 				viestintätaitojani. Haluaisinkin toimia eräänlaisena ’sillanrakentajana’
-				eri tiimien välillä.
+				eri tiimien välillä. Olen kuullut, että osaan keskustella vaikeista
+				teknisistä aiheista niin, että kukaan ei tunne oloaan tyhmäksi.
 			</p>
 			<p>
 				Olen aina avoin uusille mahdollisuuksille ja uusille kontakteille,
