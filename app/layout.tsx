@@ -1,26 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import dynamic from "next/dynamic";
 import { Inter } from "next/font/google";
 
+import CookiesConsent from "@/components/cookiesconsent";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar/navbar";
 import { CSPostHogProvider } from "@/components/posthogprovider";
-
-const CookiesConsent = dynamic(() => import("../components/cookiesconsent"), {
-	ssr: false,
-});
-
-const Footer = dynamic(() => import("../components/footer"), {
-	ssr: false,
-});
-
-const Navbar = dynamic(() => import("../components/navbar/navbar"), {
-	ssr: false,
-});
-
-const ThemeProvider = dynamic(() => import("../components/themeprovider"), {
-	ssr: false,
-});
+import ThemeProvider from "@/components/themeprovider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -52,12 +39,7 @@ export default async function RootLayout({
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<ThemeProvider
-					attribute="class"
-					defaultTheme="system"
-					enableSystem
-					disableTransitionOnChange
-				>
+				<ThemeProvider>
 					<CSPostHogProvider>
 						<Navbar />
 						<main className="bg-repeat bg-[url(../public/background.png),_url(../public/background.png)] dark:bg-[url(../public/background-invert.png),_url(../public/background-invert.png)] min-h-screen">

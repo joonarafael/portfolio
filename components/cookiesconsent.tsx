@@ -11,6 +11,10 @@ import { Button } from "./ui/button";
 const CookiesConsent = () => {
 	const { language } = useTranslationStore();
 
+	if (typeof window === "undefined") {
+		return null;
+	}
+
 	const consent = localStorage.getItem("cookies");
 	const cookieState = useCookies();
 

@@ -1,19 +1,19 @@
-import Link from 'next/link';
-import { IoIosArrowDropleft } from 'react-icons/io';
+import Link from "next/link";
+import { IoIosArrowDropleft } from "react-icons/io";
 
-import ClientOnly from '@/components/clientonly';
-import EmptyState from '@/components/emptystate';
-import { Button } from '@/components/ui/button';
-import ACCEPTABLE_PROJECT_IDS from '@/constants/projects/acceptable';
+import ClientOnly from "@/components/clientonly";
+import EmptyState from "@/components/emptystate";
+import { Button } from "@/components/ui/button";
+import ACCEPTABLE_PROJECT_IDS from "@/constants/projects/acceptable";
 
-import ProjectClient from './project';
+import ProjectClient from "./project";
 
 interface IParams {
 	project?: string;
 }
 
 const ProjectPage = async ({ params }: { params: IParams }) => {
-	const { project } = params;
+	const { project } = await params;
 
 	if (!project) {
 		return (
