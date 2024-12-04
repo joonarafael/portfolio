@@ -63,10 +63,52 @@ const config = {
 					"0%": { backgroundPosition: "0% 50%" },
 					"100%": { backgroundPosition: "100% 50%" },
 				},
+				jiggle: {
+					"0%": {
+						transform: "scale3d(1, 1, 1)",
+					},
+					"30%": {
+						transform: "scale3d(1.25, 0.75, 1)",
+					},
+					"40%": {
+						transform: "scale3d(0.75, 1.25, 1)",
+					},
+					"50%": {
+						transform: "scale3d(1.15, 0.85, 1)",
+					},
+					"65%": {
+						transform: "scale3d(0.95, 1.05, 1)",
+					},
+					"75%": {
+						transform: "scale3d(1.05, 0.95, 1)",
+					},
+					"100%": {
+						transform: "scale3d(1, 1, 1)",
+					},
+				},
+				tada: {
+					"0%": {
+						transform: "scale3d(1, 1, 1)",
+					},
+					"10%, 20%": {
+						transform: "scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg)",
+					},
+					"30%, 50%, 70%, 90%": {
+						transform: "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
+					},
+					"40%, 60%, 80%": {
+						transform: "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)",
+					},
+					"100%": {
+						transform: "scale3d(1, 1, 1)",
+					},
+				},
 			},
 			animation: {
 				gradient: "gradient 12s linear infinite",
 				gradientBackground: "gradient 18s linear infinite",
+				jiggle: "jiggle 0.6s ease-in-out 0.25s 1",
+				tada: "tada 1s ease-in-out 0.25s 1",
 			},
 			boxShadow: {
 				light: "0 0 5px theme('colors.slate.500')",

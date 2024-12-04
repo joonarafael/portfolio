@@ -12,7 +12,9 @@ import TRANSLATION from "@/translations/translation";
 const NotFound = () => {
 	const { language } = useTranslationStore();
 
-	document.title = "404 | Joona Kettunen";
+	if (typeof window !== "undefined") {
+		document.title = "404 | Joona Kettunen";
+	}
 
 	return (
 		<ClientOnly>

@@ -33,14 +33,9 @@ const Skills = () => {
 				<p className="font-bold text-xl">
 					{TRANSLATION[language].index.skills.headers.learning}
 				</p>
-				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+				<div className="flex flex-wrap justify-center items-center w-full gap-1">
 					{SKILLS_LEARNING.map((skill, i) => (
-						<div key={i} className="relative group">
-							<div className="absolute opacity-0 -inset-0.5 bg-gradient-to-r from-purple-800 to-pink-500 rounded-xl blur-md group-hover:opacity-75 transition group-hover:duration-200 duration-1000"></div>
-							<div className="relative bg-black rounded-xl p-1 items-center justify-center flex h-14">
-								<SkillElement skill={skill} />
-							</div>
-						</div>
+						<SkillElement skill={skill} key={i} />
 					))}
 				</div>
 			</div>

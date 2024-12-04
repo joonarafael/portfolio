@@ -61,7 +61,7 @@ const SKILLS: Skill[] = [
 	},
 	{
 		name: "Postgres",
-		icon: "https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&color=black&logo=postgresql&logoColor=white",
+		icon: "https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&color=black&logo=postgresql",
 	},
 	{
 		name: "ChatGPT",
@@ -84,10 +84,6 @@ const SKILLS: Skill[] = [
 		icon: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&color=black&logo=git&logoColor=red",
 	},
 	{
-		name: "AWS",
-		icon: "https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&color=black&logo=amazon-aws&logoColor=white",
-	},
-	{
 		name: "Redis",
 		icon: "https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&color=black&logo=redis",
 	},
@@ -101,15 +97,67 @@ const SKILLS: Skill[] = [
 	},
 	{
 		name: "Flask",
-		icon: "https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white&color=black",
+		icon: "https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&color=black",
 	},
 	{
 		name: "Webpack",
-		icon: "https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=white&color=black",
+		icon: "https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&color=black",
 	},
 	{
 		name: "Zod",
-		icon: "https://img.shields.io/badge/zod-%233068b7.svg?style=for-the-badge&logo=zod&logoColor=white&color=black",
+		icon: "https://img.shields.io/badge/zod-%233068b7.svg?style=for-the-badge&logo=zod&logoColor=blue&color=black",
+	},
+	{
+		name: "Rasperry Pi",
+		icon: "https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&color=black&logo=Raspberry-Pi",
+	},
+	{
+		name: "Boostrap",
+		icon: "https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&color=black&logo=bootstrap",
+	},
+	{
+		name: "ROS",
+		icon: "https://img.shields.io/badge/ros-%230A0FF9.svg?style=for-the-badge&logo=ros&color=black",
+	},
+	{
+		name: "Express",
+		icon: "https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&color=black&logo=express&logoColor=%2361DAFB",
+	},
+	{
+		name: "JWT",
+		icon: "https://img.shields.io/badge/JWT-black?style=for-the-badge&color=black&logo=JSON%20web%20tokens",
+	},
+	{
+		name: "Pytest",
+		icon: "https://img.shields.io/badge/pytest-%23ffffff.svg?style=for-the-badge&color=black&logo=pytest&logoColor=2f9fe3",
+	},
+	{
+		name: "RabbitMQ",
+		icon: "https://img.shields.io/badge/Rabbitmq-FF6600?style=for-the-badge&color=black&logo=rabbitmq",
+	},
+	{
+		name: "SASS",
+		icon: "https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&color=black&logo=SASS&logoColor=hotpink",
+	},
+	{
+		name: "React Query",
+		icon: "https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&color=black&logo=react%20query",
+	},
+	{
+		name: "React Router",
+		icon: "https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&color=black&logo=react-router",
+	},
+	{
+		name: "React Hook Form",
+		icon: "https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&color=black&logo=reacthookform",
+	},
+	{
+		name: "Redux",
+		icon: "https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&color=black&logo=redux&logoColor=purple",
+	},
+	{
+		name: "Vite",
+		icon: "https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&color=black&logo=vite",
 	},
 ];
 

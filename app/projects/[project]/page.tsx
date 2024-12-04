@@ -8,9 +8,9 @@ import ACCEPTABLE_PROJECT_IDS from "@/constants/projects/acceptable";
 
 import ProjectClient from "./project";
 
-interface IParams {
+type IParams = Promise<{
 	project?: string;
-}
+}>;
 
 const ProjectPage = async ({ params }: { params: IParams }) => {
 	const { project } = await params;

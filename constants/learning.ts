@@ -4,16 +4,16 @@ import { Skill } from "@/types";
 
 const SKILLS_LEARNING: Skill[] = [
 	{
-		name: "Rasperry Pi",
-		icon: "https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&color=black&logo=Raspberry-Pi",
-	},
-	{
-		name: "ROS",
-		icon: "https://img.shields.io/badge/ros-%230A0FF9.svg?style=for-the-badge&logo=ros&logoColor=white&color=black",
-	},
-	{
 		name: "React Native",
 		icon: "https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&color=black&logoColor=%2361DAFB",
+	},
+	{
+		name: "Expo",
+		icon: "https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&color=black&logo=expo&logoColor=#D04A37",
+	},
+	{
+		name: "GO",
+		icon: "https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&color=black&logo=go&logoColor=blue",
 	},
 ];
 

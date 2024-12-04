@@ -15,7 +15,7 @@ const ProfPic = () => {
 		<div className="relative group">
 			<div className="p-4">
 				<img
-					className="rounded-full object-contain border-b-8 border-x-2 border-black dark:border-purple-500 shadow-lg dark:shadow-purple-800 shadow-black pointer-events-none group-hover:shadow-2xl group-hover:dark:shadow-purple-500 duration-1000 group-hover:duration-200 group-hover:shadow-black"
+					className="rounded-full cursor-crosshair object-contain border-b-8 border-x-2 border-black dark:border-purple-500 shadow-lg dark:shadow-purple-800 shadow-black pointer-events-none group-hover:shadow-2xl group-hover:dark:shadow-purple-500 duration-1000 group-hover:duration-200 group-hover:shadow-black"
 					src={DROPBOX_CONTENT.profPic}
 					alt="Profile"
 				/>
