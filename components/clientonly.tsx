@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 
 interface ClientOnlyProps {
-	children: JSX.Element;
+	children: React.ReactNode;
 }
 
 const ClientOnly = ({ children }: ClientOnlyProps) => {
