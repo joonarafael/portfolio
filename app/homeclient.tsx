@@ -16,8 +16,8 @@ const HomeClient = () => {
 			<div className="flex flex-col gap-24 z-0 min-h-screen">
 				<Title />
 				<AboutMe />
-				<Skills />
 				<Projects />
+				<Skills />
 				<Experience />
 				<NewProject />
 			</div>

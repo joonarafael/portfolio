@@ -7,7 +7,7 @@ export const AboutMeBodyEn = () => {
 				Aspiring software developer with a passion for web development and a
 				strong foundation in computer science. Currently pursuing a degree in
 				Computer Science at the University of Helsinki, with a focus on web
-				development and software engineering (+ a lot of maths).
+				development and software engineering.
 			</p>
 			<p>
 				At Aufwin, I’ve gained hands-on experience in system integrations and
@@ -17,24 +17,18 @@ export const AboutMeBodyEn = () => {
 				and engaging user interfaces.
 			</p>
 			<p>
-				Recently I've also started to operate my own registered business as a
-				freelance developer, where I manage all aspects of the business,
-				including taxes, billing, and accounting. This entrepreneurial
-				experience has sharpened my ability to deliver high-quality development
-				services while also handling the operational side of a business.
+				I am dedicated to continuous learning and growth, leveraging my free
+				time to explore emerging technologies and apply them in practical
+				contexts. This includes, for example, collaborating on innovative
+				startup projects, experimenting with self-hosted DevOps solutions on my
+				home server, and staying at the forefront of industry advancements and
+				AI.
 			</p>
 			<p>
 				My long-term goal is to become a bridge between technical and
 				non-technical teams, leveraging my programming expertise and strong
 				communication skills to drive collaborative success and deliver
-				impactful solutions. I’ve been told that I can explain complex technical
-				topics in a way that makes everyone feel included and understood.
-			</p>
-			<p>
-				I’m always open to connecting with like-minded professionals and
-				exploring new opportunities to grow and contribute in the tech industry.
-				Got a question or just want to connect? Shoot me an email — I’d love to
-				hear from you!
+				impactful solutions.
 			</p>
 		</>
 	);
@@ -44,36 +38,31 @@ export const AboutMeBodyFi = () => {
 	return (
 		<>
 			<p>
-				Kunnianhimoinen web-kehitykseen vihkiytynyt ohjelmistokehittäjä vahvalla
-				akateemisella taustalla. Kolmannen vuoden tietojenkäsittelytieteiden
-				opiskelija Helsingin yliopistossa, aihealueina erityisesti web-kehitys
-				ja ohjelmistotuotanto (+ matematiikka).
+				Motivoitunut ohjelmistokehittäjä, jolla on intohimo web-kehitykseen ja
+				vahva pohja tietojenkäsittelytieteessä. Opiskelen
+				tietojenkäsittelytiedettä Helsingin yliopistossa, keskittyen
+				web-kehitykseen ja ohjelmistotuotantoon.
 			</p>
 			<p>
-				Aufwinillä olen saanut kokemusta työnteosta ohjelmistokehityksen
-				parissa. Olen lähinnä työskennellyt erinäisten
-				järjestelmäintegraatioiden parissa. Suuri kiinnostuksen kohteeni on
-				kuitenkin frontend-kehitys ja erityisesti käyttäjäkokemuksen
-				suunnittelu. Kuinka teknologia kohtaa käyttäjät?
+				Aufwinilla olen saanut käytännön kokemusta järjestelmäintegraatioista ja
+				laajan mittakaavan ohjelmistoinfrastruktuurista, samalla kun jatkan
+				taitojeni hiomista frontend-kehityksessä. Olen erityisen kiinnostunut
+				siitä, miten teknologia kohtaa käyttäjäkokemuksen, menestyen
+				intuitiivisten ja osallistavien käyttöliittymien suunnittelussa ja
+				keskustelussa.
 			</p>
 			<p>
-				Olen nyt myös aloittanut oman yritystoiminnan freelance-kehittäjänä,
-				olen toiminimelläni vastuussa kaikista yrityksen osa-alueista, kuten
-				verotuksesta, laskutuksesta ja kirjanpidosta. Yrittäjyys on
-				terävöittänyt kykyjäni monialaisesti ja opettanut tärkeitä taitoja
-				pelkän koodaamisen lisäksi.
+				Olen omistautunut jatkuvaan oppimiseen ja kasvuun, hyödyntäen
+				vapaa-aikaani uusien teknologioiden tutkimiseen ja niiden soveltamiseen
+				käytännön konteksteissa. Tähän sisältyy mm. yhteistyö innovatiivisissa
+				startup-projekteissa, kokeilut self-hostatuilla DevOps-ratkaisuilla
+				kotipalvelimellani ja pysyminen alan edistyksen ja tekoälyn kärjessä.
 			</p>
 			<p>
-				Pitkässä tähtäimessä tavoitteenani on toimia teknisten ja ei-teknisten
-				puolten risteyksessä, hyödyntäen ohjelmointiosaamistani ja vahvoja
-				viestintätaitojani. Haluaisinkin toimia eräänlaisena ’sillanrakentajana’
-				eri tiimien välillä. Olen kuullut, että osaan keskustella vaikeista
-				teknisistä aiheista niin, että kukaan ei tunne oloaan tyhmäksi.
-			</p>
-			<p>
-				Olen aina avoin uusille mahdollisuuksille ja uusille kontakteille,
-				sähköpostini Inbox-laatikko on aina auki! Kysymyksiä tai ideoita? Ota
-				yhteyttä, niin jutellaan miten edettäisiin!
+				Pitkän aikavälin tavoitteeni on toimia sillanrakentajana teknisten ja
+				ei-teknisten tiimien välillä, hyödyntäen ohjelmointiosaamistani ja
+				vahvoja viestintätaitojani kiihdyttämään yhteistyön menestystä ja
+				toimittamaan vaikuttavia, onnistuneita ratkaisuja.
 			</p>
 		</>
 	);

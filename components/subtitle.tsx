@@ -6,7 +6,7 @@ interface SubtitleProps {
 
 const Subtitle = ({ text }: SubtitleProps) => {
 	return (
-		<div className="text-center border border-foreground p-2 min-w-48 rounded-xl w-min items-center justify-center backdrop-blur-md">
+		<div className="text-center border border-foreground p-2 min-w-48 rounded-xl w-min items-center justify-center backdrop-blur-md cursor-crosshair">
 			<pre className="text-sm">{text}</pre>
 		</div>
 	);
