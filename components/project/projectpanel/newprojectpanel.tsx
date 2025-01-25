@@ -27,7 +27,7 @@ const NewProjectPanel = () => {
 	return (
 		<Dialog>
 			<DialogTrigger asChild>
-				<div className="group hover:cursor-pointer transition hover:duration-100 duration-300 hover:scale-[1.03] shadow-light dark:shadow-neon w-full h-96 flex flex-col rounded-xl items-center justify-center bg-secondary">
+				<div className="group hover:cursor-pointer transition hover:duration-100 duration-300 hover:scale-[1.03] shadow-md shadow-black/50 w-full h-96 flex flex-col rounded-xl items-center justify-center bg-secondary border-t-2 border-x">
 					<HiPlusCircle className="h-48 w-48 text-foreground/50" />
 					<p className="font-bold text-xl">
 						{TRANSLATION[language].projects.newProject.new}

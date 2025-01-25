@@ -12,8 +12,8 @@ const EXPERIENCES: Experience[] = [
 		to: null,
 		location: "Helsinki, Finland",
 		description: {
-			en: "(Alongside my studies) Working on various systems integrations and contributing to building large-scale software infrastructure. Responsibilities include interfacing with partner firms, consulting with clients, and participating in system design.",
-			fi: "(Opintojen ohella) Erinäisten järjestelmäintegraatioiden toteutusta ja työtä monimutkaisten ohjelmistokokonaisuuksien kanssa. Työnkuvaan kuuluu myös yhteydenpito partnerifirmojen kanssa ja kosultointi asiakastapaamisten välityksellä. Olen myös osallistunut järjestelmäsuunnitteluun yleisesti.",
+			en: "(Alongside my studies) Working on various IoT systems integrations and contributing to building large-scale software infrastructure. Responsibilities include interfacing with partner firms, consulting with clients, and participating in system design.",
+			fi: "(Opintojen ohella) Erinäisten IoT järjestelmäintegraatioiden toteutusta ja työtä monimutkaisten ohjelmistokokonaisuuksien kanssa. Työnkuvaan kuuluu myös yhteydenpito partnerifirmojen kanssa ja kosultointi asiakastapaamisten välityksellä. Olen myös osallistunut järjestelmäsuunnitteluun yleisesti.",
 		},
 		skills: [
 			{

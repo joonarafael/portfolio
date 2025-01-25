@@ -1,119 +1,97 @@
 "use client";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-import { useRef } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-import Slider from "react-slick";
-
-import { Button } from "@/components/ui/button";
 import SKILLS from "@/constants/skills";
+import { Skill } from "@/types";
 
 import SkillElement from "./skillelement";
 
-const SkillList = () => {
-	const sliderRef = useRef<Slider | null>(null);
+interface SkillListProps {
+	skills?: Skill[];
+}
 
-	SKILLS.sort((a, b) => {
+const SkillList = ({ skills }: SkillListProps) => {
+	const toDisplay = skills || SKILLS;
+
+	toDisplay.sort((a, b) => {
 		if (a.name < b.name) return -1;
 		if (a.name > b.name) return 1;
 		return 0;
 	});
 
-	const settings = {
-		arrows: false,
-		autoPlay: true,
-		autoplaySpeed: 2000,
-		dots: true,
-		dotsClass: "slick-dots",
-		infinite: true,
-		speed: 200,
-		slidesToShow: 8,
-		slidesToScroll: 8,
-		cssEase: "linear",
-		rows: 2,
-		responsive: [
-			{
-				breakpoint: 1536,
-				settings: {
-					slidesToShow: 6,
-					slidesToScroll: 6,
-				},
-			},
-			{
-				breakpoint: 1280,
-				settings: {
-					slidesToShow: 4,
-					slidesToScroll: 4,
-					rows: 3,
-				},
-			},
-			{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 3,
-					rows: 4,
-				},
-			},
-			{
-				breakpoint: 768,
-				dots: false,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2,
-					rows: 4,
-				},
-			},
-			{
-				breakpoint: 640,
-				dots: false,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					rows: 5,
-				},
-			},
-		],
-	};
+	/**
+	CREDITS:
+	https://ibelick.com/blog/create-infinite-slider-with-tailwind-css	
+	*/
+
 	return (
-		<div className="relative flex flex-col gap-8 min-w-[180px] w-[90vw] xl:w-[80vw] max-w-[1320px] h-full">
-			<div className="max-w-full">
-				<div className="slider-container block cursor-grab">
-					<Slider
-						{...settings}
-						ref={(slider) => {
-							sliderRef.current = slider;
-						}}
+		<div className="relative m-auto min-w-[180px] w-[90vw] xl:w-[80vw] max-w-[1320px] overflow-hidden bg-background ">
+			<div className="absolute top-0 left-0 h-full w-32 z-10 bg-gradient-to-r from-background via-background to-transparent"></div>
+			<div className="absolute top-0 right-0 h-full w-32 z-10 bg-gradient-to-l from-background via-background to-transparent"></div>
+			<div className="animate-infinite-slider flex w-[calc(250px*10)] z-0">
+				{toDisplay.map((logo, index) => (
+					<div
+						className="slide flex w-48 items-center justify-center"
+						key={index}
 					>
-						{SKILLS.map((skill, i) => (
-							<SkillElement skill={skill} key={i} />
-						))}
-					</Slider>
-				</div>
-			</div>
-			<div className="flex w-full items-center justify-center flex-row gap-2">
-				<Button
-					variant="outline"
-					size="sm"
-					className="rounded-full"
-					onClick={() => {
-						sliderRef?.current?.slickPrev();
-					}}
-				>
-					<FaChevronLeft />
-				</Button>
-				<Button
-					variant="outline"
-					size="sm"
-					className="rounded-full"
-					onClick={() => {
-						sliderRef?.current?.slickNext();
-					}}
-				>
-					<FaChevronRight />
-				</Button>
+						<SkillElement skill={logo} />
+					</div>
+				))}
+				{toDisplay.map((logo, index) => (
+					<div
+						className="slide flex w-48 items-center justify-center"
+						key={index}
+					>
+						<SkillElement skill={logo} />
+					</div>
+				))}
+				{toDisplay.map((logo, index) => (
+					<div
+						className="slide flex w-48 items-center justify-center"
+						key={index}
+					>
+						<SkillElement skill={logo} />
+					</div>
+				))}
+				{toDisplay.map((logo, index) => (
+					<div
+						className="slide flex w-48 items-center justify-center"
+						key={index}
+					>
+						<SkillElement skill={logo} />
+					</div>
+				))}
+				{toDisplay.map((logo, index) => (
+					<div
+						className="slide flex w-48 items-center justify-center"
+						key={index}
+					>
+						<SkillElement skill={logo} />
+					</div>
+				))}
+				{toDisplay.map((logo, index) => (
+					<div
+						className="slide flex w-48 items-center justify-center"
+						key={index}
+					>
+						<SkillElement skill={logo} />
+					</div>
+				))}
+				{toDisplay.map((logo, index) => (
+					<div
+						className="slide flex w-48 items-center justify-center"
+						key={index}
+					>
+						<SkillElement skill={logo} />
+					</div>
+				))}
+				{toDisplay.map((logo, index) => (
+					<div
+						className="slide flex w-48 items-center justify-center"
+						key={index}
+					>
+						<SkillElement skill={logo} />
+					</div>
+				))}
 			</div>
 		</div>
 	);

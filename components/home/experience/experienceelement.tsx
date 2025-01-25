@@ -32,7 +32,7 @@ const ExperienceElement = ({
 	});
 
 	return (
-		<div className="flex w-full flex-col shadow-black/50 dark:shadow-purple-800 shadow-md p-4 gap-4 rounded-xl bg-background">
+		<div className="flex w-full flex-col shadow-black/50 shadow-md p-4 gap-4 rounded-xl bg-background border-t-2 border-x">
 			<div
 				onClick={() => {
 					setExpand(!expand);

@@ -13,14 +13,14 @@ import DROPBOX_CONTENT from "@/constants/dropboxcontent";
 const ProfPic = () => {
 	return (
 		<div className="relative group">
-			<div className="p-4">
+			<div className="p-4 cursor-default">
 				<img
-					className="rounded-full cursor-crosshair object-contain border-b-8 border-x-2 border-black dark:border-purple-500 shadow-lg dark:shadow-purple-800 shadow-black pointer-events-none group-hover:shadow-2xl group-hover:dark:shadow-purple-500 duration-1000 group-hover:duration-200 group-hover:shadow-black"
+					className="rounded-full object-contain border-b-8 border-x-2 border-black dark:border-purple-500 shadow-lg dark:shadow-purple-800 shadow-black pointer-events-none group-hover:shadow-2xl group-hover:dark:shadow-purple-500 duration-1000 group-hover:duration-200 group-hover:shadow-black"
 					src={DROPBOX_CONTENT.profPic}
 					alt="Profile"
 				/>
 			</div>
-			<div className="absolute rounded-xl p-2 left-0 right-0 -bottom-2 text-primary bg-foreground/50 dark:bg-background/75 backdrop-blur-lg font-bold text-lg shadow-lg text-white">
+			<div className="absolute rounded-xl p-2 left-0 right-0 -bottom-2 text-primary bg-foreground/50 dark:bg-background/75 backdrop-blur-lg font-bold text-lg shadow-lg border-t-2 border-x">
 				<div className="flex flex-row w-full item-center justify-center gap-1">
 					<Link
 						href="https://github.com/joonarafael"
@@ -59,7 +59,9 @@ const ProfPic = () => {
 						</Button>
 					</Link>
 				</div>
-				<div className="font-extrabold">Joona Kettunen</div>
+				<div className="font-extrabold text-muted-foreground">
+					Joona Kettunen
+				</div>
 			</div>
 		</div>
 	);

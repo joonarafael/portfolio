@@ -30,8 +30,8 @@ const PROJECTS: Project[] = [
 		id: "jobba",
 		title: "Jobba",
 		about: {
-			en: "Revolutionary job-seeking platform built with a startup team. Still in development.",
-			fi: "Vallankumouksellinen työnhakualusta rakennettu startup-tiimin kanssa. Edelleen kehitysvaiheessa.",
+			en: "Revolutionary job-seeking platform built with a startup team.",
+			fi: "Vallankumouksellinen työnhakualusta rakennettu startup-tiimin kanssa.",
 		},
 		description: {
 			en: JOBBA_DESCRIPTION_EN(),

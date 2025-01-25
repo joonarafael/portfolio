@@ -32,7 +32,7 @@ const ProjectHeader = ({ project, sortedSkills }: ProjectHeaderProps) => {
 					</Button>
 				</Link>
 				<h1 className="text-4xl sm:text-6xl font-extrabold">{project.title}</h1>
-				{project.id === "explotrack" && (
+				{project.id === "jobba" && (
 					<FlagShip text={TRANSLATION[language].global.projectPanel.flagShip} />
 				)}
 				<p className="text-lg">{project.about[language]}</p>

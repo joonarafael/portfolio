@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config = {
-	darkMode: ["class"],
+	darkMode: ["class", ""],
 	content: [
 		"./pages/**/*.{ts,tsx}",
 		"./components/**/*.{ts,tsx}",
@@ -59,6 +59,12 @@ const config = {
 				sm: "calc(var(--radius) - 4px)",
 			},
 			keyframes: {
+				infiniteSlider: {
+					"0%": { transform: "translateX(0)" },
+					"100%": {
+						transform: "translateX(calc(-250px * 5))",
+					},
+				},
 				gradient: {
 					"0%": { backgroundPosition: "0% 50%" },
 					"100%": { backgroundPosition: "100% 50%" },
@@ -109,10 +115,7 @@ const config = {
 				gradientBackground: "gradient 18s linear infinite",
 				jiggle: "jiggle 0.6s ease-in-out 0.25s 1",
 				tada: "tada 1s ease-in-out 0.25s 1",
-			},
-			boxShadow: {
-				light: "0 0 5px theme('colors.slate.500')",
-				neon: "0 0 5px theme('colors.violet.600'), 0 0 10px theme('colors.violet.800')",
+				["infinite-slider"]: "infiniteSlider 20s linear infinite",
 			},
 		},
 	},
