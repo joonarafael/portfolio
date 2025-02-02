@@ -56,8 +56,8 @@ const TRANSLATION = {
 			newproject: {
 				title: "CONTACT",
 				hero: {
-					title: "Get started!",
-					subtitle: "Got a project in mind? Let's chat.",
+					title: "Let's chat!",
+					subtitle: "Got a project in mind? I'd love to talk about it.",
 				},
 			},
 			projects: {
@@ -232,8 +232,9 @@ const TRANSLATION = {
 			newproject: {
 				title: "OTA YHTEYTTÄ",
 				hero: {
-					title: "Aloitetaan!",
-					subtitle: "Projekti mielessä? Keskustellaan.",
+					title: "Jutellaan!",
+					subtitle:
+						"Projekti mielessä? Haluaisin mielelläni keskustella siitä.",
 				},
 			},
 			projects: {

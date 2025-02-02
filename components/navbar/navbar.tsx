@@ -17,6 +17,10 @@ const Navbar = () => {
 	const pathName = usePathname();
 
 	const [scrollDirection, setScrollDirection] = useState<"up" | "down">("up");
+	const [mousePosition, setMousePosition] = useState({
+		x: 0,
+		y: 0,
+	});
 
 	useEffect(() => {
 		let lastScrollY = window.scrollY;
@@ -31,32 +35,32 @@ const Navbar = () => {
 			lastScrollY = scrollY;
 		};
 
+		const updateMousePosition = (e: MouseEvent) => {
+			setMousePosition({ x: e.clientX, y: e.clientY });
+		};
+
 		window.addEventListener("scroll", updateScrollDirection);
+		window.addEventListener("mousemove", updateMousePosition);
 
 		return () => {
 			window.removeEventListener("scroll", updateScrollDirection);
+			window.removeEventListener("mousemove", updateMousePosition);
 		};
 	}, []);
 
 	useEffect(() => {
-		let timeoutId: ReturnType<typeof setTimeout> | undefined;
-
-		if (scrollDirection === "down") {
-			timeoutId = setTimeout(() => {
+		const checkDisplay = () => {
+			if (mousePosition.y < 140) {
 				setScrollDirection("up");
-			}, 7500);
-		}
-
-		return () => {
-			if (timeoutId) {
-				clearTimeout(timeoutId);
 			}
 		};
-	}, [scrollDirection]);
+
+		checkDisplay();
+	}, [mousePosition]);
 
 	return (
 		<div
-			className={`z-50 pointer-events-none p-12 group fixed flex w-full justify-center items-center bg-gradient-to-b from-background to-transparent transition-transform duration-1000 ${
+			className={`flex z-50 pointer-events-none p-12 group fixed w-full justify-center items-center bg-gradient-to-b from-background to-transparent transition-transform duration-1000 ${
 				scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
 			}`}
 		>
