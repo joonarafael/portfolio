@@ -159,6 +159,10 @@ const SKILLS: Skill[] = [
 		name: "Vite",
 		icon: "https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&color=black&logo=vite",
 	},
+	{
+		name: "GO",
+		icon: "https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&color=black&logo=go&logoColor=blue",
+	},
 ];
 
 export default SKILLS;

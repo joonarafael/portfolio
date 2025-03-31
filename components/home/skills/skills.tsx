@@ -2,12 +2,10 @@
 
 import Link from "next/link";
 
-import SKILLS_LEARNING from "@/constants/learning";
 import { useTranslationStore } from "@/hooks/useTranslation";
 import TRANSLATION from "@/translations/translation";
 
 import Subtitle from "../../subtitle";
-import SkillElement from "./skillelement";
 import SkillList from "./skilllist";
 
 const Skills = () => {
@@ -24,10 +22,6 @@ const Skills = () => {
 					{TRANSLATION[language].index.skills.headers.skills}
 				</h2>
 				<SkillList />
-				<p className="font-bold text-xl">
-					{TRANSLATION[language].index.skills.headers.learning}
-				</p>
-				<SkillList skills={SKILLS_LEARNING} />
 			</div>
 			<Link
 				href="https://shields.io/"

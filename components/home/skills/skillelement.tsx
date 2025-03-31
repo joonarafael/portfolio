@@ -1,6 +1,6 @@
 "use client";
 
-import { Skill } from '@/types';
+import { Skill } from "@/types";
 
 interface SkillElementProps {
 	skill: Skill;

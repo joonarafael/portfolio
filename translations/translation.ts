@@ -4,7 +4,7 @@ const TRANSLATION = {
 			cookies: {
 				title: "Cookies",
 				description:
-					"This website uses cookies to ensure you get the best experience. Information about language and theme preferences are stored in cookies.",
+					"This website uses cookies to ensure you get the best experience. Information about language and theme preferences are stored in cookies. Also some analytics are gathered with cookies.",
 				buttons: {
 					accept: "Accept cookies",
 					acceptNecessary: "Accept necessary only",
@@ -180,7 +180,7 @@ const TRANSLATION = {
 			cookies: {
 				title: "Evästeet",
 				description:
-					"Tämä verkkosivu hyödyntää evästeitä parhaan käyttökokemuksen varmistamiseksi. Tieto kielivalinnasta ja teemasta tallennetaan evästeisiin.",
+					"Tämä verkkosivu hyödyntää evästeitä parhaan käyttökokemuksen varmistamiseksi. Tieto kielivalinnasta ja teemasta tallennetaan evästeisiin. Evästeillä kerätään myös analytiikkaa.",
 				buttons: {
 					accept: "Hyväksy evästeet",
 					acceptNecessary: "Hyväksy vain välttämättömät",

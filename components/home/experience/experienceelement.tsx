@@ -33,12 +33,7 @@ const ExperienceElement = ({
 
 	return (
 		<div className="flex w-full flex-col shadow-black/50 shadow-md p-4 gap-4 rounded-xl bg-background border-t-2 border-x">
-			<div
-				onClick={() => {
-					setExpand(!expand);
-				}}
-				className="flex flex-row w-full justify-between items-center"
-			>
+			<div className="flex flex-row w-full justify-between items-center">
 				<div className="flex flex-wrap gap-2 text-left items-center">
 					<h1 className="text-lg font-bold">{title[language]}</h1>
 					<h2 className="text-lg font-light">@ {company}</h2>
