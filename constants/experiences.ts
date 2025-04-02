@@ -3,17 +3,33 @@ import { Experience } from "@/types";
 const EXPERIENCES: Experience[] = [
 	{
 		title: {
-			en: "Software Developer",
-			fi: "Ohjelmistokehittäjä",
+			en: "Frontend Developer Trainee",
+			fi: "Frontend-kehittäjä, harjoittelija",
+		},
+		company: "Alma Media",
+		from: "04/2025",
+		href: "https://www.almamedia.fi",
+		to: null,
+		location: "Helsinki, Finland",
+		description: {
+			en: "",
+			fi: "",
+		},
+		skills: [],
+	},
+	{
+		title: {
+			en: "Freelance Developer",
+			fi: "Freelance ohjelmistokehittäjä",
 		},
 		company: "Aufwin Defence Systems Oy",
 		from: "07/2024",
 		href: "https://aufwindefence.fi",
-		to: null,
+		to: "04/2025",
 		location: "Helsinki, Finland",
 		description: {
 			en: "(Alongside my studies) Working on various IoT systems integrations and contributing to building large-scale software infrastructure. Responsibilities include interfacing with partner firms, consulting with clients, and participating in system design.",
-			fi: "(Opintojen ohella) Erinäisten IoT järjestelmäintegraatioiden toteutusta ja työtä monimutkaisten ohjelmistokokonaisuuksien kanssa. Työnkuvaan kuuluu myös yhteydenpito partnerifirmojen kanssa ja kosultointi asiakastapaamisten välityksellä. Olen myös osallistunut järjestelmäsuunnitteluun yleisesti.",
+			fi: "(Opintojen ohella) Erinäisten IoT-järjestelmäintegraatioiden toteutusta ja työtä monimutkaisten ohjelmistokokonaisuuksien kanssa. Työnkuvaan kuuluu myös yhteydenpito partnerifirmojen kanssa ja kosultointi asiakastapaamisten välityksellä. Olen myös osallistunut järjestelmäsuunnitteluun yleisesti.",
 		},
 		skills: [
 			{
@@ -36,9 +52,9 @@ const EXPERIENCES: Experience[] = [
 			fi: "Yrittäjä",
 		},
 		company: "Tmi Joona Kettunen",
-		from: "2024",
+		from: "07/2024",
 		href: "https://joonakettunen.netlify.app",
-		to: null,
+		to: "04/2025",
 		location: "Helsinki, Finland",
 		description: {
 			en: "Operating a registered business under my own trade name as a freelance developer. Responsible for managing all aspects of the business, including taxes, billing, and accounting, while delivering high-quality development services to clients.",
