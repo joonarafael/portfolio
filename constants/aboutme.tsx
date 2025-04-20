@@ -4,17 +4,20 @@ export const AboutMeBodyEn = () => {
 	return (
 		<>
 			<p>
-				Aspiring software developer with a passion for web development and a
-				strong foundation in computer science. Currently pursuing a degree in
-				Computer Science at the University of Helsinki, with a focus on web
-				development and software engineering.
+				I'm a passionate and self-driven software developer with a strong
+				foundation in computer science and hands-on experience in both corporate
+				and entrepreneurial environments. Currently completing my BSc in
+				Computer Science at the University of Helsinki, I've worked on a variety
+				of impactful projects ranging from defense systems integrations to
+				consumer-facing platforms.
 			</p>
 			<p>
-				At Aufwin, I’ve gained hands-on experience in system integrations and
-				large-scale software infrastructure, while continuing to hone my skills
-				in frontend development. I’m particularly captivated by how technology
-				meets user experience, thriving in designing and discussing intuitive
-				and engaging user interfaces.
+				My interests lie in full-stack development, with a particular enthusiasm
+				for frontend work using modern frameworks like React and Next.js. I
+				thrive in collaborative settings, bring strong problem-solving skills to
+				every challenge, and have a continuous drive to learn, create, and
+				refine digital experiences. When I'm not coding, you'll find me at the
+				gym, reading, or playing piano.
 			</p>
 			<p>
 				I am dedicated to continuous learning and growth, leveraging my free
@@ -38,31 +41,33 @@ export const AboutMeBodyFi = () => {
 	return (
 		<>
 			<p>
-				Motivoitunut ohjelmistokehittäjä, jolla on intohimo web-kehitykseen ja
-				vahva pohja tietojenkäsittelytieteessä. Opiskelen
-				tietojenkäsittelytiedettä Helsingin yliopistossa, keskittyen
-				web-kehitykseen ja ohjelmistotuotantoon.
+				Olen intohimoinen ja oma-aloitteinen ohjelmistokehittäjä, jolla on vahva
+				perusta tietojenkäsittelytieteessä ja käytännön kokemusta kerrytettynä
+				niin yritysmaailmasta kuin yrittäjyydestäkin. Viimeistelen parhaillani
+				tietojenkäsittelytieteen kandidaatin tutkintoa Helsingin yliopistossa,
+				ja olen työskennellyt monipuolisissa projekteissa puolustusjärjestelmien
+				integroinnista kuluttajille suunnattuihin alustoihin.
 			</p>
 			<p>
-				Aufwinilla olen saanut käytännön kokemusta järjestelmäintegraatioista ja
-				laajan mittakaavan ohjelmistoinfrastruktuurista, samalla kun jatkan
-				taitojeni hiomista frontend-kehityksessä. Olen erityisen kiinnostunut
-				siitä, miten teknologia kohtaa käyttäjäkokemuksen, menestyen
-				intuitiivisten ja osallistavien käyttöliittymien suunnittelussa ja
-				keskustelussa.
+				Olen erityisen kiinnostunut fullstack-kehityksestä, ja suhtaudun
+				innostuneesti erityisesti modernien frontend-kehysten, kuten Reactin ja
+				Next.js:n, käyttöön. Viihdyn hyvin tiimityössä, ratkon ongelmia
+				tehokkaasti ja minulla on jatkuva halu oppia, luoda ja hioa digitaalisia
+				käyttökokemuksia. Kun en ole koodin parissa, minut löytää salilta,
+				lukemasta tai soittamasta pianoa.
 			</p>
 			<p>
-				Olen omistautunut jatkuvaan oppimiseen ja kasvuun, hyödyntäen
-				vapaa-aikaani uusien teknologioiden tutkimiseen ja niiden soveltamiseen
-				käytännön konteksteissa. Tähän sisältyy mm. yhteistyö innovatiivisissa
-				startup-projekteissa, kokeilut self-hostatuilla DevOps-ratkaisuilla
-				kotipalvelimellani ja pysyminen alan edistyksen ja tekoälyn kärjessä.
+				Olen sitoutunut jatkuvaan oppimiseen ja kehittymiseen, ja hyödynnän
+				vapaa-aikani tutkien uusia teknologioita ja soveltaen niitä käytännössä.
+				Tämä tarkoittaa esimerkiksi innovatiivisiin startup-hankkeisiin
+				osallistumista, self-hostattujen DevOps-ratkaisujen kokeilua
+				kotipalvelimella sekä alan kehityksen ja tekoälyn seuraamista.
 			</p>
 			<p>
-				Pitkän aikavälin tavoitteeni on toimia sillanrakentajana teknisten ja
-				ei-teknisten tiimien välillä, hyödyntäen ohjelmointiosaamistani ja
-				vahvoja viestintätaitojani kiihdyttämään yhteistyön menestystä ja
-				toimittamaan vaikuttavia, onnistuneita ratkaisuja.
+				Pitkän aikavälin tavoitteeni on toimia siltana teknisten ja ei-teknisten
+				tiimien välillä, hyödyntäen ohjelmointiosaamistani ja vahvoja
+				viestintätaitojani yhteisen menestyksen ja vaikuttavien ratkaisujen
+				edistämiseksi.
 			</p>
 		</>
 	);

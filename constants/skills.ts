@@ -163,6 +163,18 @@ const SKILLS: Skill[] = [
 		name: "GO",
 		icon: "https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&color=black&logo=go&logoColor=blue",
 	},
+	{
+		name: "Confluence",
+		icon: "https://img.shields.io/badge/confluence-%23172BF4.svg?style=for-the-badge&logo=confluence&color=black&logoColor=blue",
+	},
+	{
+		name: "Jira",
+		icon: "https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&color=black&logoColor=blue",
+	},
+	{
+		name: "Figma",
+		icon: "https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&color=black&logoColor=orange",
+	},
 ];
 
 export default SKILLS;

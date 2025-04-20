@@ -1,5 +1,9 @@
 "use client";
 
+import Link from "next/link";
+import { RxExternalLink } from "react-icons/rx";
+
+import { Button } from "@/components/ui/button";
 import EXPERIENCES from "@/constants/experiences";
 import { useTranslationStore } from "@/hooks/useTranslation";
 import TRANSLATION from "@/translations/translation";
@@ -30,6 +34,20 @@ const Experience = () => {
 						</div>
 					))}{" "}
 				</div>
+			</div>
+			<div className="flex gap-8 w-full flex-col items-center justify-center pt-8">
+				<p className="text-foreground/75 font-light">
+					<em>{TRANSLATION[language].index.experience.visitLinkedIn}</em>
+				</p>
+				<Link href="https://www.linkedin.com/in/joonakettunen/" target="_blank">
+					<Button
+						variant="outline"
+						className="items-center gap-2 w-fit text-xl p-6 font-bold"
+					>
+						<p>{TRANSLATION[language].index.experience.linkedInBtn}</p>
+						<RxExternalLink className="w-5 h-5" />
+					</Button>
+				</Link>
 			</div>
 		</div>
 	);

@@ -17,7 +17,7 @@ export type Experience = {
 		en: string;
 		fi: string;
 	};
-	skills: Skill[];
+	skills: string[];
 };
 
 export type Project = {

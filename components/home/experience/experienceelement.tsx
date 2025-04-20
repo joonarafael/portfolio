@@ -26,8 +26,8 @@ const ExperienceElement = ({
 		experience;
 
 	skills.sort((a, b) => {
-		if (a.name < b.name) return -1;
-		if (a.name > b.name) return 1;
+		if (a < b) return -1;
+		if (a > b) return 1;
 		return 0;
 	});
 
@@ -96,7 +96,7 @@ const ExperienceElement = ({
 					</div>
 					<div className="flex flex-wrap gap-3 text-muted-foreground text-xs font-light">
 						{skills.map((skill, i) => (
-							<div key={i}>{skill.name}</div>
+							<div key={i}>{skill}</div>
 						))}
 					</div>
 				</div>

@@ -52,6 +52,9 @@ const TRANSLATION = {
 				title: "EXPERIENCE",
 				header: "Quick summary of my most recent experiences",
 				present: "Present",
+				visitLinkedIn:
+					"Please check my LinkedIn profile to view my full resume in greater detail!",
+				linkedInBtn: "View my LinkedIn profile",
 			},
 			newproject: {
 				title: "CONTACT",
@@ -228,6 +231,9 @@ const TRANSLATION = {
 				title: "TYÖKOKEMUS",
 				header: "Työkokemus",
 				present: "Nykyhetki",
+				visitLinkedIn:
+					"Koko yksityiskohtaisen ansioluetteloni löydät LinkedInistä!",
+				linkedInBtn: "Katso LinkedIn -profiilini",
 			},
 			newproject: {
 				title: "OTA YHTEYTTÄ",

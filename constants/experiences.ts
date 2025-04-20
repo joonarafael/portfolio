@@ -4,7 +4,7 @@ const EXPERIENCES: Experience[] = [
 	{
 		title: {
 			en: "Frontend Developer Trainee",
-			fi: "Frontend-kehittäjä, harjoittelija",
+			fi: "Frontend-kehittäjä Trainee",
 		},
 		company: "Alma Media",
 		from: "04/2025",
@@ -12,10 +12,18 @@ const EXPERIENCES: Experience[] = [
 		to: null,
 		location: "Helsinki, Finland",
 		description: {
-			en: "",
-			fi: "",
+			en: "Working on various Alma Marketplace web applications, with a focus on frontend development. Gaining hands-on experience in software development within a large Finnish digital service company. Learning to collaborate with different teams and professionals, while also developing an understanding of the needs and perspectives of various stakeholders involved in the product development process.",
+			fi: "Työskentelen eri Alma Marketplace -verkkosovellusten parissa, keskittyen erityisesti frontend-kehitykseen. Kerrytän käytännön kokemusta ohjelmistokehityksestä suuressa suomalaisessa digitaalisten palveluiden yrityksessä. Opin tekemään yhteistyötä eri tiimien ja ammattilaisten kanssa, samalla kun syvennän ymmärrystäni tuotekehitykseen osallistuvien sidosryhmien tarpeista ja näkökulmista.",
 		},
-		skills: [],
+		skills: [
+			"Docker",
+			"Jira",
+			"Figma",
+			"Scrum",
+			"TypeScript",
+			"JavaScript",
+			"Confluence",
+		],
 	},
 	{
 		title: {
@@ -31,20 +39,7 @@ const EXPERIENCES: Experience[] = [
 			en: "(Alongside my studies) Working on various IoT systems integrations and contributing to building large-scale software infrastructure. Responsibilities include interfacing with partner firms, consulting with clients, and participating in system design.",
 			fi: "(Opintojen ohella) Erinäisten IoT-järjestelmäintegraatioiden toteutusta ja työtä monimutkaisten ohjelmistokokonaisuuksien kanssa. Työnkuvaan kuuluu myös yhteydenpito partnerifirmojen kanssa ja kosultointi asiakastapaamisten välityksellä. Olen myös osallistunut järjestelmäsuunnitteluun yleisesti.",
 		},
-		skills: [
-			{
-				name: "AWS",
-				icon: "https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&color=black&logo=amazon-aws&logoColor=white",
-			},
-			{
-				name: "Python",
-				icon: "https://img.shields.io/badge/-Python-informational?style=for-the-badge&color=black&logo=python",
-			},
-			{
-				name: "Docker",
-				icon: "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&color=black",
-			},
-		],
+		skills: ["AWS", "Python", "Docker"],
 	},
 	{
 		title: {
