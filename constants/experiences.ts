@@ -3,6 +3,22 @@ import { Experience } from "@/types";
 const EXPERIENCES: Experience[] = [
   {
     title: {
+      en: "Project Lead",
+      fi: "Hankkeen vetäjä, pääsuunnittelija",
+    },
+    company: "Junction",
+    from: "05/2025",
+    href: "https://www.hackjunction.com",
+    to: null,
+    location: "Helsinki, Finland",
+    description: {
+      en: "(Volunteer) Helping the CTO of Junction to manage the platform source code refactoring & overseeing the overhaul of the frontend styling. Guiding a team of volunteer developers executing these tasks and assisting them with various technical and non-technical questions.",
+      fi: "(Vapaaehtoistyö) Avustan Junctionin CTOta hallitsemaan Junction-platformin lähdekoodin refaktorointityötä ja valvon tyylittelyn uudistusta. Luotsin vapaaehtoisten ohjelmoijien tiimiä, ohjaan heitä etenemään työssä ja autan kysymyksissä.",
+    },
+    skills: [],
+  },
+  {
+    title: {
       en: "Frontend Developer Trainee",
       fi: "Frontend-kehittäjä Trainee",
     },
