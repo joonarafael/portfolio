@@ -64,7 +64,7 @@ const EXPERIENCES: Experience[] = [
     },
     company: "Tmi Joona Kettunen",
     from: "07/2024",
-    href: "https://joonakettunen.netlify.app",
+    href: "https://joonakettunen.dev",
     to: "04/2025",
     location: "Helsinki, Finland",
     description: {
