@@ -3,7 +3,6 @@
 import Link from "next/link";
 
 import LoadingState from "@/components/loadingstate";
-import { Button } from "@/components/ui/button";
 import DROPBOX_CONTENT from "@/constants/dropboxcontent";
 import { useTranslationStore } from "@/hooks/useTranslation";
 import TRANSLATION from "@/translations/translation";
@@ -15,7 +14,7 @@ const TitleVideo = () => {
 
 	return (
 		<div className="flex-col h-full hidden lg:flex w-2/5 items-center justify-center">
-			<div className="relative bg-gradient-to-t from-black to-purple-500 w-full h-full shadow-light dark:shadow-neon rounded-xl border-t-2 border-x">
+			<div className="relative bg-linear-to-t from-black to-purple-500 w-full h-full shadow-light dark:shadow-neon rounded-xl border-t-2 border-x">
 				<div className="absolute z-40 rounded-xl w-full h-full shadow-[0_0_80px_rgba(0,0,0,0.8)_inset] left-0 top-0"></div>
 				<video
 					autoPlay

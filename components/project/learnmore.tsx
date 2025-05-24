@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { RxGithubLogo } from "react-icons/rx";
-import { VscGlobe } from "react-icons/vsc";
 
 import { Button } from "@/components/ui/button";
 import { useTranslationStore } from "@/hooks/useTranslation";
@@ -19,7 +18,7 @@ const ProjectLearnMore = ({ project }: ProjectLearnMoreProps) => {
 	const { language } = useTranslationStore();
 
 	return (
-		<div className="flex flex-col lg:flex-row justify-between min-h-48 items-center gradient-background animate-gradientBackground rounded-xl py-16 lg:py-0 lg:px-16 w-full backdrop-blur-lg gap-4">
+		<div className="flex flex-col lg:flex-row justify-between min-h-48 items-center gradient-background animate-gradient-background rounded-xl py-16 lg:py-0 lg:px-16 w-full backdrop-blur-lg gap-4">
 			<div className="text-white text-center lg:text-left">
 				{project.id === "explotrack" || project.id === "jobba" ? (
 					<>

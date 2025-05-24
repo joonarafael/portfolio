@@ -60,9 +60,8 @@ const Navbar = () => {
 
 	return (
 		<div
-			className={`flex z-50 pointer-events-none p-12 group fixed w-full justify-center items-center bg-gradient-to-b from-background to-transparent transition-transform duration-1000 ${
-				scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
-			}`}
+			className={`flex z-50 pointer-events-none p-12 group fixed w-full justify-center items-center bg-linear-to-b from-background to-transparent transition-transform duration-1000 ${scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
+				}`}
 		>
 			<div className="group-hover:shadow-lg group-hover:shadow-black/50 dark:group-hover:shadow-purple-500 shadow-black/25 bg-background border-t-2 border-x shadow-md min-w-[180px] w-full max-w-[2440px] flex justify-between items-center rounded-xl p-2 transition group-hover:duration-200 duration-1000 flex-col sm:flex-row gap-2 pointer-events-auto">
 				<div className="flex flex-row gap-2">

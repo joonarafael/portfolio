@@ -31,11 +31,11 @@ const SkillList = ({ skills }: SkillListProps) => {
 	*/
 
 	return (
-		<div className="relative m-auto min-w-[180px] w-[90vw] xl:w-[80vw] max-w-[1320px] overflow-hidden bg-background ">
-			<div className="absolute top-0 left-0 h-full w-16 sm:w-32 z-10 bg-gradient-to-r from-background via-background to-transparent"></div>
-			<div className="absolute top-0 right-0 h-full w-16 sm:w-32 z-10 bg-gradient-to-l from-background via-background to-transparent"></div>
+		<div className="relative m-auto min-w-[180px] w-[90vw] xl:w-[80vw] max-w-[1320px] overflow-hidden bg-background group cursor-crosshair">
+			<div className="absolute top-0 left-0 h-full w-16 sm:w-32 z-10 bg-linear-to-r from-background via-background to-transparent"></div>
+			<div className="absolute top-0 right-0 h-full w-16 sm:w-32 z-10 bg-linear-to-l from-background via-background to-transparent"></div>
 			<div
-				className="animate-infinite-slider flex z-0"
+				className="animate-infinite-slider flex z-0 [animation-play-state:running] group-hover:[animation-play-state:paused]"
 				style={{
 					width: `${toDisplay.length * 200}px`,
 				}}
@@ -58,7 +58,7 @@ const SkillList = ({ skills }: SkillListProps) => {
 				))}
 			</div>
 			<div
-				className="animate-infinite-slider flex z-0"
+				className="animate-infinite-slider flex z-0 [animation-play-state:running] group-hover:[animation-play-state:paused]"
 				style={{
 					width: `${toDisplay.length * 200}px`,
 				}}
