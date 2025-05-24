@@ -1,6 +1,6 @@
 # PORTFOLIO
 
-My personal portfolio website. Check the live website [here](https://joonakettunen.dev/ "Portfolio Joona Kettunen") hosted by [Vercel](https://vercel.com/home "Vercel - Your complete platform for the web.").
+My personal portfolio website. Check the live website [here](https://joonakettunen.dev/ "Portfolio - Joona Kettunen") hosted by [Vercel](https://vercel.com/home "Vercel - Your complete platform for the web.").
 
 ## General
 
