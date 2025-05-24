@@ -29,10 +29,10 @@ const Experience = () => {
 						<div key={i}>
 							<ExperienceElement
 								experience={experience}
-								initialExpand={i == 0}
+								initialExpand={i === 0 || i === 1}
 							/>
 						</div>
-					))}{" "}
+					))}
 				</div>
 			</div>
 			<div className="flex gap-8 w-full flex-col items-center justify-center pt-8">
